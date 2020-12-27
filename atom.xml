@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>patdz的专业记录</title>
+  
+  <subtitle>技术</subtitle>
+  <link href="https://patdz.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://patdz.github.io/"/>
+  <updated>2020-12-27T02:15:34.494Z</updated>
+  <id>https://patdz.github.io/</id>
+  
+  <author>
+    <name>patdz</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sudo保持当前用户的环境变量</title>
+    <link href="https://patdz.github.io/2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/"/>
+    <id>https://patdz.github.io/2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/</id>
+    <published>2020-12-27T02:10:35.000Z</published>
+    <updated>2020-12-27T02:15:34.494Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;方法一&quot;&gt;&lt;a href=&quot;#方法一&quot; class=&quot;headerlink&quot; title=&quot;方法一&quot;&gt;&lt;/a&gt;方法一&lt;/h2&gt;&lt;p&gt;在&lt;code&gt;/etc/sudoers&lt;/code&gt;文件中设置&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="sudo" scheme="https://patdz.github.io/tags/sudo/"/>
+    
+    <category term="env" scheme="https://patdz.github.io/tags/env/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://patdz.github.io/2020/12/24/hello-world/"/>
+    <id>https://patdz.github.io/2020/12/24/hello-world/</id>
+    <published>2020-12-24T09:00:03.506Z</published>
+    <updated>2020-12-24T09:00:03.506Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo在文章中添加图片</title>
+    <link href="https://patdz.github.io/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/"/>
+    <id>https://patdz.github.io/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/</id>
+    <published>2020-12-22T06:20:04.000Z</published>
+    <updated>2020-12-24T09:00:03.506Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;目录中安装插件&lt;code&gt;npm install https://github.com/CodeFalling/hexo-asset-image --save&lt;/code&gt;&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>地图-经纬度所在省份城市</title>
+    <link href="https://patdz.github.io/2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/"/>
+    <id>https://patdz.github.io/2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/</id>
+    <published>2020-12-22T02:08:28.000Z</published>
+    <updated>2020-12-24T09:00:03.513Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;下载区域文件&quot;&gt;&lt;a href=&quot;#下载区域文件&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Map" scheme="https://patdz.github.io/categories/Map/"/>
+    
+    
+    <category term="longitude" scheme="https://patdz.github.io/tags/longitude/"/>
+    
+    <category term="latitude" scheme="https://patdz.github.io/tags/latitude/"/>
+    
+    <category term="geocode" scheme="https://patdz.github.io/tags/geocode/"/>
+    
+    <category term="reverse" scheme="https://patdz.github.io/tags/reverse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>brew tap</title>
+    <link href="https://patdz.github.io/2020/12/16/brew-tap/"/>
+    <id>https://patdz.github.io/2020/12/16/brew-tap/</id>
+    <published>2020-12-16T08:54:58.000Z</published>
+    <updated>2020-12-24T09:00:03.505Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot; title=&quot;目标&quot;&gt;&lt;/a&gt;目标&lt;/h2&gt;&lt;p&gt;&lt;code&gt;brew&lt;/code&gt;没找到&lt;code&gt;influx&lt;/code&gt;客户端程序，所以搞一个&lt;/p&gt;
+&lt;h2 id=&quot;步骤&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Brew" scheme="https://patdz.github.io/categories/Brew/"/>
+    
+    
+    <category term="Mac" scheme="https://patdz.github.io/tags/Mac/"/>
+    
+    <category term="brew" scheme="https://patdz.github.io/tags/brew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac安装第三方软件(开发工具篇)</title>
+    <link href="https://patdz.github.io/2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/"/>
+    <id>https://patdz.github.io/2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/</id>
+    <published>2020-12-16T04:10:32.000Z</published>
+    <updated>2020-12-24T09:00:03.511Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;redis-cli&quot;&gt;&lt;a href=&quot;#redis-cli&quot; class=&quot;headerlink&quot; title=&quot;redis-cli&quot;&gt;&lt;/a&gt;&lt;code&gt;redis-cli&lt;/code&gt;&lt;/h1&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Mac" scheme="https://patdz.github.io/categories/Mac/"/>
+    
+    
+    <category term="Mac" scheme="https://patdz.github.io/tags/Mac/"/>
+    
+    <category term="brew" scheme="https://patdz.github.io/tags/brew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>监控[influxdb+telegraf+grafana]</title>
+    <link href="https://patdz.github.io/2020/12/09/jian-kong-influxdb-telegraf-grafana/"/>
+    <id>https://patdz.github.io/2020/12/09/jian-kong-influxdb-telegraf-grafana/</id>
+    <published>2020-12-09T02:16:11.000Z</published>
+    <updated>2020-12-24T09:00:03.516Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;安装Docker&quot;&gt;&lt;a href=&quot;#安装Docker&quot; class=&quot;headerlink&quot; title=&quot;安装Docker&quot;&gt;&lt;/a&gt;安装&lt;code&gt;Docker&lt;/code&gt;&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="monitor" scheme="https://patdz.github.io/categories/monitor/"/>
+    
+    
+    <category term="influxdb" scheme="https://patdz.github.io/tags/influxdb/"/>
+    
+    <category term="influx" scheme="https://patdz.github.io/tags/influx/"/>
+    
+    <category term="telegraf" scheme="https://patdz.github.io/tags/telegraf/"/>
+    
+    <category term="grafana" scheme="https://patdz.github.io/tags/grafana/"/>
+    
+    <category term="ubuntu" scheme="https://patdz.github.io/tags/ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql</title>
+    <link href="https://patdz.github.io/2020/12/03/mysql/"/>
+    <id>https://patdz.github.io/2020/12/03/mysql/</id>
+    <published>2020-12-03T07:50:25.000Z</published>
+    <updated>2020-12-24T09:00:03.512Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;语句&quot;&gt;&lt;a href=&quot;#语句&quot; class=&quot;headerlink&quot; title=&quot;语句&quot;&gt;&lt;/a&gt;语句&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;时间格式&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-mysql&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="db" scheme="https://patdz.github.io/categories/db/"/>
+    
+    
+    <category term="mysql" scheme="https://patdz.github.io/tags/mysql/"/>
+    
+    <category term="db" scheme="https://patdz.github.io/tags/db/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kafka</title>
+    <link href="https://patdz.github.io/2020/12/03/kafka/"/>
+    <id>https://patdz.github.io/2020/12/03/kafka/</id>
+    <published>2020-12-03T05:21:53.000Z</published>
+    <updated>2020-12-24T09:00:03.510Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="mq" scheme="https://patdz.github.io/categories/mq/"/>
+    
+    
+    <category term="kafka" scheme="https://patdz.github.io/tags/kafka/"/>
+    
+    <category term="mq" scheme="https://patdz.github.io/tags/mq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux命令</title>
+    <link href="https://patdz.github.io/2020/12/01/linux-ming-ling/"/>
+    <id>https://patdz.github.io/2020/12/01/linux-ming-ling/</id>
+    <published>2020-12-01T06:58:07.000Z</published>
+    <updated>2020-12-24T09:00:03.510Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如果存在某个文件，则重命名&lt;/p&gt;
+  &lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://patdz.github.io/categories/tools/"/>
+    
+    
+    <category term="bash" scheme="https://patdz.github.io/tags/bash/"/>
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人笔记</title>
+    <link href="https://patdz.github.io/2020/12/01/ge-ren-bi-ji/"/>
+    <id>https://patdz.github.io/2020/12/01/ge-ren-bi-ji/</id>
+    <published>2020-12-01T04:19:11.000Z</published>
+    <updated>2020-12-24T09:00:03.513Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
+
+
+
+&lt;h2 id=&quot;MySQL&quot;&gt;&lt;a href=&quot;#MySQL&quot; class=&quot;headerlink&quot; title=&quot;MySQL&quot;&gt;&lt;/a&gt;MySQL&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="patdz" scheme="https://patdz.github.io/categories/patdz/"/>
+    
+    
+    <category term="personal" scheme="https://patdz.github.io/tags/personal/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>openssl</title>
+    <link href="https://patdz.github.io/2020/12/01/openssl/"/>
+    <id>https://patdz.github.io/2020/12/01/openssl/</id>
+    <published>2020-12-01T04:17:41.000Z</published>
+    <updated>2020-12-24T09:00:03.512Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;字符串&lt;code&gt;sha256&lt;/code&gt;加密&lt;/p&gt;
+  &lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://patdz.github.io/categories/tools/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="openssl" scheme="https://patdz.github.io/tags/openssl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>screen命令使用</title>
+    <link href="https://patdz.github.io/2020/12/01/screen-ming-ling-shi-yong/"/>
+    <id>https://patdz.github.io/2020/12/01/screen-ming-ling-shi-yong/</id>
+    <published>2020-12-01T03:47:19.000Z</published>
+    <updated>2020-12-24T09:00:03.512Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;screen-使用&quot;&gt;&lt;a href=&quot;#screen-使用&quot; class=&quot;headerlink&quot; title=&quot;screen 使用&quot;&gt;&lt;/a&gt;&lt;code&gt;screen&lt;/code&gt; 使用&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://patdz.github.io/categories/tools/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="screen" scheme="https://patdz.github.io/tags/screen/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安家了</title>
+    <link href="https://patdz.github.io/2020/12/01/an-jia-liao/"/>
+    <id>https://patdz.github.io/2020/12/01/an-jia-liao/</id>
+    <published>2020-12-01T02:08:59.000Z</published>
+    <updated>2020-12-24T09:00:03.516Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;注册账户 - 这里为&lt;code&gt;patdz&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;本地安装&lt;code&gt;git&lt;/code&gt; &lt;code&gt;npm&lt;/code&gt;,</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

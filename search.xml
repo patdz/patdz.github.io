@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>sudo保持当前用户的环境变量</title>
+      <link href="2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/"/>
+      <url>2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/</url>
+      
+        <content type="html"><![CDATA[<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>在<code>/etc/sudoers</code>文件中设置</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Defaults <span class="token operator">!</span>env_reset<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>在<code>/etc/sudoers</code>文件中</p><p>可以把需要传递环境变量的命令设置到<code>env_keep</code></p><p>例如：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Defaults env_keep <span class="token operator">+=</span> <span class="token string">"ftp_proxy http_proxy https_proxy no_proxy"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p><a href="https://www.cnblogs.com/shengulong/p/7593614.html">https://www.cnblogs.com/shengulong/p/7593614.html</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> sudo </tag>
+            
+            <tag> env </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="2020/12/24/hello-world/"/>
+      <url>2020/12/24/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo在文章中添加图片</title>
+      <link href="2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/"/>
+      <url>2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/</url>
+      
+        <content type="html"><![CDATA[<ol><li>目录中安装插件<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/install-plugin.jpg"></li><li>目录的<code>_config.yml</code>文件中修改<code>post_asset_folder</code>为<code>true</code><br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/post-assert-folder.jpg">     </li><li>尝试生成一篇新的文章<code>hexo new post "hexo在文章中添加图片"</code></li><li>会发现同时生成了一个放置图片的目录<br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/newpost.jpg">     </li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>地图-经纬度所在省份城市</title>
+      <link href="2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/"/>
+      <url>2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载区域文件"><a href="#下载区域文件" class="headerlink" title="下载区域文件"></a>下载区域文件</h2><p>根据附属的参考，本文选择从<code>https://osm-boundaries.com/</code>中下载</p><p>滑动到页面最下，选择<code>Download</code></p><p><code>Admin Level</code> 对于中国来说</p><ul><li><p><code>2</code> 国家级别</p></li><li><p><code>3</code> 香港、澳门、直辖市、阿克赛钦等你懂得区域</p></li><li><p><code>4</code> 省</p></li><li><p><code>5</code> 省下面的市</p></li><li><p><code>6</code> 次级市、市里的区，县</p></li><li><p><code>7</code>， <code>8</code> 略</p><p><img src="/2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/downlaod-map.jpg" alt="download-map"></p></li></ul><p>如果下载的数据(例如下载世界范围内level2的地图)，由于国家比较多需要分批下载，这时候就需要合并了</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g geojson-mergegeojson-merge <span class="token number">1</span>.geojson <span class="token number">2</span>.geojson <span class="token operator">&gt;</span> combined.geojson<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h2><p>下载的为<code>geojson</code>文件，可以从<code>https://mapshaper.org/</code>查看文件包含的区域</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>这里使用<code>github.com/paulmach/orb</code>这个库来读取<code>geojson</code>文件并进行经纬度到城市的转换</p><p>详情见代码<code>https://github.com/jiuzhou-zhao/reverse-geocode-offline</code></p><h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><ul><li><p><code>https://osm-boundaries.com/</code>上默认是<code>2020-11-09</code>的数据，竟然没有<code>china</code>这个<code>2</code>级轮廓</p></li><li><p><code>nominatim</code>提供了<code>api</code>来获取<code>geojson</code>格式的地图，但是不知道怎么现在全国范围内的省，只能一个一个下</p><ul><li><code>https://nominatim.org/release-docs/develop/api/Overview/</code></li><li><code>https://github.com/osm-search/Nominatim</code></li><li><code>https://nominatim.openstreetmap.org/ui/search.html?q=china</code></li></ul></li><li><p><code>https://www.openstreetmap.org/relation/270056</code>中国轮廓，还是找不到下属的省份信息</p></li><li><p><code>http://polygons.openstreetmap.fr/index.py</code>看样子不错啊，但是需要提供ID(例如270056)来下载。还是不知道怎么下载它下面的所有子节点</p></li><li><p>关于获取子项目，这样来做吧</p><ul><li><p>打开<code>http://overpass-turbo.eu/</code></p></li><li><p>执行 - 其中 <code>admin_level=3</code> 执行完后再执行一次 <code>admin_level=4</code></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>out:csv<span class="token punctuation">(</span>::type, ::id, name, admin_level, parent_id<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>rel<span class="token punctuation">(</span><span class="token number">270056</span><span class="token punctuation">)</span>-<span class="token operator">&gt;</span>.c<span class="token punctuation">;</span>.c map_to_area<span class="token punctuation">;</span>rel<span class="token punctuation">(</span>area<span class="token punctuation">)</span><span class="token punctuation">[</span>admin_level<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>foreach<span class="token punctuation">(</span>  convert rel ::id <span class="token operator">=</span> id<span class="token punctuation">(</span><span class="token punctuation">)</span>, ::<span class="token operator">=</span>::, <span class="token assign-left variable">parent_id</span><span class="token operator">=</span>c.set<span class="token punctuation">(</span>id<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span> // save as parent_id  // how to now get each <span class="token builtin class-name">set</span> of children of the admin_level bellow?.  out<span class="token punctuation">;</span>  <span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul></li></ul><blockquote><p><a href="https://www.jianshu.com/p/03a9204e2380">https://www.jianshu.com/p/03a9204e2380</a></p><p><a href="https://mapshaper.org/">https://mapshaper.org/</a></p><p><a href="https://osm-boundaries.com/">https://osm-boundaries.com/</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Map </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> longitude </tag>
+            
+            <tag> latitude </tag>
+            
+            <tag> geocode </tag>
+            
+            <tag> reverse </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>brew tap</title>
+      <link href="2020/12/16/brew-tap/"/>
+      <url>2020/12/16/brew-tap/</url>
+      
+        <content type="html"><![CDATA[<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><code>brew</code>没找到<code>influx</code>客户端程序，所以搞一个</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol><li><p><code>github</code>上创建用户<code>patdz</code>下的仓库<a href="https://github.com/patdz/influx-cli"><code>influx-cli</code></a>, 用来存放二进制的<code>influx</code>包</p></li><li><p>本地打包<code>influx</code> <code>tar zcvf 0.0.1.tgz influx</code></p></li><li><p><code>github</code>的<code>influx-cli</code>页面创建<code>release</code> <code>v0.0.0.1</code>, 本地文件<code>0.0.1.tgz</code>附加到该<code>release</code>上。文件地址为<code>https://github.com/patdz/influx-cli/releases/download/v0.0.1/0.0.1.tgz</code></p></li><li><p>执行<code>brew create https://github.com/patdz/influx-cli/releases/download/v0.0.1/0.0.1.tgz</code></p><ol><li><p>执行会下载包并创建<code>brew Formula</code>文件</p></li><li><p><code>def install</code>函数内容改为</p><pre class="line-numbers language-ruby" data-language="ruby"><code class="language-ruby">bin<span class="token punctuation">.</span>install <span class="token string">"influx"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol></li><li><p>上一步会看到提示，常见的<code>rb</code>文件为<code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/influx-cli.rb</code>,本步尝试安装</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew <span class="token function">install</span> influx-cli<span class="token comment"># influx 会安装到 /usr/local/bin/influx 目录下</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li><li><p><code>github</code>上创建项目<a href="https://github.com/patdz/homebrew-influx-cli"><code>homebrew-influx-cli</code></a> - 注意：要用<code>github</code>上项目支持<code>brew tap</code>，则命名必须为<code>homebrew-*</code>形式</p></li><li><p>添加<code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/influx-cli.rb</code>文件到项目中并<code>pull</code></p></li><li><p>二进制版本升级后自动更新参考<code>https://github.com/aoki/homebrew-redis-cli</code>吧</p></li></ol><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew tap patdz/influx-clibrew update <span class="token operator">&amp;&amp;</span> brew doctorbrew <span class="token function">install</span> influx-cli<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><blockquote><p><a href="https://liam.page/2016/07/30/release-your-own-app-in-Homebrew/">https://liam.page/2016/07/30/release-your-own-app-in-Homebrew/</a></p><p><a href="https://github.com/aoki/homebrew-redis-cli">https://github.com/aoki/homebrew-redis-cli</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Brew </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+            <tag> brew </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mac安装第三方软件(开发工具篇)</title>
+      <link href="2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/"/>
+      <url>2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="redis-cli"><a href="#redis-cli" class="headerlink" title="redis-cli"></a><code>redis-cli</code></h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew tap ringohub/redis-cli brew update <span class="token operator">&amp;&amp;</span> brew doctorbrew <span class="token function">install</span> redis-cli<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h1 id="mysql-client"><a href="#mysql-client" class="headerlink" title="mysql-client"></a><code>mysql-client</code></h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew <span class="token function">install</span> mysql-client<span class="token builtin class-name">echo</span> <span class="token string">'export PATH="/usr/local/opt/mysql-client/bin:<span class="token environment constant">$PATH</span>"'</span> <span class="token operator">&gt;&gt;</span> ~/.zshrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h1 id="influxdb-client"><a href="#influxdb-client" class="headerlink" title="influxdb client"></a><code>influxdb client</code></h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew tap patdz/influx-clibrew update <span class="token operator">&amp;&amp;</span> brew doctorbrew <span class="token function">install</span> influx-cli<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mac </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+            <tag> brew </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>监控[influxdb+telegraf+grafana]</title>
+      <link href="2020/12/09/jian-kong-influxdb-telegraf-grafana/"/>
+      <url>2020/12/09/jian-kong-influxdb-telegraf-grafana/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装<code>Docker</code></h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 更新ubuntu的apt源索引</span><span class="token function">sudo</span> <span class="token function">apt-get</span> update<span class="token comment"># 安装包允许apt通过HTTPS使用仓库</span><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token punctuation">\</span>    apt-transport-https <span class="token punctuation">\</span>    ca-certificates <span class="token punctuation">\</span>    <span class="token function">curl</span> <span class="token punctuation">\</span>    software-properties-common    <span class="token comment"># 添加Docker官方GPG key</span><span class="token function">curl</span> -fsSL https://download.docker.com/linux/ubuntu/gpg <span class="token operator">|</span> <span class="token function">sudo</span> apt-key <span class="token function">add</span> -<span class="token comment"># 设置Docker稳定版仓库</span><span class="token function">sudo</span> add-apt-repository <span class="token punctuation">\</span>   <span class="token string">"deb [arch=amd64] https://download.docker.com/linux/ubuntu \   <span class="token variable"><span class="token variable">$(</span>lsb_release -cs<span class="token variable">)</span></span> \   stable"</span>   <span class="token comment"># 添加仓库后，更新apt源索引</span><span class="token function">sudo</span> <span class="token function">apt-get</span> update<span class="token comment"># 安装最新版Docker CE（社区版）</span><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> docker-ce<span class="token comment"># 安装 docker-compose</span><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> docker-compose<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p><a href="https://www.cnblogs.com/blog-rui/p/11244023.html">https://www.cnblogs.com/blog-rui/p/11244023.html</a></p></blockquote><h2 id="安装telegraf"><a href="#安装telegraf" class="headerlink" title="安装telegraf"></a>安装<code>telegraf</code></h2><ol><li><p>点击链接下载telegraf指定版本：<a href="https://repos.influxdata.com/debian/pool/stable/t/telegraf">下载安装包</a></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 这里选择 下载了 telegraf_1.16.3-1_amd64.deb</span><span class="token function">sudo</span> dpkg -i telegraf_1.16.3-1_amd64.deb<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li><li><p>修改配置文件 <code>/etc/telegraf/telegraf.conf</code></p><ul><li><code>[[outputs.influxdb]]</code>项取消注释 <code>urls = ["http://127.0.0.1:8086"]</code> 和 <code>database = "telegraf"</code><ul><li>这样<code>telegraf</code>会默默的向<code>influxdb</code>里面写入<code>cpu</code>、<code>内存</code>、<code>硬盘</code>等硬件的时序参数</li></ul></li><li><code>[[outputs.influxdb]]</code>项取消注释<code>username</code>和<code>password</code>并将实际值设置为<code>influxdb</code>用户的实际值</li><li>取消注释：<code>[[inputs.statsd]]</code>和其下面的<code>protocol = "udp"</code> <code>service_address = ":8125"</code><ul><li>开启<code>statsd</code>服务</li></ul></li></ul></li><li><p>重启服务 <code>systemctl restart telegraf</code></p></li></ol><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>[[outputs.influxdb]]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> monitor </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> influxdb </tag>
+            
+            <tag> influx </tag>
+            
+            <tag> telegraf </tag>
+            
+            <tag> grafana </tag>
+            
+            <tag> ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mysql</title>
+      <link href="2020/12/03/mysql/"/>
+      <url>2020/12/03/mysql/</url>
+      
+        <content type="html"><![CDATA[<h2 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h2><ul><li><p>时间格式</p><pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">select DATE_FORMAT(create_time,'%Y%m%d') as day from tableA;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> db </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql </tag>
+            
+            <tag> db </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kafka</title>
+      <link href="2020/12/03/kafka/"/>
+      <url>2020/12/03/kafka/</url>
+      
+        <content type="html"><![CDATA[<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># create topic</span>kafka-topics.sh --create --topic topic002 --partitions <span class="token number">4</span> --zookeeper zookeeper-dev:2181 --replication-factor <span class="token number">2</span><span class="token comment"># list topics</span>kafka-topics.sh --list --zookeeper zookeeper-dev:2181<span class="token comment"># describe topic</span>kafka-topics.sh --describe --topic topic002 --zookeeper zookeeper-dev:2181<span class="token comment"># consume</span>kafka-console-consumer.sh --topic topic002 --bootstrap-server kafka-dev:9092,kafka-dev-2:9092<span class="token comment"># producer</span>kafka-console-producer.sh --topic topic002 --broker-list kafka-dev:9092,kafka-dev-2:9092<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p><a href="https://www.kafkatool.com/download.html">kafkatool</a></p><h2 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h2><pre class="line-numbers language-dockerfile" data-language="dockerfile"><code class="language-dockerfile">zookeeper-dev:  container_name: zookeeper-dev  image: wurstmeister/zookeeper  volumes:    - ${ZOOKEEPER_DIR}/data:/data  ports:    - "2181:2181"kafka-dev:  container_name: kafka-dev  image: wurstmeister/kafka  ports:    - "9092:9092"  environment:    KAFKA_ADVERTISED_HOST_NAME: 11.79.118.201    KAFKA_CREATE_TOPICS: "test:1:1"    KAFKA_ZOOKEEPER_CONNECT: "zookeeper-dev:2181"  volumes:    - ${KAFKA_DIR}/kafka-logs:/kafkakafka-dev-2:  container_name: kafka-dev-2  image: wurstmeister/kafka  ports:    - "9093:9092"  environment:    KAFKA_ADVERTISED_HOST_NAME: 11.79.118.201    KAFKA_CREATE_TOPICS: "test:1:1"    KAFKA_ZOOKEEPER_CONNECT: "zookeeper-dev:2181"    KAFKA_ADVERTISED_PORT: 9093  volumes:    - ${KAFKA_DIR}/kafka-logs2:/kafka<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> mq </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> kafka </tag>
+            
+            <tag> mq </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>linux命令</title>
+      <link href="2020/12/01/linux-ming-ling/"/>
+      <url>2020/12/01/linux-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>如果存在某个文件，则重命名</p>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span> -s /file <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">&amp;&amp;</span> <span class="token function">mv</span> /file /file.<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%F_%T<span class="token variable">)</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p><code>date</code></p>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">date</span> +%F_%T<span class="token number">2020</span>-12-01_15:07:27$ <span class="token function">date</span> +%s<span class="token number">1606806485</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>获取外网<code>ip</code></p>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> -s ip.cip.cc<span class="token comment"># 获取ip信息</span><span class="token function">curl</span> -s cip.cc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li><p>从文件中查找字符串</p>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">fgrep</span> <span class="token string">"mytext"</span> textfile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>获取进程<code>aliyun-service</code>的真正文件地址</p>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ll /proc/<span class="token variable"><span class="token variable">$(</span>pidof aliyun-service<span class="token variable">)</span></span>/exe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> bash </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>个人笔记</title>
+      <link href="2020/12/01/ge-ren-bi-ji/"/>
+      <url>2020/12/01/ge-ren-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<a id="more"></a> <h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><ul><li><p><a href="https://blog.csdn.net/azhuyangjun/article/details/86976568">MySQL 分库分表</a></p><pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">## only for myisamCREATE TABLE IF NOT EXISTS `user1` (`id` int NOT NULL AUTO_INCREMENT,`name` varchar(50) DEFAULT '',`sex` int(1) NOT NULL DEFAULT '0',PRIMARY KEY (`id`)) ENGINE=MyISAM AUTO_INCREMENT=1;CREATE TABLE IF NOT EXISTS `user2` (`id` int NOT NULL AUTO_INCREMENT,`name` varchar(50) DEFAULT '',`sex` int(1) NOT NULL DEFAULT '0',PRIMARY KEY (`id`)) ENGINE=MyISAM AUTO_INCREMENT=1;CREATE TABLE IF NOT EXISTS `alluser` (`id` int NOT NULL AUTO_INCREMENT,`name` varchar(50) DEFAULT '',`sex` int(1) NOT NULL DEFAULT '0',INDEX(id)) ENGINE=MERGE UNION=(user1,user2) INSERT_METHOD=LAST AUTO_INCREMENT=1;INSERT INTO `user1`(`name`, `sex`) VALUES('张颖', 0);INSERT INTO `user2`(`name`, `sex`) VALUES('tank', 1);INSERT INTO `alluser`(`name`, `sex`) VALUES('tank2', 3);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><ul><li><p><a href="https://blog.csdn.net/tjcyjd/article/details/11194489">深入解析MySQL分区（Partition）功能</a></p><pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">CREATE TABLE part_tab ( c1 int default NULL, c2 varchar(30) default NULL, c3 date default NULL) engine=myisam PARTITION BY RANGE (year(c3)) (PARTITION p0 VALUES LESS THAN (1995),PARTITION p1 VALUES LESS THAN (1996) , PARTITION p2 VALUES LESS THAN (1997) ,PARTITION p3 VALUES LESS THAN (1998) , PARTITION p4 VALUES LESS THAN (1999) ,PARTITION p5 VALUES LESS THAN (2000) , PARTITION p6 VALUES LESS THAN (2001) ,PARTITION p7 VALUES LESS THAN (2002) , PARTITION p8 VALUES LESS THAN (2003) ,PARTITION p9 VALUES LESS THAN (2004) , PARTITION p10 VALUES LESS THAN (2010),PARTITION p11 VALUES LESS THAN MAXVALUE ); CREATE TABLE users (       uid INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,       name VARCHAR(30) NOT NULL DEFAULT '',       email VARCHAR(30) NOT NULL DEFAULT '')PARTITION BY RANGE (uid) (       PARTITION p0 VALUES LESS THAN (3000000)       DATA DIRECTORY = '/data0/data'       INDEX DIRECTORY = '/data1/idx',        PARTITION p1 VALUES LESS THAN (6000000)       DATA DIRECTORY = '/data2/data'       INDEX DIRECTORY = '/data3/idx',        PARTITION p2 VALUES LESS THAN (9000000)       DATA DIRECTORY = '/data4/data'       INDEX DIRECTORY = '/data5/idx',        PARTITION p3 VALUES LESS THAN MAXVALUE     DATA DIRECTORY = '/data6/data'        INDEX DIRECTORY = '/data7/idx');    CREATE TABLE users (     uid INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,     name VARCHAR(30) NOT NULL DEFAULT '',     email VARCHAR(30) NOT NULL DEFAULT '')PARTITION BY HASH (uid) PARTITIONS 4 (     PARTITION p0     DATA DIRECTORY = '/data0/data'     INDEX DIRECTORY = '/data1/idx',      PARTITION p1     DATA DIRECTORY = '/data2/data'     INDEX DIRECTORY = '/data3/idx',      PARTITION p2     DATA DIRECTORY = '/data4/data'     INDEX DIRECTORY = '/data5/idx',      PARTITION p3     DATA DIRECTORY = '/data6/data'     INDEX DIRECTORY = '/data7/idx');<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> patdz </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> personal </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>openssl</title>
+      <link href="2020/12/01/openssl/"/>
+      <url>2020/12/01/openssl/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>字符串<code>sha256</code>加密</p>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> -n <span class="token string">"stw"</span>  <span class="token operator">|</span> openssl sha256<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> openssl </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>screen命令使用</title>
+      <link href="2020/12/01/screen-ming-ling-shi-yong/"/>
+      <url>2020/12/01/screen-ming-ling-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="screen-使用"><a href="#screen-使用" class="headerlink" title="screen 使用"></a><code>screen</code> 使用</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 创建session</span><span class="token function">screen</span> -S zjz<span class="token comment"># 查看所有session</span><span class="token function">screen</span> -ls<span class="token comment"># 重新进入session</span><span class="token function">screen</span> -r zjz<span class="token comment"># 根据名字destroy</span><span class="token function">screen</span> -S zjz -X quit<span class="token comment"># session中退出  [按着`Ctrl+a`再按`d`]</span>Ctrl+a d<span class="token comment"># session中销毁当前</span><span class="token builtin class-name">exit</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> screen </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安家了</title>
+      <link href="2020/12/01/an-jia-liao/"/>
+      <url>2020/12/01/an-jia-liao/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p><a href="https://github.com/">Github</a>注册账户 - 这里为<code>patdz</code></p></li><li><p>本地安装<code>git</code> <code>npm</code>, 创建<code>ssh key</code>,并关联<code>github</code>上的账户</p></li><li><p>登录账户新建<code>repository</code>这里名字为<code>patdz.github.io</code></p><ul><li>注意：是在用户名<code>patdz</code>下创建名字为<code>patdz.github.io</code>的<code>repository</code>,格式为<code>${用户名}.github.io</code></li></ul></li><li><p>本地安装<code>hexo</code></p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>创建项目</p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> blog<span class="token builtin class-name">cd</span> bloghexo init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li><p>更新<code>hexo</code>博客代码</p><ul><li>修改 <code>patdz.github.io</code> 目录的 <code>_config.yml</code>, 内容替换成自己的仓库地址  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 修改 title 等自定义内容</span><span class="token comment"># </span><span class="token comment"># 修改deploy相关</span>deploy:  type: <span class="token function">git</span>  repository: git@github.com:patdz/patdz.github.io.git  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul></li><li><p>新增，发布文章</p><ol><li>安装插件 <code>npm i hexo-deployer-git</code></li><li>新增文章 <code>hexo new post "安家了"</code></li><li>把本文章内容复制到 <code>source\_posts</code>下的<code>安家了.md</code>文件中</li><li>测试，发布 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo ghexo shexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>发布之后等一段时间<code>几分钟到1小时?</code>，在<code>github.com</code>上打开<code>repository</code>的<code>settings</code>页面，选择<code>Options</code>往下拉，能在<code>GitHub Pages</code>看到地址，这里是<code>https://patdz.github.io/</code></p></blockquote></li></ol></li><li><p>源码上传 - 首先创建仓库 <code>src.patdz.github.io</code></p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span class="token function">git</span> commit -m <span class="token string">"init"</span><span class="token function">git</span> branch -M main<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:patdz/src.patdz.github.io.git<span class="token function">git</span> push -u origin main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>主题、设置 - <a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a></p></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
