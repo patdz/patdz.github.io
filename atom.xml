@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2020-12-27T02:15:34.494Z</updated>
+  <updated>2021-01-06T09:29:22.133Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS7配置静态IP地址</title>
+    <link href="https://patdz.github.io/2021/01/06/centos7-pei-zhi-jing-tai-ip-di-zhi/"/>
+    <id>https://patdz.github.io/2021/01/06/centos7-pei-zhi-jing-tai-ip-di-zhi/</id>
+    <published>2021-01-06T09:18:19.000Z</published>
+    <updated>2021-01-06T09:29:22.133Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ls /etc/sysconfig/network-scripts&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="CentOS7" scheme="https://patdz.github.io/categories/CentOS7/"/>
+    
+    
+    <category term="静态IP地址" scheme="https://patdz.github.io/tags/%E9%9D%99%E6%80%81IP%E5%9C%B0%E5%9D%80/"/>
+    
+  </entry>
   
   <entry>
     <title>sudo保持当前用户的环境变量</title>

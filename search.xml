@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CentOS7配置静态IP地址</title>
+      <link href="2021/01/06/centos7-pei-zhi-jing-tai-ip-di-zhi/"/>
+      <url>2021/01/06/centos7-pei-zhi-jing-tai-ip-di-zhi/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p><code>ls /etc/sysconfig/network-scripts</code> 查看以<code>ifcfg-</code>开始的非<code>ifcfg-lo</code>的配置文件，这里为<code>ifcfg-ens33</code></p><p><img src="/2021/01/06/centos7-pei-zhi-jing-tai-ip-di-zhi/ls.png" alt="ls"></p></li><li><p>按如下内容修改<code>ifcfg-ens33</code></p><p><img src="/2021/01/06/centos7-pei-zhi-jing-tai-ip-di-zhi/ifcfg-ens33.png" alt="ifcfg-ens33"></p><blockquote><p>解释一下：我这里为虚拟机，网段为<code>192.168.223.0/24</code>，网关为<code>192.168.223.2</code></p></blockquote></li><li><p>重启网络 <code>systemctl restart network</code></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> CentOS7 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 静态IP地址 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>sudo保持当前用户的环境变量</title>
       <link href="2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/"/>
       <url>2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/</url>
