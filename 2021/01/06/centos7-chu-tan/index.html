@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    250
+                    330
                 </div>
                 
 
@@ -546,7 +546,7 @@
 <span class="token function">sudo</span> <span class="token function">wget</span> -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>安装<code>gcc g++</code></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> yum <span class="token function">install</span> gcc-c++<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> yum <span class="token function">install</span> gcc-c++ -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
@@ -565,7 +565,37 @@ sudo yum install net-tools  -y<span aria-hidden="true" class="line-numbers-rows"
 <p>在</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">root        <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span> ALL  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>下面增加</p>
-<pre><code class="bash">z  ALL=(ALL) ALL</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">z  <span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span> ALL<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+</li>
+</ol>
+<ol start="9">
+<li><p>网络时间同步，设置时区</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># install</span>
+<span class="token function">sudo</span> yum -y <span class="token function">install</span> ntp ntpdate
+
+<span class="token comment"># 设置系统时间与网络时间同步</span>
+<span class="token function">sudo</span> ntpdate cn.pool.ntp.org
+
+<span class="token comment"># 将系统时间写入硬件时间</span>
+<span class="token function">sudo</span>  hwclock --systohc
+
+<span class="token comment">#</span>
+<span class="token function">sudo</span> timedatectl
+
+<span class="token comment"># 修改时区为 Asia</span>
+<span class="token function">sudo</span> timedatectl  set-timezone Asia/Shanghai
+
+<span class="token comment"># Error: Servname Not Supported for Ai_socktype</span>
+<span class="token function">vim</span> /etc/services
+
+ntp             <span class="token number">123</span>/tcp
+ntp             <span class="token number">123</span>/udp<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
 </li>
 </ol>
 
@@ -673,18 +703,17 @@ sudo yum install net-tools  -y<span aria-hidden="true" class="line-numbers-rows"
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/01/06/centos7-chu-tan/">
+                <a href="/2021/01/10/centos7-ymi-gitlab/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="CentOS7初探">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CentOS7-ymi-gitlab">
                         
-                        <span class="card-title">CentOS7初探</span>
+                        <span class="card-title">CentOS7-ymi-gitlab</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -694,22 +723,29 @@ sudo yum install net-tools  -y<span aria-hidden="true" class="line-numbers-rows"
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-06
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-10
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/CentOS7/" class="post-category">
-                                    CentOS7
+                            <a href="/categories/ymi/" class="post-category">
+                                    ymi
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/gitlab/">
+                        <span class="chip bg-color">gitlab</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -958,7 +994,7 @@ sudo yum install net-tools  -y<span aria-hidden="true" class="line-numbers-rows"
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.6k</span>&nbsp;字
+                class="white-color">3.9k</span>&nbsp;字
             
             
             

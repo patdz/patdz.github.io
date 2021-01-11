@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2021-01-09T08:29:36.450Z</updated>
+  <updated>2021-01-11T08:12:48.036Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -17,11 +17,95 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CentOS7-安装golang</title>
+    <link href="https://patdz.github.io/2021/01/11/centos7-an-zhuang-golang/"/>
+    <id>https://patdz.github.io/2021/01/11/centos7-an-zhuang-golang/</id>
+    <published>2021-01-11T08:03:05.000Z</published>
+    <updated>2021-01-11T08:12:48.036Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载包 - &lt;a href=&quot;https://golang.org/dl/&quot;&gt;地址&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="install" scheme="https://patdz.github.io/categories/install/"/>
+    
+    
+    <category term="golang" scheme="https://patdz.github.io/tags/golang/"/>
+    
+    <category term="install" scheme="https://patdz.github.io/tags/install/"/>
+    
+    <category term="centos7" scheme="https://patdz.github.io/tags/centos7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7-ymi-gitlab_runner</title>
+    <link href="https://patdz.github.io/2021/01/11/centos7-ymi-gitlab-runner/"/>
+    <id>https://patdz.github.io/2021/01/11/centos7-ymi-gitlab-runner/</id>
+    <published>2021-01-11T07:15:00.000Z</published>
+    <updated>2021-01-11T08:51:16.582Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ymi" scheme="https://patdz.github.io/categories/ymi/"/>
+    
+    
+    <category term="gitlab" scheme="https://patdz.github.io/tags/gitlab/"/>
+    
+    <category term="gitlab runner" scheme="https://patdz.github.io/tags/gitlab-runner/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7-ymi-gitlab</title>
+    <link href="https://patdz.github.io/2021/01/10/centos7-ymi-gitlab/"/>
+    <id>https://patdz.github.io/2021/01/10/centos7-ymi-gitlab/</id>
+    <published>2021-01-10T12:23:27.000Z</published>
+    <updated>2021-01-11T07:02:03.589Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前置&quot;&gt;&lt;a href=&quot;#前置&quot; class=&quot;headerlink&quot; title=&quot;前置&quot;&gt;&lt;/a&gt;前置&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;用&lt;code&gt;vmware&lt;/code&gt;虚拟机安装&lt;code&gt;centos7</summary>
+        
+      
+    
+    
+    
+    <category term="ymi" scheme="https://patdz.github.io/categories/ymi/"/>
+    
+    
+    <category term="gitlab" scheme="https://patdz.github.io/tags/gitlab/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CentOS7初探</title>
     <link href="https://patdz.github.io/2021/01/06/centos7-chu-tan/"/>
     <id>https://patdz.github.io/2021/01/06/centos7-chu-tan/</id>
     <published>2021-01-06T09:32:05.000Z</published>
-    <updated>2021-01-09T08:29:36.450Z</updated>
+    <updated>2021-01-10T12:23:37.557Z</updated>
     
     
       
