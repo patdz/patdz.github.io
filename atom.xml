@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2021-01-11T08:12:48.036Z</updated>
+  <updated>2021-01-11T13:42:53.866Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CentOS7-ymi-ldap</title>
+    <link href="https://patdz.github.io/2021/01/11/centos7-ymi-ldap/"/>
+    <id>https://patdz.github.io/2021/01/11/centos7-ymi-ldap/</id>
+    <published>2021-01-11T11:22:06.000Z</published>
+    <updated>2021-01-11T13:42:53.866Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h2 id=&quot;Install-openldap&quot;&gt;&lt;a href=&quot;#Install-openldap&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ymi" scheme="https://patdz.github.io/categories/ymi/"/>
+    
+    
+    <category term="ldap" scheme="https://patdz.github.io/tags/ldap/"/>
+    
+    <category term="openldap" scheme="https://patdz.github.io/tags/openldap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git-杂锦</title>
+    <link href="https://patdz.github.io/2021/01/11/git-za-jin/"/>
+    <id>https://patdz.github.io/2021/01/11/git-za-jin/</id>
+    <published>2021-01-11T09:51:50.000Z</published>
+    <updated>2021-01-11T09:53:14.729Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;windows&lt;/code&gt;上&lt;code&gt;git&lt;/code&gt;文件标记为&lt;code&gt;+x&lt;/code&gt;可执行&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://patdz.github.io/categories/Git/"/>
+    
+    
+    <category term="git" scheme="https://patdz.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CentOS7-安装golang</title>
     <link href="https://patdz.github.io/2021/01/11/centos7-an-zhuang-golang/"/>
     <id>https://patdz.github.io/2021/01/11/centos7-an-zhuang-golang/</id>
     <published>2021-01-11T08:03:05.000Z</published>
-    <updated>2021-01-11T08:12:48.036Z</updated>
+    <updated>2021-01-13T02:28:57.714Z</updated>
     
     
       
@@ -36,14 +91,12 @@
     
     
     
-    <category term="install" scheme="https://patdz.github.io/categories/install/"/>
+    <category term="CentOS7" scheme="https://patdz.github.io/categories/CentOS7/"/>
     
     
     <category term="golang" scheme="https://patdz.github.io/tags/golang/"/>
     
     <category term="install" scheme="https://patdz.github.io/tags/install/"/>
-    
-    <category term="centos7" scheme="https://patdz.github.io/tags/centos7/"/>
     
   </entry>
   
@@ -511,30 +564,6 @@
     <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
     
     <category term="screen" scheme="https://patdz.github.io/tags/screen/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>安家了</title>
-    <link href="https://patdz.github.io/2020/12/01/an-jia-liao/"/>
-    <id>https://patdz.github.io/2020/12/01/an-jia-liao/</id>
-    <published>2020-12-01T02:08:59.000Z</published>
-    <updated>2020-12-24T09:00:03.516Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;注册账户 - 这里为&lt;code&gt;patdz&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;本地安装&lt;code&gt;git&lt;/code&gt; &lt;code&gt;npm&lt;/code&gt;,</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
