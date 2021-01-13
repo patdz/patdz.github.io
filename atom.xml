@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2021-01-11T13:42:53.866Z</updated>
+  <updated>2021-01-13T02:37:54.452Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,145 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker-常用命令</title>
+    <link href="https://patdz.github.io/2021/01/13/docker-chang-yong-ming-ling/"/>
+    <id>https://patdz.github.io/2021/01/13/docker-chang-yong-ming-ling/</id>
+    <published>2021-01-13T02:37:01.000Z</published>
+    <updated>2021-01-13T02:37:54.452Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Dockker-Installed Go binary not found in path on Alpine Linux Docker</title>
+    <link href="https://patdz.github.io/2021/01/13/dockker-installed-go-binary-not-found-in-path-on-alpine-linux-docker/"/>
+    <id>https://patdz.github.io/2021/01/13/dockker-installed-go-binary-not-found-in-path-on-alpine-linux-docker/</id>
+    <published>2021-01-13T02:35:33.000Z</published>
+    <updated>2021-01-13T02:36:13.233Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;我这里现象是，正常编译的没问题，加上 “static”等一堆参数就会出现&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;解决方案：&lt;/p&gt;
+&lt;p&gt;Dockerfile里增加&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+    <category term="处理出错" scheme="https://patdz.github.io/tags/%E5%A4%84%E7%90%86%E5%87%BA%E9%94%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker - 报错 WARNING: IPv4 forwarding is disabled. Networking will not work.</title>
+    <link href="https://patdz.github.io/2021/01/13/docker-bao-cuo-warning-ipv4-forwarding-is-disabled-networking-will-not-work/"/>
+    <id>https://patdz.github.io/2021/01/13/docker-bao-cuo-warning-ipv4-forwarding-is-disabled-networking-will-not-work/</id>
+    <published>2021-01-13T02:34:05.000Z</published>
+    <updated>2021-01-13T02:34:51.674Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;修改&lt;code&gt;00-system.conf&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;vim  /usr/lib/sysctl.d/00-system.conf&lt;/p&gt;
+&lt;p&gt;添加&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+    <category term="处理出错" scheme="https://patdz.github.io/tags/%E5%A4%84%E7%90%86%E5%87%BA%E9%94%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker-设置当前用户不需要sudo权限</title>
+    <link href="https://patdz.github.io/2021/01/13/docker-she-zhi-dang-qian-yong-hu-bu-xu-yao-sudo-quan-xian/"/>
+    <id>https://patdz.github.io/2021/01/13/docker-she-zhi-dang-qian-yong-hu-bu-xu-yao-sudo-quan-xian/</id>
+    <published>2021-01-13T02:32:47.000Z</published>
+    <updated>2021-01-13T02:33:20.385Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;假设当前用户为&lt;code&gt;z&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;sudo groupadd docker
+sudo usermod -aG</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+    <category term="权限" scheme="https://patdz.github.io/tags/%E6%9D%83%E9%99%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker-清理docker容器的日志大小</title>
+    <link href="https://patdz.github.io/2021/01/13/docker-qing-li-docker-rong-qi-de-ri-zhi-da-xiao/"/>
+    <id>https://patdz.github.io/2021/01/13/docker-qing-li-docker-rong-qi-de-ri-zhi-da-xiao/</id>
+    <published>2021-01-13T02:30:49.000Z</published>
+    <updated>2021-01-13T02:32:07.698Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在&lt;code&gt;linux&lt;/code&gt;上，容器日志一般存放在&lt;code&gt;/var/lib/docker/containers/container_id/&lt;/code&gt;下面，</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+    <category term="clean" scheme="https://patdz.github.io/tags/clean/"/>
+    
+    <category term="log" scheme="https://patdz.github.io/tags/log/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS7-ymi-ldap</title>
@@ -422,148 +561,6 @@
     <category term="mysql" scheme="https://patdz.github.io/tags/mysql/"/>
     
     <category term="db" scheme="https://patdz.github.io/tags/db/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kafka</title>
-    <link href="https://patdz.github.io/2020/12/03/kafka/"/>
-    <id>https://patdz.github.io/2020/12/03/kafka/</id>
-    <published>2020-12-03T05:21:53.000Z</published>
-    <updated>2020-12-24T09:00:03.510Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="mq" scheme="https://patdz.github.io/categories/mq/"/>
-    
-    
-    <category term="kafka" scheme="https://patdz.github.io/tags/kafka/"/>
-    
-    <category term="mq" scheme="https://patdz.github.io/tags/mq/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux命令</title>
-    <link href="https://patdz.github.io/2020/12/01/linux-ming-ling/"/>
-    <id>https://patdz.github.io/2020/12/01/linux-ming-ling/</id>
-    <published>2020-12-01T06:58:07.000Z</published>
-    <updated>2020-12-24T09:00:03.510Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;如果存在某个文件，则重命名&lt;/p&gt;
-  &lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token</summary>
-        
-      
-    
-    
-    
-    <category term="tools" scheme="https://patdz.github.io/categories/tools/"/>
-    
-    
-    <category term="bash" scheme="https://patdz.github.io/tags/bash/"/>
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>个人笔记</title>
-    <link href="https://patdz.github.io/2020/12/01/ge-ren-bi-ji/"/>
-    <id>https://patdz.github.io/2020/12/01/ge-ren-bi-ji/</id>
-    <published>2020-12-01T04:19:11.000Z</published>
-    <updated>2020-12-24T09:00:03.513Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
-
-
-
-&lt;h2 id=&quot;MySQL&quot;&gt;&lt;a href=&quot;#MySQL&quot; class=&quot;headerlink&quot; title=&quot;MySQL&quot;&gt;&lt;/a&gt;MySQL&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="patdz" scheme="https://patdz.github.io/categories/patdz/"/>
-    
-    
-    <category term="personal" scheme="https://patdz.github.io/tags/personal/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>openssl</title>
-    <link href="https://patdz.github.io/2020/12/01/openssl/"/>
-    <id>https://patdz.github.io/2020/12/01/openssl/</id>
-    <published>2020-12-01T04:17:41.000Z</published>
-    <updated>2020-12-24T09:00:03.512Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;字符串&lt;code&gt;sha256&lt;/code&gt;加密&lt;/p&gt;
-  &lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="tools" scheme="https://patdz.github.io/categories/tools/"/>
-    
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
-    
-    <category term="openssl" scheme="https://patdz.github.io/tags/openssl/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>screen命令使用</title>
-    <link href="https://patdz.github.io/2020/12/01/screen-ming-ling-shi-yong/"/>
-    <id>https://patdz.github.io/2020/12/01/screen-ming-ling-shi-yong/</id>
-    <published>2020-12-01T03:47:19.000Z</published>
-    <updated>2020-12-24T09:00:03.512Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;screen-使用&quot;&gt;&lt;a href=&quot;#screen-使用&quot; class=&quot;headerlink&quot; title=&quot;screen 使用&quot;&gt;&lt;/a&gt;&lt;code&gt;screen&lt;/code&gt; 使用&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="tools" scheme="https://patdz.github.io/categories/tools/"/>
-    
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
-    
-    <category term="screen" scheme="https://patdz.github.io/tags/screen/"/>
     
   </entry>
   
