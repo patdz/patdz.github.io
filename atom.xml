@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2021-01-13T02:37:54.452Z</updated>
+  <updated>2021-01-19T01:35:45.535Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bash_总结</title>
+    <link href="https://patdz.github.io/2021/01/19/bash-zong-jie/"/>
+    <id>https://patdz.github.io/2021/01/19/bash-zong-jie/</id>
+    <published>2021-01-19T01:28:13.000Z</published>
+    <updated>2021-01-19T01:35:45.535Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;文件表达式&quot;&gt;&lt;a href=&quot;#文件表达式&quot; class=&quot;headerlink&quot; title=&quot;文件表达式&quot;&gt;&lt;/a&gt;&lt;code&gt;文件表达式&lt;/code&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-e filename&lt;/code&gt;&lt;ul&gt;
+&lt;li&gt;如果</summary>
+        
+      
+    
+    
+    
+    <category term="Bash" scheme="https://patdz.github.io/categories/Bash/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7-ymi-iredmail</title>
+    <link href="https://patdz.github.io/2021/01/14/centos7-ymi-iredmail/"/>
+    <id>https://patdz.github.io/2021/01/14/centos7-ymi-iredmail/</id>
+    <published>2021-01-14T09:12:20.000Z</published>
+    <updated>2021-01-15T10:04:08.385Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;openldap&lt;/code&gt;结构&lt;/p&gt;
+  &lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="ymi" scheme="https://patdz.github.io/categories/ymi/"/>
+    
+    
+    <category term="iredmail" scheme="https://patdz.github.io/tags/iredmail/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker-常用命令</title>
@@ -160,15 +212,14 @@ sudo usermod -aG</summary>
     <link href="https://patdz.github.io/2021/01/11/centos7-ymi-ldap/"/>
     <id>https://patdz.github.io/2021/01/11/centos7-ymi-ldap/</id>
     <published>2021-01-11T11:22:06.000Z</published>
-    <updated>2021-01-11T13:42:53.866Z</updated>
+    <updated>2021-01-14T08:33:25.315Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;h2 id=&quot;Install-openldap&quot;&gt;&lt;a href=&quot;#Install-openldap&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;h2 id=&quot;Install-openldap&quot;&gt;&lt;a href=&quot;#Install-openldap&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -499,68 +550,6 @@ sudo usermod -aG</summary>
     <category term="Mac" scheme="https://patdz.github.io/tags/Mac/"/>
     
     <category term="brew" scheme="https://patdz.github.io/tags/brew/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>监控[influxdb+telegraf+grafana]</title>
-    <link href="https://patdz.github.io/2020/12/09/jian-kong-influxdb-telegraf-grafana/"/>
-    <id>https://patdz.github.io/2020/12/09/jian-kong-influxdb-telegraf-grafana/</id>
-    <published>2020-12-09T02:16:11.000Z</published>
-    <updated>2020-12-24T09:00:03.516Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;安装Docker&quot;&gt;&lt;a href=&quot;#安装Docker&quot; class=&quot;headerlink&quot; title=&quot;安装Docker&quot;&gt;&lt;/a&gt;安装&lt;code&gt;Docker&lt;/code&gt;&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="monitor" scheme="https://patdz.github.io/categories/monitor/"/>
-    
-    
-    <category term="influxdb" scheme="https://patdz.github.io/tags/influxdb/"/>
-    
-    <category term="influx" scheme="https://patdz.github.io/tags/influx/"/>
-    
-    <category term="telegraf" scheme="https://patdz.github.io/tags/telegraf/"/>
-    
-    <category term="grafana" scheme="https://patdz.github.io/tags/grafana/"/>
-    
-    <category term="ubuntu" scheme="https://patdz.github.io/tags/ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql</title>
-    <link href="https://patdz.github.io/2020/12/03/mysql/"/>
-    <id>https://patdz.github.io/2020/12/03/mysql/</id>
-    <published>2020-12-03T07:50:25.000Z</published>
-    <updated>2020-12-24T09:00:03.512Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;语句&quot;&gt;&lt;a href=&quot;#语句&quot; class=&quot;headerlink&quot; title=&quot;语句&quot;&gt;&lt;/a&gt;语句&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;时间格式&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-mysql&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="db" scheme="https://patdz.github.io/categories/db/"/>
-    
-    
-    <category term="mysql" scheme="https://patdz.github.io/tags/mysql/"/>
-    
-    <category term="db" scheme="https://patdz.github.io/tags/db/"/>
     
   </entry>
   
