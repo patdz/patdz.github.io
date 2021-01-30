@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>grpc</title>
+      <link href="2021/01/30/grpc/"/>
+      <url>2021/01/30/grpc/</url>
+      
+        <content type="html"><![CDATA[<h2 id="grpcui-grpc测试工具"><a href="#grpcui-grpc测试工具" class="headerlink" title="grpcui - grpc测试工具"></a><a href="https://github.com/fullstorydev/grpcui">grpcui</a> - grpc测试工具</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /X/work/com/github.com/sbasestarter/proto-repo/proto <span class="token operator">&amp;&amp;</span> grpcui -import-path ./ -import-path /c/Users/admin/go/pkg/mod/github.com/grpc-ecosystem/grpc-gateway@v1.11.3/third_party/googleapis <span class="token variable"><span class="token variable">$(</span><span class="token function">find</span> <span class="token builtin class-name">.</span> -name *.proto <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">"ignore.proto"</span> <span class="token operator">|</span> <span class="token function">grep</span> -vE <span class="token punctuation">$(</span>find <span class="token builtin class-name">.</span> -name *.proto <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">egrep</span> <span class="token string">"import<span class="token entity" title="\\">\\</span>s{1,}<span class="token entity" title="\&quot;">\"</span>"</span> <span class="token operator">|</span>  <span class="token function">awk</span> '<span class="token punctuation">{</span>print substr<span class="token punctuation">(</span>$2,2,length<span class="token punctuation">(</span>$2<span class="token punctuation">)</span>-3<span class="token variable">)</span></span><span class="token punctuation">}</span><span class="token string">'|tr "<span class="token entity" title="\n">\n</span>" "|" | awk '</span><span class="token punctuation">{</span>print substr<span class="token punctuation">(</span><span class="token variable">$1</span>,0,length<span class="token punctuation">(</span><span class="token variable">$1</span><span class="token punctuation">)</span>-1<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token string">') | sed '</span>s/<span class="token punctuation">[</span>^ <span class="token punctuation">]</span>* */ -proto <span class="token operator">&amp;</span>/g' <span class="token operator">|</span> <span class="token function">tr</span> <span class="token string">"<span class="token entity" title="\n">\n</span>"</span> <span class="token string">" "</span><span class="token punctuation">)</span> -port <span class="token number">8898</span> --plaintext <span class="token number">127.0</span>.0.1:9120<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> grpc </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 集合 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>bash_总结</title>
       <link href="2021/01/19/bash-zong-jie/"/>
       <url>2021/01/19/bash-zong-jie/</url>

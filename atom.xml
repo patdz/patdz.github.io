@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2021-01-19T01:35:45.535Z</updated>
+  <updated>2021-01-30T07:38:00.011Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>grpc</title>
+    <link href="https://patdz.github.io/2021/01/30/grpc/"/>
+    <id>https://patdz.github.io/2021/01/30/grpc/</id>
+    <published>2021-01-30T07:29:14.000Z</published>
+    <updated>2021-01-30T07:38:00.011Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;grpcui-grpc测试工具&quot;&gt;&lt;a href=&quot;#grpcui-grpc测试工具&quot; class=&quot;headerlink&quot; title=&quot;grpcui - grpc测试工具&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="grpc" scheme="https://patdz.github.io/categories/grpc/"/>
+    
+    
+    <category term="集合" scheme="https://patdz.github.io/tags/%E9%9B%86%E5%90%88/"/>
+    
+  </entry>
   
   <entry>
     <title>bash_总结</title>
@@ -518,33 +543,6 @@ sudo usermod -aG</summary>
     
     
     <category term="Brew" scheme="https://patdz.github.io/categories/Brew/"/>
-    
-    
-    <category term="Mac" scheme="https://patdz.github.io/tags/Mac/"/>
-    
-    <category term="brew" scheme="https://patdz.github.io/tags/brew/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mac安装第三方软件(开发工具篇)</title>
-    <link href="https://patdz.github.io/2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/"/>
-    <id>https://patdz.github.io/2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/</id>
-    <published>2020-12-16T04:10:32.000Z</published>
-    <updated>2020-12-24T09:00:03.511Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;redis-cli&quot;&gt;&lt;a href=&quot;#redis-cli&quot; class=&quot;headerlink&quot; title=&quot;redis-cli&quot;&gt;&lt;/a&gt;&lt;code&gt;redis-cli&lt;/code&gt;&lt;/h1&gt;&lt;pre class=&quot;line-numbers</summary>
-        
-      
-    
-    
-    
-    <category term="Mac" scheme="https://patdz.github.io/categories/Mac/"/>
     
     
     <category term="Mac" scheme="https://patdz.github.io/tags/Mac/"/>

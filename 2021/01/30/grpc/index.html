@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="brew tap, patdz">
+    <meta name="keywords" content="grpc, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>brew tap | patdz的专业记录</title>
+    <title>grpc | patdz的专业记录</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">brew tap</h1>
+                    <h1 class="description center-align post-title">grpc</h1>
                 </div>
             </div>
         </div>
@@ -447,12 +447,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Mac/">
-                                <span class="chip bg-color">Mac</span>
-                            </a>
-                        
-                            <a href="/tags/brew/">
-                                <span class="chip bg-color">brew</span>
+                            <a href="/tags/%E9%9B%86%E5%90%88/">
+                                <span class="chip bg-color">集合</span>
                             </a>
                         
                     </div>
@@ -463,8 +459,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Brew/" class="post-category">
-                                Brew
+                            <a href="/categories/grpc/" class="post-category">
+                                grpc
                             </a>
                         
                     </div>
@@ -476,7 +472,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-16
+                    2021-01-30
                 </div>
                 
 
@@ -485,7 +481,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    296
+                    89
                 </div>
                 
 
@@ -510,46 +506,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><code>brew</code>没找到<code>influx</code>客户端程序，所以搞一个</p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li><p><code>github</code>上创建用户<code>patdz</code>下的仓库<a target="_blank" rel="noopener" href="https://github.com/patdz/influx-cli"><code>influx-cli</code></a>, 用来存放二进制的<code>influx</code>包</p>
-</li>
-<li><p>本地打包<code>influx</code> <code>tar zcvf 0.0.1.tgz influx</code></p>
-</li>
-<li><p><code>github</code>的<code>influx-cli</code>页面创建<code>release</code> <code>v0.0.0.1</code>, 本地文件<code>0.0.1.tgz</code>附加到该<code>release</code>上。文件地址为<code>https://github.com/patdz/influx-cli/releases/download/v0.0.1/0.0.1.tgz</code></p>
-</li>
-<li><p>执行<code>brew create https://github.com/patdz/influx-cli/releases/download/v0.0.1/0.0.1.tgz</code></p>
-<ol>
-<li><p>执行会下载包并创建<code>brew Formula</code>文件</p>
-</li>
-<li><p><code>def install</code>函数内容改为</p>
-<pre class="line-numbers language-ruby" data-language="ruby"><code class="language-ruby">bin<span class="token punctuation">.</span>install <span class="token string">"influx"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ol>
-</li>
-<li><p>上一步会看到提示，常见的<code>rb</code>文件为<code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/influx-cli.rb</code>,本步尝试安装</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew <span class="token function">install</span> influx-cli
-<span class="token comment"># influx 会安装到 /usr/local/bin/influx 目录下</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</li>
-<li><p><code>github</code>上创建项目<a target="_blank" rel="noopener" href="https://github.com/patdz/homebrew-influx-cli"><code>homebrew-influx-cli</code></a> - 注意：要用<code>github</code>上项目支持<code>brew tap</code>，则命名必须为<code>homebrew-*</code>形式</p>
-</li>
-<li><p>添加<code>/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/influx-cli.rb</code>文件到项目中并<code>pull</code></p>
-</li>
-<li><p>二进制版本升级后自动更新参考<code>https://github.com/aoki/homebrew-redis-cli</code>吧</p>
-</li>
-</ol>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew tap patdz/influx-cli
-brew update <span class="token operator">&amp;&amp;</span> brew doctor
-brew <span class="token function">install</span> influx-cli<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+                <h2 id="grpcui-grpc测试工具"><a href="#grpcui-grpc测试工具" class="headerlink" title="grpcui - grpc测试工具"></a><a target="_blank" rel="noopener" href="https://github.com/fullstorydev/grpcui">grpcui</a> - grpc测试工具</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /X/work/com/github.com/sbasestarter/proto-repo/proto <span class="token operator">&amp;&amp;</span> grpcui -import-path ./ -import-path /c/Users/admin/go/pkg/mod/github.com/grpc-ecosystem/grpc-gateway@v1.11.3/third_party/googleapis <span class="token variable"><span class="token variable">$(</span><span class="token function">find</span> <span class="token builtin class-name">.</span> -name *.proto <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">"ignore.proto"</span> <span class="token operator">|</span> <span class="token function">grep</span> -vE <span class="token punctuation">$(</span>find <span class="token builtin class-name">.</span> -name *.proto <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">egrep</span> <span class="token string">"import<span class="token entity" title="\\">\\</span>s{1,}<span class="token entity" title="\&quot;">\"</span>"</span> <span class="token operator">|</span>  <span class="token function">awk</span> '<span class="token punctuation">{</span>print substr<span class="token punctuation">(</span>$2,2,length<span class="token punctuation">(</span>$2<span class="token punctuation">)</span>-3<span class="token variable">)</span></span><span class="token punctuation">}</span><span class="token string">'|tr "<span class="token entity" title="\n">\n</span>" "|" | awk '</span><span class="token punctuation">{</span>print substr<span class="token punctuation">(</span><span class="token variable">$1</span>,0,length<span class="token punctuation">(</span><span class="token variable">$1</span><span class="token punctuation">)</span>-1<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token string">') | sed '</span>s/<span class="token punctuation">[</span>^ <span class="token punctuation">]</span>* */ -proto <span class="token operator">&amp;</span>/g' <span class="token operator">|</span> <span class="token function">tr</span> <span class="token string">"<span class="token entity" title="\n">\n</span>"</span> <span class="token string">" "</span><span class="token punctuation">)</span> -port <span class="token number">8898</span> --plaintext <span class="token number">127.0</span>.0.1:9120<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-
-
-
-
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://liam.page/2016/07/30/release-your-own-app-in-Homebrew/">https://liam.page/2016/07/30/release-your-own-app-in-Homebrew/</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/aoki/homebrew-redis-cli">https://github.com/aoki/homebrew-redis-cli</a></p>
-</blockquote>
 
                 
             </div>
@@ -576,7 +534,7 @@ brew <span class="token function">install</span> influx-cli<span aria-hidden="tr
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://patdz.github.io/2020/12/16/brew-tap/">https://patdz.github.io/2020/12/16/brew-tap/</a>
+                    <a href="https://patdz.github.io/2021/01/30/grpc/">https://patdz.github.io/2021/01/30/grpc/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -614,12 +572,8 @@ brew <span class="token function">install</span> influx-cli<span aria-hidden="tr
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Mac/">
-                                    <span class="chip bg-color">Mac</span>
-                                </a>
-                            
-                                <a href="/tags/brew/">
-                                    <span class="chip bg-color">brew</span>
+                                <a href="/tags/%E9%9B%86%E5%90%88/">
+                                    <span class="chip bg-color">集合</span>
                                 </a>
                             
                         </div>
@@ -663,17 +617,18 @@ brew <span class="token function">install</span> influx-cli<span aria-hidden="tr
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/">
+                <a href="/2021/01/30/grpc/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="地图-经纬度所在省份城市">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="grpc">
                         
-                        <span class="card-title">地图-经纬度所在省份城市</span>
+                        <span class="card-title">grpc</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -683,38 +638,27 @@ brew <span class="token function">install</span> influx-cli<span aria-hidden="tr
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Map/" class="post-category">
-                                    Map
+                            <a href="/categories/grpc/" class="post-category">
+                                    grpc
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/longitude/">
-                        <span class="chip bg-color">longitude</span>
-                    </a>
-                    
-                    <a href="/tags/latitude/">
-                        <span class="chip bg-color">latitude</span>
-                    </a>
-                    
-                    <a href="/tags/geocode/">
-                        <span class="chip bg-color">geocode</span>
-                    </a>
-                    
-                    <a href="/tags/reverse/">
-                        <span class="chip bg-color">reverse</span>
+                    <a href="/tags/%E9%9B%86%E5%90%88/">
+                        <span class="chip bg-color">集合</span>
                     </a>
                     
                 </div>
@@ -728,13 +672,13 @@ brew <span class="token function">install</span> influx-cli<span aria-hidden="tr
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/">
+                <a href="/2021/01/19/bash-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mac安装第三方软件(开发工具篇)">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="bash_总结">
                         
-                        <span class="card-title">mac安装第三方软件(开发工具篇)</span>
+                        <span class="card-title">bash_总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -745,31 +689,19 @@ brew <span class="token function">install</span> influx-cli<span aria-hidden="tr
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Mac/" class="post-category">
-                                    Mac
+                            <a href="/categories/Bash/" class="post-category">
+                                    Bash
                                 </a>
                             
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Mac/">
-                        <span class="chip bg-color">Mac</span>
-                    </a>
-                    
-                    <a href="/tags/brew/">
-                        <span class="chip bg-color">brew</span>
-                    </a>
-                    
                 </div>
                 
             </div>
