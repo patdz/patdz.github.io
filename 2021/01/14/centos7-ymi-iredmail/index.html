@@ -1,0 +1,1837 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="羊米-邮件服务器安装, patdz">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>羊米-邮件服务器安装 | patdz的程序人生</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="patdz的程序人生" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">patdz的程序人生</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">patdz的程序人生</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">羊米-邮件服务器安装</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/iredmail/">
+                                <span class="chip bg-color">iredmail</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Ymi/" class="post-category">
+                                Ymi
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-01-14
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <ul>
+<li><p><code>openldap</code>结构</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token operator">|</span>--dc<span class="token operator">=</span>com
+<span class="token operator">|</span>  <span class="token operator">|</span>--ou<span class="token operator">=</span>groups
+<span class="token operator">|</span>  <span class="token operator">|</span>  <span class="token operator">|</span>--cn<span class="token operator">=</span>mail
+<span class="token operator">|</span>  <span class="token operator">|</span>  <span class="token operator">|</span>--ou<span class="token operator">=</span>mail_group
+<span class="token operator">|</span>  <span class="token operator">|</span>     <span class="token operator">|</span>--cn<span class="token operator">=</span>admins@ymipro.com
+<span class="token operator">|</span>  <span class="token operator">|</span>     <span class="token operator">|</span>--cn<span class="token operator">=</span>admins@ymicj.com
+<span class="token operator">|</span>  <span class="token operator">|</span>--ou<span class="token operator">=</span>users
+<span class="token operator">|</span>  <span class="token operator">|</span>  <span class="token operator">|</span>--cn<span class="token operator">=</span>test_user1
+<span class="token operator">|</span>--dc<span class="token operator">=</span>ymipro.com
+<span class="token operator">|</span>  <span class="token operator">|</span>--ou<span class="token operator">=</span>users
+<span class="token operator">|</span>     <span class="token operator">|</span>--cn<span class="token operator">=</span>test_pro_user1
+<span class="token operator">|</span>--dc<span class="token operator">=</span>ymicj.com
+<span class="token operator">|</span>  <span class="token operator">|</span>--ou<span class="token operator">=</span>users
+<span class="token operator">|</span>     <span class="token operator">|</span>--cn<span class="token operator">=</span>test_cj_user1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p><code>test_user1</code></p>
+<ul>
+<li><code>mail</code>: <code>test_user1@ymi.com</code></li>
+<li><code>uid</code>: <code>test_user1</code></li>
+<li><code>cn</code>: <code>test_user1</code></li>
+</ul>
+</li>
+<li><p><code>test_pro_user1</code></p>
+<ul>
+<li><code>mail</code>: <code>test_pro_user1@ymipro.com</code></li>
+<li><code>uid</code>: <code>test_pro_user1</code></li>
+<li><code>cn</code>: <code>test_pro_user1</code></li>
+</ul>
+</li>
+<li><p><code>test_cj_user1</code></p>
+<ul>
+<li><code>mail</code>: <code>test_cj_user1@ymicj.com</code></li>
+<li><code>uid</code>: <code>test_cj_user1</code></li>
+<li><code>cn</code>: <code>test_cj_user1</code></li>
+</ul>
+<blockquote>
+<p>三个用户都加入 <code>admins@ymipro.com</code>和<code>admins@ymicj.com</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="安装-iRedMail"><a href="#安装-iRedMail" class="headerlink" title="安装 iRedMail"></a>安装 <a target="_blank" rel="noopener" href="https://www.iredmail.org/">iRedMail</a></h1><ol>
+<li><p>Set Hostname</p>
+<ul>
+<li><p>cmd</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> hostnamectl set-hostname mx.ymipro-l.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>/etc/hosts</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">vim</span> /etc/hosts<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li><p><code>127.0.0.1</code>后增加<code>mx.ymipro-l.com</code> - 注意：按文档所说， Warning: List the FQDN hostname as first item.</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token number">127.0</span>.0.1 mx.ymipro-l.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p><code>hostname -f</code> 命令能正确获取设置的FQDN就ok了</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Download <a target="_blank" rel="noopener" href="https://www.iredmail.org/download.html">iRedMail</a> - 这里选择 <a target="_blank" rel="noopener" href="https://github.com/iredmail/iRedMail/archive/1.3.2.tar.gz">STABLE 1.3.2</a></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~
+<span class="token comment"># wget https://github.com/iredmail/iRedMail/archive/1.3.2.tar.gz</span>
+<span class="token function">wget</span> https://github.com/iredmail/iRedMail/archive/1.3.2.tar.gz
+
+<span class="token function">tar</span> xvf <span class="token number">1.3</span>.2.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Install</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~/iRedMail-1.3.2/
+<span class="token function">sudo</span> <span class="token assign-left variable">CHECK_NEW_IREDMAIL</span><span class="token operator">=</span>NO <span class="token function">bash</span> iRedMail.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p><code>Default mail storage path</code> - <code>/var/vmail</code></p>
+</li>
+<li><p><code>Preferred web server</code> - <code>Nginx</code></p>
+</li>
+<li><p><code>Choose Preferred bakcend used to store mail accounts</code> - <code>OpenLDAP</code></p>
+</li>
+<li><p><code>LDAP suffix</code> - <code>dc=ymipro,dc=com</code></p>
+</li>
+<li><p><code>Password for MYSQL administrator</code> - <code>11111111</code></p>
+</li>
+<li><p><code>Your first mail domain name</code> - <code>ymipro.com</code></p>
+</li>
+<li><p><code>Password for the mail domain administrator</code> - <code>11111111</code></p>
+</li>
+<li><p><code>Optional components</code> - <code>RoundCubemail,SOGo,netdata,iRedAdmin,Fail2ban</code></p>
+</li>
+<li><blockquote>
+<p>用<code>ymipro.com</code>的<code>DNS</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.iredmail.org/install.iredmail.on.rhel.html">https://docs.iredmail.org/install.iredmail.on.rhel.html</a></p>
+</blockquote>
+<h1 id="修改为使用外部OpenLDAP方式"><a href="#修改为使用外部OpenLDAP方式" class="headerlink" title="修改为使用外部OpenLDAP方式"></a>修改为使用外部<code>OpenLDAP</code>方式</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.iredmail.org/active.directory.html">https://docs.iredmail.org/active.directory.html</a></p>
+</blockquote>
+<ul>
+<li><p>ldap服务器</p>
+</li>
+<li><p><code>ip</code>: <code>192.168.223.10</code></p>
+</li>
+<li><p>Disable unused iRedMail special settings:</p>
+  <pre class="line-numbers language-none"><code class="language-none">postconf -e virtual_alias_maps=''
+postconf -e sender_bcc_maps=''
+postconf -e recipient_bcc_maps=''
+postconf -e relay_domains=''
+postconf -e relay_recipient_maps=''
+postconf -e sender_dependent_relayhost_maps=''<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Add your mail domain name in smtpd_sasl_local_domain and virtual_mailbox_domains:</p>
+  <pre class="line-numbers language-none"><code class="language-none">postconf -e smtpd_sasl_local_domain='ymipro.com'
+postconf -e virtual_mailbox_domains='ymi.com ymigroup.com ymicj.com ymipro.com'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>Change transport maps setting:</p>
+  <pre class="line-numbers language-none"><code class="language-none">postconf -e transport_maps='hash:/etc/postfix/transport'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>Enable AD query. Note: We will create these 3 files later.</p>
+<ul>
+<li>Verify SMTP senders<pre class="line-numbers language-none"><code class="language-none">postconf -e smtpd_sender_login_maps='proxy:ldap:/etc/postfix/ad_sender_login_maps.cf'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>Verify local mail users<pre class="line-numbers language-none"><code class="language-none">postconf -e virtual_mailbox_maps='proxy:ldap:/etc/postfix/ad_virtual_mailbox_maps.cf'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>Verify local mail lists/groups.<pre class="line-numbers language-none"><code class="language-none">postconf -e virtual_alias_maps='proxy:ldap:/etc/postfix/ad_virtual_group_maps.cf'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li>Create/edit file: /etc/postfix/transport<pre class="line-numbers language-none"><code class="language-none">ymipro.com dovecot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ul>
+</li>
+<li><p>Run postmap so that postfix can read it:</p>
+  <pre class="line-numbers language-none"><code class="language-none">postmap hash:/etc/postfix/transport<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>Create file: /etc/postfix/ad_sender_login_maps.cf</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">server_host     <span class="token operator">=</span> <span class="token number">192.168</span>.223.10
+server_port     <span class="token operator">=</span> <span class="token number">389</span>
+version         <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token builtin class-name">bind</span>            <span class="token operator">=</span> <span class="token function">yes</span>
+start_tls       <span class="token operator">=</span> no
+bind_dn         <span class="token operator">=</span> <span class="token assign-left variable">cn</span><span class="token operator">=</span>admin,dc<span class="token operator">=</span>com
+bind_pw         <span class="token operator">=</span> adminpass
+search_base     <span class="token operator">=</span> <span class="token assign-left variable">dc</span><span class="token operator">=</span>com
+scope           <span class="token operator">=</span> sub
+query_filter    <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>objectClass<span class="token operator">=</span>inetOrgPerson<span class="token punctuation">)</span><span class="token punctuation">(</span>memberOf<span class="token operator">=</span>cn<span class="token operator">=</span>mail,ou<span class="token operator">=</span>groups,dc<span class="token operator">=</span>com<span class="token punctuation">)</span><span class="token punctuation">(</span>mail<span class="token operator">=</span>%s<span class="token punctuation">)</span><span class="token punctuation">(</span>ou:dn:<span class="token operator">=</span>users<span class="token punctuation">))</span>
+<span class="token assign-left variable">result_attribute</span><span class="token operator">=</span> mail
+debuglevel      <span class="token operator">=</span> <span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>注意：bind_pw输入实际的密码</p>
+</blockquote>
+</li>
+<li><p>Create file: /etc/postfix/ad_virtual_mailbox_maps.cf</p>
+  <pre class="line-numbers language-none"><code class="language-none">server_host     = 192.168.223.10
+server_port     = 389
+version         = 3
+bind            = yes
+start_tls       = no
+bind_dn         = cn=admin,dc=com
+bind_pw         = adminpass
+search_base     = dc=com
+scope           = sub
+query_filter    = (&amp;(objectClass=inetOrgPerson)(memberOf=cn=mail,ou=groups,dc=com)(mail=%s)(ou:dn:=users))
+result_attribute= mail
+result_format   = %d/%u/Maildir/
+debuglevel      = 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Create file: /etc/postfix/ad_virtual_group_maps.cf</p>
+  <pre class="line-numbers language-none"><code class="language-none">server_host     = 192.168.223.10
+server_port     = 389
+version         = 3
+bind            = yes
+start_tls       = no
+bind_dn         = cn=admin,dc=com
+bind_pw         = adminpass
+search_base     = dc=com
+scope           = sub
+query_filter    = (&amp;(|(objectClass=groupOfUniqueNames)(objectClass=groupOfNames))(cn=%s)(ou:dn:=mail_group))
+special_result_attribute = member
+#leaf_result_attribute = mail
+result_attribute= mail
+debuglevel      = 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Verify LDAP query with AD in Postfix</p>
+</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">[root@ymi-l z]# postmap -q test_cj_user1@ymicj.com ldap:/etc/postfix/ad_virtual_mailbox_maps.cf
+ymicj.com/test_cj_user1/Maildir/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">[root@ymi-l z]# postmap -q test_cj_user1@ymicj.com ldap:/etc/postfix/ad_sender_login_maps.cf
+test_cj_user1@ymicj.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">[root@mx log]# postmap -q admins@ymipro.com ldap:/etc/postfix/ad_virtual_group_maps.cf
+test_pro_user1@ymipro.com,test_cj_user1@ymicj.com,test_user1@ymi.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>Remove iRedAPD integration in Postfix</p>
+<ul>
+<li><p>To disable iRedAPD service:</p>
+<ul>
+<li>please remove all check_policy_service inet:127.0.0.1:7777 in Postfix config file /etc/postfix/main.cf (Linux/OpenBSD) or /usr/local/etc/postfix/main.cf (FreeBSD).<br>Restart or reload Postfix service.</li>
+<li>Disable iredapd service.  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> systemctl stop iredapd
+<span class="token function">sudo</span> systemctl disabled iredapd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Enable Active Directory integration in Dovecot /etc/dovecot/dovecot-ldap.conf</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hosts           <span class="token operator">=</span> <span class="token number">192.168</span>.223.10:389
+ldap_version    <span class="token operator">=</span> <span class="token number">3</span>
+auth_bind       <span class="token operator">=</span> <span class="token function">yes</span>
+dn              <span class="token operator">=</span> <span class="token assign-left variable">cn</span><span class="token operator">=</span>admin,dc<span class="token operator">=</span>com
+dnpass          <span class="token operator">=</span> adminpass
+base            <span class="token operator">=</span> <span class="token assign-left variable">dc</span><span class="token operator">=</span>com
+scope           <span class="token operator">=</span> subtree
+deref           <span class="token operator">=</span> never
+
+<span class="token comment"># Below two are required by command 'doveadm mailbox ...'</span>
+<span class="token comment">#iterate_attrs   = mail=user</span>
+<span class="token comment">#iterate_filter  = (&amp;(objectClass=mailUser)(accountStatus=active)(!(domainStatus=disabled))(enabledService=mail))</span>
+
+<span class="token comment">#user_filter     = (&amp;(objectClass=mailUser)(accountStatus=active)(!(domainStatus=disabled))(enabledService=mail)(enabledService=%Ls%Lc)(|(mail=%u)(&amp;(enabledService=shadowaddress)(shadowAddress=%u))))</span>
+user_filter     <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>objectClass<span class="token operator">=</span>inetOrgPerson<span class="token punctuation">)</span><span class="token punctuation">(</span>memberOf<span class="token operator">=</span>cn<span class="token operator">=</span>mail,ou<span class="token operator">=</span>groups,dc<span class="token operator">=</span>com<span class="token punctuation">)</span><span class="token punctuation">(</span>mail<span class="token operator">=</span>%u<span class="token punctuation">)</span><span class="token punctuation">(</span>ou:dn:<span class="token operator">=</span>users<span class="token punctuation">))</span>
+
+<span class="token comment">#user_attrs      = mail=master_user,mail=user,=home=%L{ldap:homeDirectory},=mail=%{ldap:mailboxFormat:maildir}:~/%{ldap:mailboxFolder:Maildir}/,mailQuota=quota_rule=*:bytes=%$</span>
+user_attrs      <span class="token operator">=</span> <span class="token operator">=</span>home<span class="token operator">=</span>/var/vmail/vmail1/%Ld/%Ln/,<span class="token operator">=</span>mail<span class="token operator">=</span>maildir:~/Maildir/
+
+<span class="token comment"># Used for dn lookup</span>
+<span class="token comment">#pass_filter     = (&amp;(objectClass=mailUser)(accountStatus=active)(!(domainStatus=disabled))(enabledService=mail)(enabledService=%Ls%Lc)(|(mail=%u)(&amp;(enabledService=shadowaddress)(shadowAddress=%u))))</span>
+pass_filter     <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token punctuation">(</span>objectClass<span class="token operator">=</span>inetOrgPerson<span class="token punctuation">)</span><span class="token punctuation">(</span>memberOf<span class="token operator">=</span>cn<span class="token operator">=</span>mail,ou<span class="token operator">=</span>groups,dc<span class="token operator">=</span>com<span class="token punctuation">)</span><span class="token punctuation">(</span>mail<span class="token operator">=</span>%u<span class="token punctuation">)</span><span class="token punctuation">(</span>ou:dn:<span class="token operator">=</span>users<span class="token punctuation">))</span>
+
+<span class="token comment">#pass_attrs      = mail=user,userPassword=password,allowNets=allow_nets</span>
+pass_attrs      <span class="token operator">=</span> <span class="token assign-left variable">userPassword</span><span class="token operator">=</span>password
+default_pass_scheme <span class="token operator">=</span> CRYPT<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">sudo service dovecot restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>test dovecot</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># telnet localhost 143                     # &lt;- Type this</span>
+* OK <span class="token punctuation">[</span><span class="token punctuation">..</span>.<span class="token punctuation">]</span> Dovecot ready.
+
+<span class="token builtin class-name">.</span> login user1@ymipro-l.com password_of_user  <span class="token comment"># &lt;- Type this. Do not miss the dot in the beginning</span>
+<span class="token builtin class-name">.</span> OK <span class="token punctuation">[</span><span class="token punctuation">..</span>.<span class="token punctuation">]</span> Logged <span class="token keyword">in</span>
+
+^<span class="token punctuation">]</span>                                         <span class="token comment"># &lt;- Quit telnet with "Ctrl+]", then type 'quit'.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Enable Active Directory integration in Roundcube webmail for Global LDAP Address Book - /opt/www/roundcubemail/config/config.inc.php</p>
+  <pre class="line-numbers language-none"><code class="language-none">// Global LDAP address book.
+$config['ldap_public']["global_ldap_abook"] = array(
+    'name'              =&gt; 'Global LDAP Address Book',
+    'hosts'             =&gt; array('192.168.223.10'),
+    'port'              =&gt; 389,
+    'use_tls'           =&gt; false,
+    'ldap_version'      =&gt; '3',
+    'network_timeout'   =&gt; 10,
+    'user_specific'     =&gt; false,
+
+    // Search mail users under same domain.
+    'base_dn'       =&gt; 'dc=com',
+    'bind_dn'       =&gt; 'cn=admin,dc=com',
+    'bind_pass'     =&gt; 'adminpass',
+    'hidden'        =&gt; false,
+    'searchonly'    =&gt; false,
+    'writable'      =&gt; false,
+
+    'search_fields' =&gt; array('mail', 'cn', 'sn', 'givenName', 'street', 'telephoneNumber', 'mobile', 'stree', 'postalCode'),
+
+    // mapping of contact fields to directory attributes
+    'fieldmap' =&gt; array(
+        'name'          =&gt; 'cn',
+        'surname'       =&gt; 'sn',
+        'firstname'     =&gt; 'givenName',
+        'title'         =&gt; 'title',
+        'email'         =&gt; 'mail:*',
+        'phone:work'    =&gt; 'telephoneNumber',
+        'phone:mobile'  =&gt; 'mobile',
+        'phone:workfax' =&gt; 'facsimileTelephoneNumber',
+        'street'        =&gt; 'street',
+        'zipcode'       =&gt; 'postalCode',
+        'locality'      =&gt; 'l',
+        'department'    =&gt; 'departmentNumber',
+        'notes'         =&gt; 'description',
+        'photo'         =&gt; 'jpegPhoto',
+    ),
+    'sort'          =&gt; 'cn',
+    'scope'         =&gt; 'sub',
+    'filter'        =&gt; '(&amp;(objectClass=inetOrgPerson)(memberOf=cn=mail,ou=groups,dc=com)(ou:dn:=users))',
+    'fuzzy_search'  =&gt; true,
+    'vlv'           =&gt; false,   // Enable Virtual List View to more efficiently fetch paginated data (if server supports it)
+    'sizelimit'     =&gt; '0',     // Enables you to limit the count of entries fetched. Setting this to 0 means no limit.
+    'timelimit'     =&gt; '0',     // Sets the number of seconds how long is spend on the search. Setting this to 0 means no limit.
+    'referrals'     =&gt; false,  // Sets the LDAP_OPT_REFERRALS option. Mostly used in multi-domain Active Directory setups
+
+    'group_filters' =&gt; array(
+        'departments' =&gt; array(
+            'name'    =&gt; 'Mailing Lists',
+            'scope'   =&gt; 'sub',
+            'base_dn' =&gt; 'dc=com',
+            'filter'  =&gt; '(&amp;(|(objectClass=groupOfUniqueNames)(objectClass=groupOfNames))(ou:dn:=mail_group))',
+            'name_attr' =&gt; 'cn',
+            'email'     =&gt; 'mail',
+        ),
+    ),
+);
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Enable sogo - /etc/sogo/sogo.conf</p>
+</li>
+</ul>
+<pre class="line-numbers language-none"><code class="language-none">SOGoUserSources = (
+    {
+        // Used for user authentication
+        // ...
+        type = ldap;
+        // ...
+        hostname = "ldap://192.168.223.10:389";
+        baseDN = "dc=com";
+        bindDN = "cn=admin,dc=com";
+        bindPassword = "adminpass";
+        filter = "(objectClass=inetOrgPerson AND memberOf='cn=mail,ou=groups,dc=com' AND ou:dn:=users)";
+        // bindAsCurrentUser = YES;
+        // ...
+    },  
+    {
+        // Used for global address book
+        type = ldap;
+        id = global_addressbook;
+        // ...
+        hostname = "ldap:///192.168.223.10:389";
+        baseDN = "dc=com";
+        bindDN = "cn=admin,dc=com";
+        bindPassword = "adminpass";
+        filter = "(objectClass=inetOrgPerson AND memberOf=cn=mail,ou=groups,dc=com AND ou:dn:=users)";
+        //bindAsCurrentUser = YES;
+        // ...
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>注意：注释掉<code>bindAsCurrentUser = YES;</code></p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">sudo service sogod start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>什麽操蛋邏輯，竟然修改配置文件後重啓計算機才有效</p>
+</blockquote>
+<h2 id="SSL证书"><a href="#SSL证书" class="headerlink" title="SSL证书"></a><code>SSL</code>证书</h2><h3 id="web证书"><a href="#web证书" class="headerlink" title="web证书"></a><code>web</code>证书</h3><p>邮件系统默认提供了证书，在配置完成之后，已经可以通过HTTPS访问。但是由于iRedMail提供的证书只是系统生成的，并没有经过认证，因此浏览器会提示不安全。</p>
+<ol>
+<li>建议自行申请Symantec等证书（收费或免费均可），然后覆盖默认的证书<ul>
+<li>/etc/pki/tls/certs/iRedMail.crt</li>
+<li>/etc/pki/tls/private/iRedMail.key</li>
+</ul>
+</li>
+<li>将申请的证书重命名为 iRedMail.crt ，上传到 /etc/pki/tls/certs/ 目录覆盖原有系统证书</li>
+<li>将申请的证书的key重命名为 iRedMail.key， 上传到/etc/pki/tls/private/目录覆盖原有系统证书 </li>
+<li>重启服务器</li>
+</ol>
+<h3 id="postfix-dovecot-证书"><a href="#postfix-dovecot-证书" class="headerlink" title="postfix dovecot 证书"></a><code>postfix</code> <code>dovecot</code> 证书</h3><ol>
+<li><p>部署证书<code>letsencrypt.tgz</code>到<code>/etc/letsencrypt_auto</code>目录</p>
+</li>
+<li><p>修改</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">su</span>
+
+postconf -e <span class="token assign-left variable">smtpd_tls_cert_file</span><span class="token operator">=</span><span class="token string">'/etc/letsencrypt_auto/live/0/cert.pem'</span>
+postconf -e <span class="token assign-left variable">smtpd_tls_key_file</span><span class="token operator">=</span><span class="token string">'/etc/letsencrypt_auto/live/0/privkey.pem'</span>
+postconf -e <span class="token assign-left variable">smtpd_tls_CAfile</span><span class="token operator">=</span><span class="token string">'/etc/letsencrypt_auto/live/0/fullchain.pem'</span>
+
+systemctl restart postfix.service
+
+<span class="token builtin class-name">exit</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># vim /etc/dovecot/dovecot.conf</span>
+
+ssl <span class="token operator">=</span> required
+verbose_ssl <span class="token operator">=</span> no
+ssl_ca <span class="token operator">=</span> <span class="token operator">&lt;</span>/etc/letsencrypt_auto/live/0/fullchain.pem
+ssl_cert <span class="token operator">=</span> <span class="token operator">&lt;</span>/etc/letsencrypt_auto/live/0/cert.pem
+ssl_key <span class="token operator">=</span> <span class="token operator">&lt;</span>/etc/letsencrypt_auto/live/0/privkey.pem<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> dovecot restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+</li>
+</ol>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.qnjslm.com/ITHelp/580.html">https://www.qnjslm.com/ITHelp/580.html</a></p>
+</blockquote>
+<h1 id="重启服务器"><a href="#重启服务器" class="headerlink" title="重启服务器"></a>重启服务器</h1><h1 id="部署代理"><a href="#部署代理" class="headerlink" title="部署代理"></a>部署代理</h1><ol>
+<li><p>生成或者导入证书 - 下面步骤只做 1 或者 2， 不用全做</p>
+<ol>
+<li><p>生成证书</p>
+<ul>
+<li><p>生成 <code>ymicj的key</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># ymicj</span>
+<span class="token function">sudo</span> amavisd -c /etc/amavisd/amavisd.conf genrsa /var/lib/dkim/ymicj.com.pem <span class="token number">2048</span>
+<span class="token function">sudo</span> <span class="token function">chown</span> amavis:amavis /var/lib/dkim/ymicj.com.pem
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 /var/lib/dkim/ymicj.com.pem<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>这里 <code>2048</code> 位数设置要跟原来的相同？可以用<code>sudo amavisd -c /etc/amavisd/amavisd.conf showkeys</code>来查看</p>
+</blockquote>
+</li>
+<li><p>生成 <code>ymipro的key</code> - 应该不需要调用，本身就存在的</p>
+<pre class="line-numbers language-none"><code class="language-none">sudo amavisd -c /etc/amavisd/amavisd.conf genrsa /var/lib/dkim/ymipro.com.pem
+sudo chown amavis:amavis /var/lib/dkim/ymipro.com.pem
+sudo chmod 0400 /var/lib/dkim/ymipro.com.pem<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+<li><p>导入证书</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">su</span>
+<span class="token builtin class-name">cd</span> /var/lib/dkim/
+<span class="token function">rm</span> -rf *
+rz
+<span class="token function">tar</span> zxvf dkim_email.tgz
+<span class="token function">rm</span> -rf dkim_email.tgz
+<span class="token builtin class-name">exit</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+</li>
+<li><p>修改 <code>/etc/amavisd/amavisd.conf</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Add dkim_key here.</span>
+dkim_key<span class="token punctuation">(</span><span class="token string">'ymipro.com'</span>, <span class="token string">'dkim'</span>, <span class="token string">'/var/lib/dkim/ymipro.com.pem'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+dkim_key<span class="token punctuation">(</span><span class="token string">'ymicj.com'</span>, <span class="token string">'dkim'</span>, <span class="token string">'/var/lib/dkim/ymicj.com.pem'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+@dkim_signature_options_bysender_maps <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment"># 'd' defaults to a domain of an author/sender address,</span>
+    <span class="token comment"># 's' defaults to whatever selector is offered by a matching key</span>
+
+    <span class="token comment"># Per-domain dkim key</span>
+    <span class="token comment">#"domain.com"  =&gt; { d =&gt; "domain.com", a =&gt; 'rsa-sha256', ttl =&gt; 10*24*3600 },</span>
+
+    <span class="token comment"># catch-all (one dkim key for all domains)</span>
+    <span class="token string">'ymipro.com'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>d <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'ymipro.com'</span>,
+            a <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'rsa-sha256'</span>,
+            c <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'relaxed/simple'</span>,
+            ttl <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">30</span>*24*3600 <span class="token punctuation">}</span>,
+    <span class="token string">'ymicj.com'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>d <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'ymicj.com'</span>,
+            a <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'rsa-sha256'</span>,
+            c <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'relaxed/simple'</span>,
+            ttl <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">30</span>*24*3600 <span class="token punctuation">}</span>,
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>重启服务</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> amavisd restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>设置<code>DNS</code>规则</p>
+<blockquote>
+<p><code>sudo amavisd -c /etc/amavisd/amavisd.conf showkeys</code> 获取 <code>DKMI</code></p>
+</blockquote>
+<ul>
+<li><p>ymicj DNS</p>
+  <pre class="line-numbers language-none"><code class="language-none">## A 记录
+mail.ymicj.com A 176.122.161.213
+## MX 记录
+ymicj.com MX 176.122.161.213
+## SPF 记录
+ymicj.com TXT v=spf1 ip4:176.122.161.213 -all
+## DKMI 记录
+dkim._domainkey.ymicj.com	TXT	v=DKIM1; p=******<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>ymipro DNS</p>
+  <pre class="line-numbers language-none"><code class="language-none">mail.ymipro.com A 49.234.46.74
+@ ymipro.com MX 176.122.161.213
+mail ymipro.com TXT v=spf1 ip4:176.122.161.213 -all
+dkim._domainkey.ymipro.com	TXT	v=DKIM1; p=******<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><code>sudo amavisd -c /etc/amavisd/amavisd.conf showkeys</code> 获取 <code>DKMI</code></p>
+<p><code>sudo amavisd -c /etc/amavisd/amavisd.conf testkey</code> 来验证</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.iredmail.org/sign.dkim.signature.for.new.domain.html">https://docs.iredmail.org/sign.dkim.signature.for.new.domain.html</a></p>
+</blockquote>
+<del>
+
+<h2 id="由于25端口转代理，所有25请求的端口都是127-0-0-1会导致SMTP-Open-Relay"><a href="#由于25端口转代理，所有25请求的端口都是127-0-0-1会导致SMTP-Open-Relay" class="headerlink" title="由于25端口转代理，所有25请求的端口都是127.0.0.1会导致SMTP Open Relay"></a>由于<code>25</code>端口转代理，所有<code>25</code>请求的端口都是<code>127.0.0.1</code>会导致<code>SMTP Open Relay</code></h2><ul>
+<li><p><code>tproxy</code>连接<code>25</code>端口走非<code>lo</code>ip，这个需要更新<code>tproxy client</code> - 假设这个地址为<code>192.168.113.147</code></p>
+</li>
+<li><p><code>post screen</code>白名单</p>
+  <pre class="line-numbers language-none"><code class="language-none"># vim /etc/postfix/postscreen_access.cidr
+    192.168.113.0/24 permit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">sudo service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p><code>/etc/postfix/main.cf: -&gt; postscreen_access_list = permit_mynetworks, cidr:/etc/postfix/postscreen_access.cidr</code></p>
+</blockquote>
+</li>
+<li><p><code>iredpad</code></p>
+  <pre class="line-numbers language-none"><code class="language-none"># sudo vim  /opt/iredapd/settings.py
+ldap_uri = "ldap://192.168.113.141:389"
+ldap_basedn = "dc=com"
+ldap_binddn = "cn=admin,dc=com"
+ldap_bindpw = "adminpass"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <pre class="line-numbers language-none"><code class="language-none"># sudo vim /opt/iredapd/libs/default_settings.py
+MYNETWORKS = ['192.168.113.0/24']<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">sudo service iredapd restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><code>banner</code></p>
+  <pre class="line-numbers language-none"><code class="language-none">[root@mx z]# postconf smtpd_banner
+smtpd_banner = $myhostname ESMTP $mail_name
+[root@mx z]# postconf myhostname
+myhostname = ymicj.com
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li></ul></del>
+
+
+
+<h2 id="proxy-protocol"><a href="#proxy-protocol" class="headerlink" title="proxy protocol"></a>proxy protocol</h2><ul>
+<li><p>配置</p>
+  <pre class="line-numbers language-none"><code class="language-none"># on real mail server
+vim /etc/postfix/main.cf
+    postscreen_upstream_proxy_protocol = haproxy
+    postscreen_upstream_proxy_timeout = 20s
+
+# on front's nginx    
+vim email.tcp.conf.stream
+    25 tcp stream: proxy_protocol on;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>重启服务</p>
+  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> systemctl restart postfix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>log: <code>tailf /var/log/maillog</code></p>
+</li>
+<li><p>set banner: <code>postconf -e myhostname=ymicj.com</code></p>
+<blockquote>
+<p>smtpd_banner = $myhostname</p>
+</blockquote>
+</li>
+<li><p>SMTP Open Relay test</p>
+  <pre class="line-numbers language-none"><code class="language-none">Connecting to 49.234.46.74
+
+220 ymicj.com ESMTP Postfix [938 ms]
+EHLO keeper-us-east-1c.mxtoolbox.com
+250-ymicj.com
+250-PIPELINING
+250-SIZE 15728640
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 DSN [891 ms]
+MAIL FROM:&lt;supertool@mxtoolbox.com&gt;
+250 2.1.0 Ok [875 ms]
+RCPT TO:&lt;test@mxtoolboxsmtpdiag.com&gt;
+454 4.7.1 &lt;test@mxtoolboxsmtpdiag.com&gt;: Relay access denied [891 ms]
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>  after accpt rcpt to:</p>
+  <pre class="line-numbers language-none"><code class="language-none">data
+subject: hoho
+
+content1
+content2
+.
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://mxtoolbox.com/SuperTool.aspx?action=smtp:ymipro.com&amp;run=toolpage">https://mxtoolbox.com/SuperTool.aspx?action=smtp%3aymipro.com&amp;run=toolpage</a></p>
+</blockquote>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.iredmail.org/index.html">https://docs.iredmail.org/index.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.iredmail.org/active.directory.html">https://docs.iredmail.org/active.directory.html</a></p>
+<p><a target="_blank" rel="noopener" href="http://note.youdao.com/yws/public/resource/359b2fff6a21186e09a514b6f23aaf97/xmlnote/33744598974F45AF94C11C099C92F640/4757">http://note.youdao.com/yws/public/resource/359b2fff6a21186e09a514b6f23aaf97/xmlnote/33744598974F45AF94C11C099C92F640/4757</a></p>
+</blockquote>
+<h2 id="mail-DNS"><a href="#mail-DNS" class="headerlink" title="mail DNS"></a>mail DNS</h2><blockquote>
+<p>dns設置<br><a target="_blank" rel="noopener" href="https://www.qnjslm.com/ITHelp/566.html">https://www.qnjslm.com/ITHelp/566.html</a></p>
+<p>外部端口<br><a target="_blank" rel="noopener" href="https://docs.iredmail.org/network.ports.html">https://docs.iredmail.org/network.ports.html</a></p>
+<p>client<br><a target="_blank" rel="noopener" href="http://www.ithov.com/linux/100665_2.shtml">http://www.ithov.com/linux/100665_2.shtml</a></p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">mail.ymicj.com	A	45.77.190.27	300		2019-10-30 04:02:43	编辑 删除
+ymicj.com	MX	45.77.190.27	300	10	2019-10-30 09:37:08	编辑 删除
+mail.ymicj.com	TXT	v=spf1 ip4:45.77.190.27 -all	300		2019-10-30 05:59:31	编辑 删除
+dkim._domainkey.ymicj.com	TXT	v=DKIM1; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZeb0qSIKSuJbstVPwvWAmjU0BvMDz5iBmXzWl5eBUUfKVkTurJKWGYc6DRmpoehrmYJTPXp+qWxHJEO2vtnVCzPvxwfv5ieNeqiwbrl+3cT79aFnsKG0j8GN/zI6+VOmVf+ZoJVKDL3LA3I3jlPQur7wfpuKVdxP0uiZ8fYZZ6QIDAQAB	300		2019-10-30 07:56:10	编辑 删除<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://docs.iredmail.org/file.locations.html">https://docs.iredmail.org/file.locations.html</a></p>
+</blockquote>
+<h1 id="。。。"><a href="#。。。" class="headerlink" title="。。。"></a>。。。</h1><ul>
+<li>某个域名发不出邮件  <pre class="line-numbers language-none"><code class="language-none">postconf -e local_recipient_maps=$virtual_mailbox_maps
+
+service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+</li>
+</ul>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol>
+<li><p>进入信箱后，点击收件箱，弹出错误</p>
+<p>查看 <code>/var/log/dovecot</code> 下的<code> imap.log</code> 日志<br>发现是<code> /var/vmail</code> 权限问题，用如下命令解决</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chown</span> vmail:vmail /var/vmail<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p> Helo command rejected: ACCESS DENIED. Your email was rejected because the sending mail server appears to be on a dynamic IP address that should not be doing direct mail delivery (10-93-166-234); </p>
+</li>
+</ol>
+<p>简单粗暴的办法是 /etc/postfix/helo_access.pcre 中相应字符串的表达式注释掉</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://forum.iredmail.org/topic8108-iredmail-support-mail-rejected.html">https://forum.iredmail.org/topic8108-iredmail-support-mail-rejected.html</a></p>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">patdz</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://patdz.github.io/2021/01/14/centos7-ymi-iredmail/">https://patdz.github.io/2021/01/14/centos7-ymi-iredmail/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">patdz</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/iredmail/">
+                                    <span class="chip bg-color">iredmail</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/01/19/bash-zong-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="bash总结">
+                        
+                        <span class="card-title">bash总结</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-19
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Bash/" class="post-category">
+                                    Bash
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/script/">
+                        <span class="chip bg-color">script</span>
+                    </a>
+                    
+                    <a href="/tags/bash/">
+                        <span class="chip bg-color">bash</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/01/13/docker-chang-yong-ming-ling/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Docker-常用命令">
+                        
+                        <span class="card-title">Docker-常用命令</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Docker/" class="post-category">
+                                    Docker
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/config/">
+                        <span class="chip bg-color">config</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">patdz</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

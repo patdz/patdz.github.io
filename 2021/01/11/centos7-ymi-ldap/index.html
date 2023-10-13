@@ -1,0 +1,1890 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="羊米-OpenLDAP服务器安装, patdz">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>羊米-OpenLDAP服务器安装 | patdz的程序人生</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="patdz的程序人生" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">patdz的程序人生</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">patdz的程序人生</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">羊米-OpenLDAP服务器安装</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/ldap/">
+                                <span class="chip bg-color">ldap</span>
+                            </a>
+                        
+                            <a href="/tags/openldap/">
+                                <span class="chip bg-color">openldap</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Ymi/" class="post-category">
+                                Ymi
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-01-11
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>内网机器安装，然后通过VPS和内网穿透来对外提供服务</p>
+<h2 id="Install-openldap"><a href="#Install-openldap" class="headerlink" title="Install openldap"></a>Install openldap</h2><ol>
+<li><p>install openldap</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> yum -y <span class="token function">install</span> openldap compat-openldap openldap-clients openldap-servers openldap-servers-sql openldap-devel
+<span class="token function">sudo</span> systemctl start slapd
+<span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> slapd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>verify</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>z@ldap-ymi ~<span class="token punctuation">]</span>$ <span class="token function">sudo</span> <span class="token function">netstat</span> -antup <span class="token operator">|</span> <span class="token function">grep</span> -i <span class="token number">389</span>
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:389             <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">7965</span>/slapd          
+tcp6       <span class="token number">0</span>      <span class="token number">0</span> :::389                  :::*                    LISTEN      <span class="token number">7965</span>/slapd <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><code>sudo yum install net-tools -y</code></p>
+</blockquote>
+</li>
+<li><p>setup ldap password</p>
+<ol>
+<li><p>gen pass - 这里为 <code>11111111</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>z@ldap-ymi ~<span class="token punctuation">]</span>$ slappasswd -h <span class="token punctuation">{</span>SSHA<span class="token punctuation">}</span> -s <span class="token number">11111111</span>
+<span class="token punctuation">{</span>SSHA<span class="token punctuation">}</span>diIowJ/IbQskpCqbI3Az3Mnt9fh95J7S<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>查看当前<code>db</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">ls</span> -al /etc/openldap/slapd.d/cn<span class="token operator">=</span>config/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>注意这里是<code>{2}hdb</code></p>
+</blockquote>
+</li>
+<li><p>vim db.ldif</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dn: <span class="token assign-left variable">olcDatabase</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>hdb,cn<span class="token operator">=</span>config
+changetype: modify
+replace: olcSuffix
+olcSuffix: <span class="token assign-left variable">dc</span><span class="token operator">=</span>com
+
+dn: <span class="token assign-left variable">olcDatabase</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>hdb,cn<span class="token operator">=</span>config
+changetype: modify
+replace: olcRootDN
+olcRootDN: <span class="token assign-left variable">cn</span><span class="token operator">=</span>admin,dc<span class="token operator">=</span>com
+
+dn: <span class="token assign-left variable">olcDatabase</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>hdb,cn<span class="token operator">=</span>config
+changetype: modify
+replace: olcRootPW
+olcRootPW: <span class="token punctuation">{</span>SSHA<span class="token punctuation">}</span>diIowJ/IbQskpCqbI3Az3Mnt9fh95J7S<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><code>{2}hdb</code>: <code>sudo ls /etc/openldap/slapd.d/cn=config/</code></p>
+<p><code>rootdn</code>: <code>cn=admin,dc=com</code></p>
+<p><code>{SSHA}Z44sZoJLqeECOAR/yEYm9ZyKUilZJO0I</code>: 步骤<code>1</code>里生成的结果</p>
+</blockquote>
+</li>
+<li><p>apply db.ldif</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapmodify -Y EXTERNAL  -H ldapi:/// -f db.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+</li>
+<li><p>Make a changes to <code>/etc/openldap/slapd.d/cn=config/olcDatabase={1}monitor.ldif</code> (Do not edit manually) file to restrict the monitor access only to ldap root (ldapadm) user not to others.</p>
+<ol>
+<li><p>vim monitor.ldif</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dn: <span class="token assign-left variable">olcDatabase</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>monitor,cn<span class="token operator">=</span>config
+changetype: modify
+replace: olcAccess
+olcAccess: <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span>to * by dn.base<span class="token operator">=</span><span class="token string">"gidNumber=0+uidNumber=0,cn=peercred,cn=external, cn=auth"</span> <span class="token builtin class-name">read</span> by dn.base<span class="token operator">=</span><span class="token string">"cn=admin,dc=com"</span> <span class="token builtin class-name">read</span> by * none<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>修正 <code>/etc/openldap/slapd.d/cn=config/olcDatabase={1}monitor.ldif</code>的内容</p>
+</blockquote>
+</li>
+<li><p>apply monitor.ldif</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapmodify -Y EXTERNAL  -H ldapi:/// -f monitor.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+</li>
+<li><p>Set up LDAP database</p>
+<ol>
+<li><p>Copy the sample database configuration file to /var/lib/ldap and update the file permissions.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">cp</span> /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
+<span class="token function">sudo</span> <span class="token function">chown</span> -R ldap:ldap /var/lib/ldap/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>Add the cosine and nis LDAP schemas.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">def</span> <span class="token keyword">in</span> /etc/openldap/schema/*.ldif <span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">sudo</span> ldapadd -Y EXTERNAL -H ldapi:/// -f <span class="token variable">$def</span><span class="token punctuation">;</span> <span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>vim base.ldif</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dn: <span class="token assign-left variable">dc</span><span class="token operator">=</span>com
+o: RDCenter
+objectclass: dcobject
+objectclass: organization
+
+dn: <span class="token assign-left variable">ou</span><span class="token operator">=</span>users,dc<span class="token operator">=</span>com
+objectClass: organizationalUnit
+ou: <span class="token function">users</span>
+
+dn: <span class="token assign-left variable">ou</span><span class="token operator">=</span>groups,dc<span class="token operator">=</span>com
+objectClass: organizationalUnit
+ou: <span class="token function">groups</span>
+
+dn: <span class="token assign-left variable">dc</span><span class="token operator">=</span>ymi,dc<span class="token operator">=</span>com
+o: RDCenter Ymi
+objectclass: dcobject
+objectclass: organization
+
+dn: <span class="token assign-left variable">dc</span><span class="token operator">=</span>ymipro,dc<span class="token operator">=</span>com
+o: RDCenter YmiPro
+objectclass: dcobject
+objectclass: organization
+
+dn: <span class="token assign-left variable">dc</span><span class="token operator">=</span>ymicj,dc<span class="token operator">=</span>com
+o: RDCenter YmiCj
+objectclass: dcobject
+objectclass: organization
+
+dn: <span class="token assign-left variable">ou</span><span class="token operator">=</span>users,dc<span class="token operator">=</span>ymi,dc<span class="token operator">=</span>com
+objectClass: organizationalUnit
+ou: <span class="token function">users</span>
+
+dn: <span class="token assign-left variable">ou</span><span class="token operator">=</span>users,dc<span class="token operator">=</span>ymipro,dc<span class="token operator">=</span>com
+objectClass: organizationalUnit
+ou: <span class="token function">users</span>
+
+dn: <span class="token assign-left variable">ou</span><span class="token operator">=</span>users,dc<span class="token operator">=</span>ymicj,dc<span class="token operator">=</span>com
+objectClass: organizationalUnit
+ou: <span class="token function">users</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>apply base.ldif</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapadd -x -W -D <span class="token string">"cn=admin,dc=com"</span> -f base.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>注：需要输入密码的地方输入就好了</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="6">
+<li><p>creating a new user - 测试，可以不做这一步</p>
+<ol>
+<li><p>create raj ldif file</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">vim</span> raj.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dn: <span class="token assign-left variable">uid</span><span class="token operator">=</span>raj,ou<span class="token operator">=</span>users,dc<span class="token operator">=</span>com
+objectClass: <span class="token function">top</span>
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: raj
+uid: raj
+uidNumber: <span class="token number">9999</span>
+gidNumber: <span class="token number">100</span>
+homeDirectory: /home/raj
+loginShell: /bin/bash
+gecos: Raj <span class="token punctuation">[</span>Admin <span class="token punctuation">(</span>at<span class="token punctuation">)</span> ITzGeek<span class="token punctuation">]</span>
+userPassword: <span class="token punctuation">{</span>crypt<span class="token punctuation">}</span>x
+shadowLastChange: <span class="token number">17058</span>
+shadowMin: <span class="token number">0</span>
+shadowMax: <span class="token number">99999</span>
+shadowWarning: <span class="token number">7</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Use the ldapadd command with the above file to create a new user called “raj” in OpenLDAP directory.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapadd -x -W -D <span class="token string">"cn=admin,dc=com"</span> -f raj.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>Assign a password to the user.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldappasswd -s password123 -W -D <span class="token string">"cn=admin,dc=com"</span> -x <span class="token string">"uid=raj,ou=users,dc=com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>verify</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ldapsearch -x <span class="token assign-left variable">cn</span><span class="token operator">=</span>raj -b <span class="token assign-left variable">dc</span><span class="token operator">=</span>com
+
+<span class="token comment"># 如果后面禁用了匿名访问，则用下面命令访问</span>
+ldapsearch -x <span class="token assign-left variable">cn</span><span class="token operator">=</span>raj -b <span class="token assign-left variable">dc</span><span class="token operator">=</span>com -W -D <span class="token string">"cn=admin,dc=com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>delete it  (Optional)</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapdelete -W -D <span class="token string">"cn=admin,dc=com"</span> <span class="token string">"uid=raj,ou=users,dc=com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+</li>
+<li><p>Add the LDAP service to the firewall</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> firewall-cmd --permanent --add-service<span class="token operator">=</span>ldap
+<span class="token function">sudo</span> firewall-cmd --reload<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>Enable LDAP logging</p>
+<ol>
+<li><p>modify rsyslog.conf</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">vim</span> /etc/rsyslog.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p> <code>Add below line to /etc/rsyslog.conf file.</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">local4.* /var/log/ldap.log<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>Restart the rsyslog service.</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> systemctl restart rsyslog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="Install-phpLDAPadmin"><a href="#Install-phpLDAPadmin" class="headerlink" title="Install phpLDAPadmin"></a>Install phpLDAPadmin</h2><ol>
+<li><p>Install phpLDAPadmin</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> yum <span class="token function">install</span> -y phpldapadmin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>如果找不到软件包，则 <code>sudo yum localinstall http://rpms.famillecollet.com/enterprise/remi-release-7.rpm -y</code></p>
+</blockquote>
+</li>
+<li><p>Change nginx.conf - <code>conf.d</code>目录</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">vim</span> /etc/nginx/conf.d/ldap.ymipro-l.com.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">server <span class="token punctuation">{</span>
+    listen       <span class="token number">80</span><span class="token punctuation">;</span>
+    server_name  ldap.ymipro-l.com ldap.ymipro.com<span class="token punctuation">;</span>
+    location /htdocs <span class="token punctuation">{</span>
+        <span class="token builtin class-name">alias</span> /usr/share/phpldapadmin/htdocs<span class="token punctuation">;</span>
+        index index.php<span class="token punctuation">;</span>
+        location ~ <span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+            <span class="token builtin class-name">alias</span> /usr/share/phpldapadmin<span class="token punctuation">;</span>
+            fastcgi_pass <span class="token number">127.0</span>.0.1:9000<span class="token punctuation">;</span>
+            fastcgi_index index.php<span class="token punctuation">;</span>
+            fastcgi_param SCRIPT_FILENAME <span class="token variable">$document_root</span><span class="token variable">$fastcgi_script_name</span><span class="token punctuation">;</span>
+            include fastcgi_params<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+        
+    error_page   <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span>  /50x.html<span class="token punctuation">;</span><span class="token comment">#错误页面</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ol>
+<blockquote>
+<p><code>ldap.ymi-l.com</code>指向本服务器</p>
+</blockquote>
+<ol start="4">
+<li><p>修改 <code>phpldapadmin/config.php</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">vim</span> /etc/phpldapadmin/config.php<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token variable">$servers</span>-<span class="token operator">&gt;</span>setValue<span class="token punctuation">(</span><span class="token string">'login'</span>,<span class="token string">'attr'</span>,<span class="token string">'dn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+// <span class="token variable">$servers</span>-<span class="token operator">&gt;</span>setValue<span class="token punctuation">(</span><span class="token string">'login'</span>,<span class="token string">'attr'</span>,<span class="token string">'uid'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>将<code>uid</code>结尾的注释掉，也就是行首添加<code>//</code>，将<code>dn</code>结尾的行打开，行首去掉<code>//</code> - 这个是因为我创建的用户RID为cn</p>
+</blockquote>
+</li>
+<li><p>Restart</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">service</span> nginx restart
+<span class="token function">sudo</span> <span class="token function">service</span> php-fpm restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>selinux</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> setsebool -P httpd_can_connect_ldap on<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>Login <code>http://ldap.ymipro-l.com/htdocs/</code></p>
+<blockquote>
+<p>访问端主机设置 <code>你的本地ldap服务器ip地址 ldap.ymipro-l.com</code></p>
+<p>登录 使用用户名 <code>cn=admin,dc=com</code> 密码为设置的密码</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="ldap添加memberof模块"><a href="#ldap添加memberof模块" class="headerlink" title="ldap添加memberof模块"></a>ldap添加<code>memberof</code>模块</h2><blockquote>
+<p>这个工作应该一开始就做好，要不然后面要做的话，还得把建好的组全删掉再重建。这个模块的作用是当你建一个组的时候，把一些用户添加到这个组里去，它会自动给这些用户添加一个<code>memberOf</code>属性，有很多应用需要检查这个属性。</p>
+<p>添加的时候比较麻烦，需要建3个<code>ldif</code>文件，然后1个执行<code>ldapmodify</code>，2个执行<code>ldapadd</code>，错一点都不行：</p>
+</blockquote>
+<ol>
+<li><p>vim memberof_config.ldif</p>
+ <pre class="line-numbers language-none"><code class="language-none">dn: cn=module,cn=config
+cn: module
+objectClass: olcModuleList
+olcModuleLoad: memberof
+olcModulePath: /usr/lib64/openldap<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>小心第5行，先要确认你的目录是不是在/usr/lib64下面</p>
+</blockquote>
+</li>
+<li><p>apply memberof_config.ldif</p>
+ <pre class="line-numbers language-none"><code class="language-none">sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f memberof_config.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>vim refint1.ldif</p>
+ <pre class="line-numbers language-none"><code class="language-none">dn: cn=module{0},cn=config
+add: olcmoduleload
+olcmoduleload: refint<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ol>
+<blockquote>
+<p>这个文件里我的memberOf是第一个模块，所以编号是0，你的不一定，要看清楚到底第几号模块是memberof，然后就改成几就可以了</p>
+<p>sudo ls -al /etc/openldap/slapd.d/cn=config/ 下面看 <code>module{编号}.ldif</code>之类的文件，哪个是命令新创建的，编号就是几</p>
+</blockquote>
+<ol start="4">
+<li><p>apply <code>refint1.ldif</code></p>
+ <pre class="line-numbers language-none"><code class="language-none">sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f refint1.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>设置</p>
+<ol>
+<li><p>vim memberof_groupofnames_overlay.ldif</p>
+ <pre class="line-numbers language-none"><code class="language-none">dn: olcOverlay={0}memberof,olcDatabase={2}hdb,cn=config
+objectClass: olcConfig
+objectClass: olcMemberOf
+objectClass: olcOverlayConfig
+objectClass: top
+olcOverlay: memberof
+olcMemberOfDangling: ignore
+olcMemberOfRefInt: TRUE
+olcMemberOfGroupOC: groupOfNames
+olcMemberOfMemberAD: member
+olcMemberOfMemberOfAD: memberOf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>注意<code>db</code> <code>member</code>数字</p>
+</blockquote>
+</li>
+<li><p>apply <code>memberof_overlay.ldif</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapadd -Q -Y EXTERNAL -H ldapi:/// -f memberof_groupofnames_overlay.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>vim memberof_groupofuniquenames_overlay.ldif</p>
+ <pre class="line-numbers language-none"><code class="language-none">dn: olcOverlay={0}memberof,olcDatabase={2}hdb,cn=config
+objectClass: olcConfig
+objectClass: olcMemberOf
+objectClass: olcOverlayConfig
+objectClass: top
+olcOverlay: memberof
+olcMemberOfDangling: ignore
+olcMemberOfRefInt: TRUE
+olcMemberOfGroupOC: groupOfUniqueNames
+olcMemberOfMemberAD: uniqueMember
+olcMemberOfMemberOfAD: memberOf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>apply <code>memberof_groupofuniquenames_overlay.ldif</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapadd -Q -Y EXTERNAL -H ldapi:/// -f memberof_groupofuniquenames_overlay.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>vim refint2.ldif</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dn: <span class="token assign-left variable">olcOverlay</span><span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>refint,olcDatabase<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>hdb,cn<span class="token operator">=</span>config
+objectClass: olcConfig
+objectClass: olcOverlayConfig
+objectClass: olcRefintConfig
+objectClass: <span class="token function">top</span>
+olcOverlay: <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>refint
+olcRefintAttribute: memberof member manager owner<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>这里的 1 来自 sudo cat /etc/openldap/slapd.d/cn=config/cn=module{0}.ldif</p>
+</blockquote>
+</li>
+<li><p>apply <code>refint2.ldif</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> ldapadd -Q -Y EXTERNAL -H ldapi:/// -f refint2.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><p>创建</p>
+<p>  在<code>users</code>下面建几个新条目 [<code>默认模板</code>、<code>inetOrgPerson</code>, rdn选择cn]，这些就是你的用户了。注意，在创建新条目时，一定要选择默认模板，不要选择什么<code>Posix</code>或者<code>Generic User Account</code>，那只会帮你建出一堆没用的<code>Linux</code>账号出来，我们只想要<code>web</code>用户，不想建什么<code>Linux</code>用户，另外密码这个地方一定要选<code>md5</code>，否则你后面和其它系统连接会出问题。</p>
+<p>  然后在<code>groups</code>下面建几个组吧，比如<code>admin</code>, <code>mail</code>, <code>gitlab</code> 等等，注意选择<code>objectClass</code>为<code>groupOfNames</code>就行了。然后把你刚刚建好的几个用户分门别类的给他们加到组里去。</p>
+<p>  在这一步上，如果你前面配置<code>memberOf</code>模块配置正确的话，你会在<code>user</code>的显示内部属性里看到它的<code>memberOf</code>属性，如果看不到，说明你没有配对。</p>
+<blockquote>
+<p>其实子项目都选“默认”，进去后再选<code>objectClass</code>。用户要填写<code>Email</code>，起码<code>Gitlab</code>如果没有邮箱不让登录的</p>
+</blockquote>
+<p>  如果喜欢分组，可以再 在<code>groups</code>下面创建 ou 对象 - <code>Generic: Organisational Unit</code>模板</p>
+</li>
+<li><p>导入 - 如果存在备份文件，则删除刚才创建的数据 (backups.ldif)，导入备份数据</p>
+  <pre class="line-numbers language-none"><code class="language-none">sudo su
+systemctl stop slapd
+rm -rf /var/lib/ldap/*
+slapadd -l /root/backups.ldif
+
+cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
+chown ldap:ldap -R /var/lib/ldap/
+systemctl start slapd
+
+exit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>禁止匿名访问</p>
+  <pre class="line-numbers language-none"><code class="language-none">vim disable_anon.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">dn: cn=config
+changetype: modify
+add: olcDisallows
+olcDisallows: bind_anon
+
+dn: cn=config
+changetype: modify
+add: olcRequires
+olcRequires: authc
+
+dn: olcDatabase={-1}frontend,cn=config
+changetype: modify
+add: olcRequires
+olcRequires: authc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">sudo ldapadd -Y EXTERNAL -H ldapi:/// -f disable_anon.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>修改管理员密码</p>
+  <pre class="line-numbers language-none"><code class="language-none">slappasswd -h {SSHA} -s 12345678
+{SSHA}dvlUz8vJMSHQsDdN63WE+UbFHzqVWRsr<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>newrootpass.ldif</p>
+</blockquote>
+  <pre class="line-numbers language-none"><code class="language-none">dn: olcDatabase={2}hdb,cn=config
+changetype: modify
+replace: olcRootPW
+olcRootPW: {SSHA}dvlUz8vJMSHQsDdN63WE+UbFHzqVWRsr<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">sudo ldapmodify -H ldapi:// -Y EXTERNAL -f newrootpass.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+</li>
+</ul>
+<h2 id="Docker版本Gitlab集成"><a href="#Docker版本Gitlab集成" class="headerlink" title="Docker版本Gitlab集成"></a>Docker版本<code>Gitlab</code>集成</h2><ol>
+<li><p>sudo vim /etc/gitlab/gitlab.rb</p>
+ <pre class="line-numbers language-none"><code class="language-none">gitlab_rails['ldap_enabled'] = true
+
+gitlab_rails['ldap_servers'] = YAML.load &lt;&lt;-'EOS'
+   main: # 'main' is the GitLab 'provider ID' of this LDAP server
+     label: 'LDAP'
+     host: '192.52.194.23'
+     port: 389
+     uid: 'uid'
+     bind_dn: 'cn=admin,dc=com'
+     password: 'adminpass'
+     encryption: 'plain' # "start_tls" or "simple_tls" or "plain"
+     verify_certificates: true
+     smartcard_auth: false
+     active_directory: false
+     allow_username_or_email_login: false
+     lowercase_usernames: false
+     block_auto_created_users: false
+     base: 'dc=com'
+     user_filter: '(&amp;(memberOf=cn=gitlab,ou=groups,dc=com)(ou:dn:=users))'
+EOS<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ol>
+<blockquote>
+<p><code>uid</code> 如果不使用<code>cn</code>而选择 <code>uid</code>，那么就要求ldap中的用户配置<code>uid</code>了,不然没法登录</p>
+</blockquote>
+<ol start="2">
+<li><p><code>sudo docker exec -it Zgitlab bash</code> 执行</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 配置完成后进行配置更新</span>
+gitlab-ctl reconfigure
+
+<span class="token comment"># 检查是否配置成功 - 列出前100个用户</span>
+gitlab-rake gitlab:ldap:check
+
+<span class="token comment"># 重启gitlab服务</span>
+gitlab-ctl restart <span class="token comment"># 注:发现这个不管用，不研究了，直接重启docker就好了</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ol>
+<blockquote>
+<p>确认该用户不处于特殊状态 - 处于上面任意一种状态的账户在登录gitlab时都会报“Cloud not authenticate you from Ldapmain because “Invalid creadentials”.</p>
+</blockquote>
+<ul>
+<li>不处于“禁用账户”的状态</li>
+<li>不处于“需要首次登录修改密码”的状态</li>
+</ul>
+<h2 id="辅助"><a href="#辅助" class="headerlink" title="辅助"></a>辅助</h2><pre class="line-numbers language-none"><code class="language-none">sudo vim /etc/httpd/conf/httpd.conf <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">Listen 81<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">sudo firewall-cmd --permanent --add-port=81/tcp
+sudo firewall-cmd --reload
+sudo service httpd restart
+sudo systemctl enable httpd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">sudo vim /etc/yum.repos.d/ltb-project.repo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">[ltb-project-noarch]
+name=LTB project packages (noarch)
+baseurl=https://ltb-project.org/rpm/$releasever/noarch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-LTB-project<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">sudo yum update
+sudo  rpm --import https://ltb-project.org/wiki/lib/RPM-GPG-KEY-LTB-project
+sudo yum install self-service-password<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">sudo vim /usr/share/self-service-password/conf/config.inc.php<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>下面的是需要修改的部分</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">$ldap_url = "ldap://localhost";
+$ldap_starttls = false;
+$ldap_binddn = "cn=admin,dc=com";
+$ldap_bindpw = "adminpass";
+$ldap_base = "dc=com";
+$ldap_login_attribute = "cn";
+$ldap_fullname_attribute = "cn";
+$ldap_filter = "(&amp;(|(cn={login})(mail={login})(uid={login}))(ou:dn:=users))";
+
+
+$keyphrase = "1237890";<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">sudo service httpd restart
+sudo systemctl restart php-fpm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>修改 <code>php</code>后只需要执行<code>sudo systemctl restart php-fpm</code>就可以</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">vim enableuserchangeselfpassword.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">dn: olcDatabase={2}hdb,cn=config
+changetype: modify
+add: olcAccess
+olcAccess: {0}to attrs=userPassword
+        by dn="cn=setpasswd,ou=sys,dc=com" write
+        by dn.children="cn=setpasswd,ou=sys,dc=com" write
+        by anonymous auth
+        by self write
+        by * none
+olcAccess: {1}to *
+        by dn="cn=setpasswd,ou=sys,dc=com" write
+        by dn.children="cn=setpasswd,ou=sys,dc=com" write
+        by * read<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f enableuserchangeselfpassword.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>使用<code>ldappasswd -s password12 -W -D "uid=raj,ou=users,dc=com" -x "uid=raj,ou=users,dc=com"</code> 弹出旧密码来修改自己的密码</p>
+<p>使用<code>ldappasswd -s password12 -w password123 -D "uid=raj,ou=users,dc=com" -x "uid=raj,ou=users,dc=com"</code>来用旧密码<code>password123</code>来设置新密码</p>
+</blockquote>
+<p>访问 <code>&lt;ip&gt;:81</code> 即可</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ul>
+<li><code>fundamental/cron</code><ul>
+<li><code>LdapBackupLdap_1{=master</code></li>
+</ul>
+</li>
+<li><code>fundamental/nginx_conf</code><ul>
+<li><code>YmiPro_Ldap_1{=master</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://ltb-project.org/documentation/self-service-password/latest/start">https://ltb-project.org/documentation/self-service-password/latest/start</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/ltb-project/self-service-password/issues/243">https://github.com/ltb-project/self-service-password/issues/243</a></p>
+<p>密码被 LDAP 服务器拒绝</p>
+<p><a target="_blank" rel="noopener" href="https://blog.51cto.com/xiaolanlan/2429921?source=dra">https://blog.51cto.com/xiaolanlan/2429921?source=dra</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.openldap.org/doc/admin24/access-control.html">http://www.openldap.org/doc/admin24/access-control.html</a></p>
+</blockquote>
+<h2 id="备份、还原"><a href="#备份、还原" class="headerlink" title="备份、还原"></a>备份、还原</h2><ol>
+<li><p>Backup</p>
+ <pre class="line-numbers language-none"><code class="language-none">sudo slapcat -n 2 -l backups.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>Restore to export server</p>
+ <pre class="line-numbers language-none"><code class="language-none">sudo systemctl stop slapd
+sudo rm -fr /var/lib/ldap/*
+sudo slapadd -l /root/backups.ldif
+
+sudo cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
+sudo chown ldap:ldap -R /var/lib/ldap/
+sudo systemctl start slapd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ol>
+<h2 id="禁止匿名访问"><a href="#禁止匿名访问" class="headerlink" title="禁止匿名访问"></a>禁止匿名访问</h2><ul>
+<li><p>禁止匿名访问</p>
+  <pre class="line-numbers language-none"><code class="language-none">vim disable_anon.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">dn: cn=config
+changetype: modify
+add: olcDisallows
+olcDisallows: bind_anon
+
+dn: cn=config
+changetype: modify
+add: olcRequires
+olcRequires: authc
+
+dn: olcDatabase={-1}frontend,cn=config
+changetype: modify
+add: olcRequires
+olcRequires: authc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+  <pre class="line-numbers language-none"><code class="language-none">sudo ldapadd -Y EXTERNAL -H ldapi:/// -f disable_anon.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+</li>
+</ul>
+<h2 id="GroupOfUniqueNames"><a href="#GroupOfUniqueNames" class="headerlink" title="GroupOfUniqueNames"></a>GroupOfUniqueNames</h2><pre class="line-numbers language-none"><code class="language-none">vim memberof_load_configure.ldif<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">dn: cn=module{0},cn=config
+cn: module{0}
+objectClass: olcModuleList
+objectclass: top
+oldModuleLoad: memberof
+olcModulePath: /usr/lib64/openldap<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.itzgeek.com/how-tos/linux/centos-how-tos/step-step-openldap-server-configuration-centos-7-rhel-7.html">https://www.itzgeek.com/how-tos/linux/centos-how-tos/step-step-openldap-server-configuration-centos-7-rhel-7.html</a></p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.itzgeek.com/how-tos/linux/centos-how-tos/step-step-openldap-server-configuration-centos-7-rhel-7.html/2">https://www.itzgeek.com/how-tos/linux/centos-how-tos/step-step-openldap-server-configuration-centos-7-rhel-7.html/2</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>教程</p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000014683418?utm_source=tag-newest">https://segmentfault.com/a/1190000014683418?utm_source=tag-newest</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>修改rootDN和密码</p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/developerinit/article/details/76141065">https://blog.csdn.net/developerinit/article/details/76141065</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>this base cannot be created with PLA</p>
+</blockquote>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/13921030/phpldapadmin-does-not-work-for-an-unknown-reason">https://stackoverflow.com/questions/13921030/phpldapadmin-does-not-work-for-an-unknown-reason</a></p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">dn: dc=ymi,dc=com
+o: ldap
+objectClass: dcObject
+objectClass: organization
+
+ldapadd  -f base.ldif  -x -D  cn=admin,dc=ymi,dc=com -W<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<hr>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/liuying1802028915/article/details/82878585">https://blog.csdn.net/liuying1802028915/article/details/82878585</a></p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/liuying1802028915/article/details/82878585">https://blog.csdn.net/liuying1802028915/article/details/82878585</a></p>
+</blockquote>
+<hr>
+<p>Find the root dn account and root dn password hash:<br>$ sudo ldapsearch -H ldapi:// -LLL -Q -Y EXTERNAL -b “cn=config” “(olcRootDN=*)” dn olcRootDN olcRootPW | tee ~/newpasswd.ldif</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.linuxwave.info/2015/07/reset-openldap-default-admin-password.html">https://www.linuxwave.info/2015/07/reset-openldap-default-admin-password.html</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>Openldap and ldapadmin: Can’t contact LDAP server (-1) for user</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">getsebool -a | grep ldap
+setsebool httpd_can_connect_ldap on
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.centos.org/forums/viewtopic.php?t=60698">https://www.centos.org/forums/viewtopic.php?t=60698</a></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>additional info: modify/add: olcRootPW: no equality matching rule</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">修改modify.ldif中对应选项的"add"为"replace"即可<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<hr>
+<p><code>gitlab</code></p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/mafeng/p/10237474.html">https://www.cnblogs.com/mafeng/p/10237474.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.58jb.com/html/120.html">https://www.58jb.com/html/120.html</a></p>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">patdz</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://patdz.github.io/2021/01/11/centos7-ymi-ldap/">https://patdz.github.io/2021/01/11/centos7-ymi-ldap/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">patdz</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/ldap/">
+                                    <span class="chip bg-color">ldap</span>
+                                </a>
+                            
+                                <a href="/tags/openldap/">
+                                    <span class="chip bg-color">openldap</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/01/13/docker-qing-li-docker-rong-qi-de-ri-zhi-da-xiao/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Docker-清理docker容器的日志大小">
+                        
+                        <span class="card-title">Docker-清理docker容器的日志大小</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Docker/" class="post-category">
+                                    Docker
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/log/">
+                        <span class="chip bg-color">log</span>
+                    </a>
+                    
+                    <a href="/tags/clean/">
+                        <span class="chip bg-color">clean</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/01/11/git-za-jin/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Git-杂锦">
+                        
+                        <span class="card-title">Git-杂锦</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/git/" class="post-category">
+                                    git
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">patdz</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>patdz的程序人生</title>
+  
+  <subtitle>技术</subtitle>
+  <link href="https://patdz.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://patdz.github.io/"/>
+  <updated>2023-10-13T12:25:47.422Z</updated>
+  <id>https://patdz.github.io/</id>
+  
+  <author>
+    <name>patdz</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS7日志</title>
+    <link href="https://patdz.github.io/2023/10/13/centos7-ri-zhi/"/>
+    <id>https://patdz.github.io/2023/10/13/centos7-ri-zhi/</id>
+    <published>2023-10-13T12:22:33.000Z</published>
+    <updated>2023-10-13T12:25:47.422Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;日志归档&quot;&gt;&lt;a href=&quot;#日志归档&quot; class=&quot;headerlink&quot; title=&quot;日志归档&quot;&gt;&lt;/a&gt;日志归档&lt;/h2&gt;&lt;p&gt;文件 &lt;code&gt;/etc/logrotate.d/cs-z&lt;/code&gt; 内容如下&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="Install" scheme="https://patdz.github.io/categories/Install/"/>
+    
+    
+    <category term="log" scheme="https://patdz.github.io/tags/log/"/>
+    
+    <category term="centos" scheme="https://patdz.github.io/tags/centos/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://patdz.github.io/2023/10/13/mongo/"/>
+    <id>https://patdz.github.io/2023/10/13/mongo/</id>
+    <published>2023-10-13T11:40:50.400Z</published>
+    <updated>2023-10-13T11:40:50.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;查询&quot;&gt;&lt;a href=&quot;#查询&quot; class=&quot;headerlink&quot; title=&quot;查询&quot;&gt;&lt;/a&gt;查询&lt;/h2&gt;&lt;h3 id=&quot;索引&quot;&gt;&lt;a href=&quot;#索引&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://patdz.github.io/2023/10/13/git/"/>
+    <id>https://patdz.github.io/2023/10/13/git/</id>
+    <published>2023-10-13T11:40:50.396Z</published>
+    <updated>2023-10-13T11:40:50.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;go env -w</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Docker设置代理</title>
+    <link href="https://patdz.github.io/2023/07/17/docker-proxy/"/>
+    <id>https://patdz.github.io/2023/07/17/docker-proxy/</id>
+    <published>2023-07-17T13:30:24.000Z</published>
+    <updated>2023-10-13T11:40:50.392Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Docker-Desktop&quot;&gt;&lt;a href=&quot;#Docker-Desktop&quot; class=&quot;headerlink&quot; title=&quot;Docker Desktop&quot;&gt;&lt;/a&gt;Docker Desktop&lt;/h2&gt;&lt;p&gt;界面上找设置代理的地方&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+    <category term="proxy" scheme="https://patdz.github.io/tags/proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows上编译grpc-proto</title>
+    <link href="https://patdz.github.io/2023/07/13/install-grpc-on-windows/"/>
+    <id>https://patdz.github.io/2023/07/13/install-grpc-on-windows/</id>
+    <published>2023-07-13T05:04:40.000Z</published>
+    <updated>2023-10-13T11:40:50.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;h2 id=&quot;Download-protoc&quot;&gt;&lt;a href=&quot;#Download-protoc&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="安装教程" scheme="https://patdz.github.io/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="安装" scheme="https://patdz.github.io/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="grpc" scheme="https://patdz.github.io/tags/grpc/"/>
+    
+    <category term="windows" scheme="https://patdz.github.io/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>扩展GitForWindows</title>
+    <link href="https://patdz.github.io/2023/07/12/install-git4windowsex/"/>
+    <id>https://patdz.github.io/2023/07/12/install-git4windowsex/</id>
+    <published>2023-07-12T10:06:41.000Z</published>
+    <updated>2023-10-13T11:40:50.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;安装Git-for-Windows&quot;&gt;&lt;a href=&quot;#安装Git-for-Windows&quot; class=&quot;headerlink&quot; title=&quot;安装Git for Windows&quot;&gt;&lt;/a&gt;&lt;code&gt;安装Git for</summary>
+        
+      
+    
+    
+    
+    <category term="安装教程" scheme="https://patdz.github.io/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="安装" scheme="https://patdz.github.io/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="git4windows" scheme="https://patdz.github.io/tags/git4windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7配置阿里云yum源及epel源</title>
+    <link href="https://patdz.github.io/2023/07/09/centos7-pei-zhi-a-li-yun-yum-yuan-ji-epel-yuan/"/>
+    <id>https://patdz.github.io/2023/07/09/centos7-pei-zhi-a-li-yun-yum-yuan-ji-epel-yuan/</id>
+    <published>2023-07-09T01:43:08.000Z</published>
+    <updated>2023-10-13T11:40:50.392Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Install" scheme="https://patdz.github.io/categories/Install/"/>
+    
+    
+    <category term="centos7" scheme="https://patdz.github.io/tags/centos7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>centos-8-first</title>
+    <link href="https://patdz.github.io/2023/06/30/centos-8-first/"/>
+    <id>https://patdz.github.io/2023/06/30/centos-8-first/</id>
+    <published>2023-06-30T02:11:10.000Z</published>
+    <updated>2023-10-13T11:40:50.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;源&quot;&gt;&lt;a href=&quot;#源&quot; class=&quot;headerlink&quot; title=&quot;源&quot;&gt;&lt;/a&gt;源&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="Install" scheme="https://patdz.github.io/categories/Install/"/>
+    
+    
+    <category term="centos" scheme="https://patdz.github.io/tags/centos/"/>
+    
+    <category term="centos8" scheme="https://patdz.github.io/tags/centos8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>btc-all</title>
+    <link href="https://patdz.github.io/2023/06/15/btc-all/"/>
+    <id>https://patdz.github.io/2023/06/15/btc-all/</id>
+    <published>2023-06-15T07:43:52.000Z</published>
+    <updated>2023-10-13T11:40:50.393Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Bitcoin-core-安装&quot;&gt;&lt;a href=&quot;#Bitcoin-core-安装&quot; class=&quot;headerlink&quot; title=&quot;Bitcoin core 安装&quot;&gt;&lt;/a&gt;&lt;code&gt;Bitcoin core&lt;/code&gt; 安装&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="BTC" scheme="https://patdz.github.io/categories/BTC/"/>
+    
+    
+    <category term="btcd" scheme="https://patdz.github.io/tags/btcd/"/>
+    
+    <category term="btc core" scheme="https://patdz.github.io/tags/btc-core/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>btcd - windows</title>
+    <link href="https://patdz.github.io/2023/06/10/btcd/"/>
+    <id>https://patdz.github.io/2023/06/10/btcd/</id>
+    <published>2023-06-09T22:41:20.000Z</published>
+    <updated>2023-10-13T11:40:50.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;btcd&quot;&gt;&lt;a href=&quot;#btcd&quot; class=&quot;headerlink&quot; title=&quot;btcd&quot;&gt;&lt;/a&gt;btcd&lt;/h2&gt;&lt;h3 id=&quot;下载-btcd&quot;&gt;&lt;a href=&quot;#下载-btcd&quot; class=&quot;headerlink&quot; title=&quot;下载</summary>
+        
+      
+    
+    
+    
+    <category term="BTC" scheme="https://patdz.github.io/categories/BTC/"/>
+    
+    
+    <category term="btcd" scheme="https://patdz.github.io/tags/btcd/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>go-remote-debug</title>
+    <link href="https://patdz.github.io/2023/05/09/go-remote-debug/"/>
+    <id>https://patdz.github.io/2023/05/09/go-remote-debug/</id>
+    <published>2023-05-09T13:06:17.000Z</published>
+    <updated>2023-10-13T11:40:50.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;install-g&quot;&gt;&lt;a href=&quot;#install-g&quot; class=&quot;headerlink&quot; title=&quot;install g&quot;&gt;&lt;/a&gt;install g&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://patdz.github.io/categories/Go/"/>
+    
+    
+    <category term="go" scheme="https://patdz.github.io/tags/go/"/>
+    
+    <category term="debug" scheme="https://patdz.github.io/tags/debug/"/>
+    
+    <category term="remote" scheme="https://patdz.github.io/tags/remote/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>openwrtonwmware</title>
+    <link href="https://patdz.github.io/2023/05/09/openwrtonwmware/"/>
+    <id>https://patdz.github.io/2023/05/09/openwrtonwmware/</id>
+    <published>2023-05-09T01:38:00.000Z</published>
+    <updated>2023-10-13T11:40:50.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;暂时先借鉴别的人-Windows上安装openwrt软路由&quot;&gt;&lt;a href=&quot;#暂时先借鉴别的人-Windows上安装openwrt软路由&quot; class=&quot;headerlink&quot; title=&quot;暂时先借鉴别的人</summary>
+        
+      
+    
+    
+    
+    <category term="运维" scheme="https://patdz.github.io/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="openwrt" scheme="https://patdz.github.io/tags/openwrt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>flutter</title>
+    <link href="https://patdz.github.io/2023/04/03/flutter/"/>
+    <id>https://patdz.github.io/2023/04/03/flutter/</id>
+    <published>2023-04-03T07:33:56.000Z</published>
+    <updated>2023-10-13T11:40:50.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;编译Android-APK&quot;&gt;&lt;a href=&quot;#编译Android-APK&quot; class=&quot;headerlink&quot; title=&quot;编译Android APK&quot;&gt;&lt;/a&gt;编译Android APK&lt;/h1&gt;&lt;h2 id=&quot;创建-keystore&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="flutter" scheme="https://patdz.github.io/categories/flutter/"/>
+    
+    
+    <category term="flutter" scheme="https://patdz.github.io/tags/flutter/"/>
+    
+    <category term="publish" scheme="https://patdz.github.io/tags/publish/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>solution-backup</title>
+    <link href="https://patdz.github.io/2023/03/14/solution-backup/"/>
+    <id>https://patdz.github.io/2023/03/14/solution-backup/</id>
+    <published>2023-03-14T00:04:57.000Z</published>
+    <updated>2023-10-13T11:40:50.401Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;个人备份方案&quot;&gt;&lt;a href=&quot;#个人备份方案&quot; class=&quot;headerlink&quot; title=&quot;个人备份方案&quot;&gt;&lt;/a&gt;个人备份方案&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;使用 &lt;code&gt;Obsidian&lt;/code&gt; 笔记存放于</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>adb-无线调试</title>
+    <link href="https://patdz.github.io/2023/03/13/adb-wu-xian-diao-shi/"/>
+    <id>https://patdz.github.io/2023/03/13/adb-wu-xian-diao-shi/</id>
+    <published>2023-03-13T00:37:52.000Z</published>
+    <updated>2023-10-13T11:40:50.393Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;确保手机和PC连接到同一&lt;code&gt;WIFI&lt;/code&gt;,</summary>
+        
+      
+    
+    
+    
+    <category term="adb" scheme="https://patdz.github.io/categories/adb/"/>
+    
+    
+    <category term="adb" scheme="https://patdz.github.io/tags/adb/"/>
+    
+    <category term="无线调试" scheme="https://patdz.github.io/tags/%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git-代理</title>
+    <link href="https://patdz.github.io/2023/03/08/git-dai-li/"/>
+    <id>https://patdz.github.io/2023/03/08/git-dai-li/</id>
+    <published>2023-03-08T03:28:19.000Z</published>
+    <updated>2023-10-13T11:40:50.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h1&gt;&lt;h2 id=&quot;http-https-协议&quot;&gt;&lt;a href=&quot;#http-https-协议&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="https://patdz.github.io/categories/git/"/>
+    
+    
+    <category term="proxy" scheme="https://patdz.github.io/tags/proxy/"/>
+    
+    <category term="git" scheme="https://patdz.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx-限速</title>
+    <link href="https://patdz.github.io/2023/03/06/nginx-xian-su/"/>
+    <id>https://patdz.github.io/2023/03/06/nginx-xian-su/</id>
+    <published>2023-03-06T10:20:58.000Z</published>
+    <updated>2023-10-13T11:40:50.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;conn&quot;&gt;&lt;a href=&quot;#conn&quot; class=&quot;headerlink&quot; title=&quot;conn&quot;&gt;&lt;/a&gt;conn&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="nginx" scheme="https://patdz.github.io/categories/nginx/"/>
+    
+    
+    <category term="nginx" scheme="https://patdz.github.io/tags/nginx/"/>
+    
+    <category term="limit" scheme="https://patdz.github.io/tags/limit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx-黑名单</title>
+    <link href="https://patdz.github.io/2023/03/06/nginx-hei-ming-dan/"/>
+    <id>https://patdz.github.io/2023/03/06/nginx-hei-ming-dan/</id>
+    <published>2023-03-06T09:48:56.000Z</published>
+    <updated>2023-10-13T11:40:50.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="nginx" scheme="https://patdz.github.io/categories/nginx/"/>
+    
+    
+    <category term="nginx" scheme="https://patdz.github.io/tags/nginx/"/>
+    
+    <category term="block" scheme="https://patdz.github.io/tags/block/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker不启动获取镜像内容</title>
+    <link href="https://patdz.github.io/2022/12/21/docker-bu-qi-dong-huo-qu-jing-xiang-nei-rong/"/>
+    <id>https://patdz.github.io/2022/12/21/docker-bu-qi-dong-huo-qu-jing-xiang-nei-rong/</id>
+    <published>2022-12-20T23:57:06.000Z</published>
+    <updated>2023-10-13T11:40:50.392Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;docker create --name suspect-container</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+    <category term="docker" scheme="https://patdz.github.io/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git-标签</title>
+    <link href="https://patdz.github.io/2022/12/06/git-biao-qian/"/>
+    <id>https://patdz.github.io/2022/12/06/git-biao-qian/</id>
+    <published>2022-12-06T13:43:10.000Z</published>
+    <updated>2023-10-13T11:40:50.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; tag &lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="https://patdz.github.io/categories/git/"/>
+    
+    
+    <category term="git" scheme="https://patdz.github.io/tags/git/"/>
+    
+    <category term="tag" scheme="https://patdz.github.io/tags/tag/"/>
+    
+  </entry>
+  
+</feed>
