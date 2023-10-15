@@ -514,7 +514,14 @@ systemctl restart docker<span aria-hidden="true" class="line-numbers-rows"><span
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kaishirenshi/p/10670107.html">https://www.cnblogs.com/kaishirenshi/p/10670107.html</a></p>
 </blockquote>
-
+<h2 id="docker-compose限制"><a href="#docker-compose限制" class="headerlink" title="docker compose限制"></a>docker compose限制</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">
+nginx: 
+  image: nginx:1.12.1 
+  restart: always 
+  logging: 
+    driver: <span class="token string">"json-file"</span>
+    options: 
+      max-size: <span class="token string">"512M"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
