@@ -38,9 +38,9 @@
     <category term="Install" scheme="https://patdz.github.io/categories/Install/"/>
     
     
-    <category term="log" scheme="https://patdz.github.io/tags/log/"/>
-    
     <category term="centos" scheme="https://patdz.github.io/tags/centos/"/>
+    
+    <category term="log" scheme="https://patdz.github.io/tags/log/"/>
     
   </entry>
   

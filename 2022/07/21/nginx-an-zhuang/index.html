@@ -504,7 +504,7 @@
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> http://nginx.org/download/nginx-1.25.1.tar.gz
 <span class="token function">tar</span> xvf nginx-1.25.1.tar.gz
 
-nginx -V <span class="token comment"># 获取安装版编译参数，输出的参数用于接下来的`./configure`命令中.</span>
+nginx -V <span class="token comment"># 获取安装版编译参数，输出的参数用于接下来的`./configure`命令中. 去除`dynamic`相关的参数. "x=dynamic" =&gt; "x"</span>
 
 <span class="token builtin class-name">cd</span> nginx-1.25.1
 
@@ -512,6 +512,9 @@ nginx -V <span class="token comment"># 获取安装版编译参数，输出的�
 <span class="token function">make</span>
 <span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<blockquote>
+<p>注意去除<code>dynamic</code>相关的参数</p>
+</blockquote>
 <p>如果执行<code>./configure</code>出错，则大概率是本机缺少编译必须的包，例如本例参数需要的包如下</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> yum <span class="token function">install</span> redhat-rpm-config
 <span class="token function">sudo</span> yum <span class="token function">install</span> libxslt-devel
