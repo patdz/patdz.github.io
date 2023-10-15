@@ -529,6 +529,15 @@ nginx -V <span class="token comment"># 获取安装版编译参数，输出的�
 <blockquote>
 <p>之后再编译nginx，则使用nginx -V查询编译参数，再编译尽量使用原参数</p>
 </blockquote>
+<h4 id="stream"><a href="#stream" class="headerlink" title="stream"></a><code>stream</code></h4><blockquote>
+<p><code>/etc/nginx/nginx.conf</code> 最下行增加</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">stream <span class="token punctuation">{</span>
+    <span class="token comment">#proxy_timeout 1s;</span>
+    <span class="token comment">#proxy_responses 0;</span>
+    include /etc/nginx/conf.d/*.conf.stream<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <h3 id="开机启动，防火墙设置"><a href="#开机启动，防火墙设置" class="headerlink" title="开机启动，防火墙设置"></a>开机启动，防火墙设置</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> systemctl restart nginx
 <span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> nginx
 <span class="token function">sudo</span> firewall-cmd --permanent --zone<span class="token operator">=</span>public --add-service<span class="token operator">=</span>http 
