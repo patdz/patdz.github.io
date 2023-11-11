@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2023-10-13T12:25:47.422Z</updated>
+  <updated>2023-11-11T08:59:42.131Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git删除大文件</title>
+    <link href="https://patdz.github.io/2023/11/11/git-shan-chu-da-wen-jian/"/>
+    <id>https://patdz.github.io/2023/11/11/git-shan-chu-da-wen-jian/</id>
+    <published>2023-11-11T08:44:00.000Z</published>
+    <updated>2023-11-11T08:59:42.131Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;列出所有仓库中的对象（包括SHA值、大小、路径等），并按照大小降序排列，列出TOP 20：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="https://patdz.github.io/categories/git/"/>
+    
+    
+    <category term="rm" scheme="https://patdz.github.io/tags/rm/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS7日志</title>
@@ -510,33 +538,6 @@
     
     
     <category term="docker" scheme="https://patdz.github.io/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git-标签</title>
-    <link href="https://patdz.github.io/2022/12/06/git-biao-qian/"/>
-    <id>https://patdz.github.io/2022/12/06/git-biao-qian/</id>
-    <published>2022-12-06T13:43:10.000Z</published>
-    <updated>2023-10-13T11:40:50.396Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; tag &lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="git" scheme="https://patdz.github.io/categories/git/"/>
-    
-    
-    <category term="git" scheme="https://patdz.github.io/tags/git/"/>
-    
-    <category term="tag" scheme="https://patdz.github.io/tags/tag/"/>
     
   </entry>
   

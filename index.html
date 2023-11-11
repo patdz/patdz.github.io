@@ -558,6 +558,56 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2023/11/11/git-shan-chu-da-wen-jian/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="git删除大文件">
+                            
+                            <span class="card-title">git删除大文件</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                
+列出所有仓库中的对象（包括SHA值、大小、路径等），并按照大小降序排列，列出TOP 20：
+
+git rev-list --all | xargs -rL1 git ls-tree -r --long | sort -uk3 | sort
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-11
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/git/" class="post-category">
+                                    git
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/rm/">
+                            <span class="chip bg-color">rm</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2023/10/13/centos7-ri-zhi/">
                         <div class="card-image">
                             
@@ -1426,63 +1476,6 @@ server {
                         
                         <a href="/tags/limit/">
                             <span class="chip bg-color">limit</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/03/06/nginx-hei-ming-dan/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="nginx-黑名单">
-                            
-                            <span class="card-title">nginx-黑名单</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                配置# cat /etc/nginx/blockip.conf
-deny 176.122.161.213;
-
-
-# cat conf.d/test.ymipro.com.conf 
-server {
-  listen 443 ssl htt
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/nginx/" class="post-category">
-                                    nginx
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/nginx/">
-                            <span class="chip bg-color">nginx</span>
-                        </a>
-                        
-                        <a href="/tags/block/">
-                            <span class="chip bg-color">block</span>
                         </a>
                         
                     </div>
