@@ -365,6 +365,62 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2023/03/06/nginx-xian-su/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="nginx-限速">
+                            
+                            <span class="card-title">nginx-限速</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                conn# cat apps.ymipro.com.conf 
+limit_conn_zone $binary_remote_addr zone=addr:10m;
+
+server {
+  listen 443 ssl http2;
+  l
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-06
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/nginx/" class="post-category">
+                                    nginx
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/nginx/">
+                            <span class="chip bg-color">nginx</span>
+                        </a>
+                        
+                        <a href="/tags/limit/">
+                            <span class="chip bg-color">limit</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2023/03/06/nginx-hei-ming-dan/">
                         <div class="card-image">
                             
@@ -1282,63 +1338,6 @@ sudo firewall-cmd --permanent -
                         
                         <a href="/tags/ip/">
                             <span class="chip bg-color">ip</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/07/21/nginx-yan-zheng/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Nginx验证">
-                            
-                            <span class="card-title">Nginx验证</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-生成用户密码文件
-
-[root@ymicj nginx]# htpasswd -c ./auth_conf admin
-New password: 
-Re-type new password: 
-Adding password for u
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Nginx/" class="post-category">
-                                    Nginx
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/nginx/">
-                            <span class="chip bg-color">nginx</span>
-                        </a>
-                        
-                        <a href="/tags/auth/">
-                            <span class="chip bg-color">auth</span>
                         </a>
                         
                     </div>

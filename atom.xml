@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2023-11-11T08:59:42.131Z</updated>
+  <updated>2023-12-10T08:53:34.358Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>openwrtinstallonvmware</title>
+    <link href="https://patdz.github.io/2023/12/10/openwrtinstallonvmware/"/>
+    <id>https://patdz.github.io/2023/12/10/openwrtinstallonvmware/</id>
+    <published>2023-12-10T07:32:08.000Z</published>
+    <updated>2023-12-10T08:53:34.358Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;下载openwrt镜像文件&quot;&gt;&lt;a href=&quot;#下载openwrt镜像文件&quot; class=&quot;headerlink&quot; title=&quot;下载openwrt镜像文件&quot;&gt;&lt;/a&gt;下载&lt;code&gt;openwrt&lt;/code&gt;镜像文件&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="运维" scheme="https://patdz.github.io/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="openwrt" scheme="https://patdz.github.io/tags/openwrt/"/>
+    
+  </entry>
   
   <entry>
     <title>git删除大文件</title>
@@ -513,31 +540,6 @@
     <category term="nginx" scheme="https://patdz.github.io/tags/nginx/"/>
     
     <category term="block" scheme="https://patdz.github.io/tags/block/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker不启动获取镜像内容</title>
-    <link href="https://patdz.github.io/2022/12/21/docker-bu-qi-dong-huo-qu-jing-xiang-nei-rong/"/>
-    <id>https://patdz.github.io/2022/12/21/docker-bu-qi-dong-huo-qu-jing-xiang-nei-rong/</id>
-    <published>2022-12-20T23:57:06.000Z</published>
-    <updated>2023-10-13T11:40:50.392Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;docker create --name suspect-container</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
-    
-    
-    <category term="docker" scheme="https://patdz.github.io/tags/docker/"/>
     
   </entry>
   
