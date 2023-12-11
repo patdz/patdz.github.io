@@ -496,6 +496,17 @@
 <blockquote>
 <p><code>192.168.3</code>为宿主机网卡段<br><img src="/2023/12/10/openwrtinstallonvmware/cv20.png" alt="cv"></p>
 </blockquote>
+<h2 id="国内源"><a href="#国内源" class="headerlink" title="国内源"></a>国内源</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sed</span> -i <span class="token string">'s/downloads.openwrt.org/mirrors.ustc.edu.cn\/openwrt/g'</span> /etc/opkg/distfeeds.conf
+
+opkg update
+
+opkg <span class="token function">install</span> <span class="token function">curl</span> <span class="token function">bash</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://mirrors.ustc.edu.cn/help/openwrt.html">https://mirrors.ustc.edu.cn/help/openwrt.html</a></p>
+</blockquote>
 
                 
             </div>
