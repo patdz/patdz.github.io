@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Bash之总结, patdz">
+    <meta name="keywords" content="Firewall之ufw备忘, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Bash之总结 | patdz的程序人生</title>
+    <title>Firewall之ufw备忘 | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -326,12 +326,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Bash之总结</h1>
+                    <h1 class="description center-align post-title">Firewall之ufw备忘</h1>
                 </div>
             </div>
         </div>
@@ -447,8 +447,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/bash/">
-                                <span class="chip bg-color">bash</span>
+                            <a href="/tags/firewall/">
+                                <span class="chip bg-color">firewall</span>
+                            </a>
+                        
+                            <a href="/tags/ufw/">
+                                <span class="chip bg-color">ufw</span>
                             </a>
                         
                     </div>
@@ -459,8 +463,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Bash/" class="post-category">
-                                Bash
+                            <a href="/categories/Firewall/" class="post-category">
+                                Firewall
                             </a>
                         
                     </div>
@@ -472,7 +476,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-19
+                    2025-03-15
                 </div>
                 
 
@@ -481,7 +485,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    240
+                    52
                 </div>
                 
 
@@ -493,11 +497,6 @@
                 
 
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -511,77 +510,16 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="文件表达式"><a href="#文件表达式" class="headerlink" title="文件表达式"></a><code>文件表达式</code></h2><ul>
-<li><code>-e filename</code><ul>
-<li>如果 <code>filename</code> 存在，则为真 </li>
-</ul>
-</li>
-<li><code>-d filename</code><ul>
-<li>如果 <code>filename</code> 为目录，则为真 </li>
-</ul>
-</li>
-<li><code>-f filename</code><ul>
-<li>如果 <code>filename</code> 为常规文件，则为真 </li>
-</ul>
-</li>
-<li><code>-L filename</code><ul>
-<li>如果 <code>filename</code> 为符号链接，则为真 </li>
-</ul>
-</li>
-<li><code>-r filename</code><ul>
-<li>如果 <code>filename</code> 可读，则为真 </li>
-</ul>
-</li>
-<li><code>-w filename</code><ul>
-<li>如果 <code>filename</code> 可写，则为真 </li>
-</ul>
-</li>
-<li><code>-x filename</code><ul>
-<li>如果 <code>filename</code> 可执行，则为真 </li>
-</ul>
-</li>
-<li><code>-s filename</code><ul>
-<li>如果 <code>filename</code> 长度不为0，则为真 </li>
-</ul>
-</li>
-<li><code>-h filename</code><ul>
-<li>如果 <code>filename</code> 是软链接，则为真 </li>
-</ul>
-</li>
-<li><code>filename1 -nt filename2</code><ul>
-<li>如果 <code>filename1</code> 比 <code>filename2</code> 新，则为真</li>
-</ul>
-</li>
-<li><code>filename1 -ot filename2</code><ul>
-<li>如果 <code>filename1</code> 比 <code>filename2</code> 旧，则为真</li>
-</ul>
-</li>
-</ul>
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><ul>
-<li><p>如果存在某个文件，则重命名</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span> -s /file <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">&amp;&amp;</span> <span class="token function">mv</span> /file /file.<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%F_%T<span class="token variable">)</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p><code>date</code></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">date</span> +%F_%T
-<span class="token number">2020</span>-12-01_15:07:27
-$ <span class="token function">date</span> +%s
-<span class="token number">1606806485</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>获取外网<code>ip</code></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> -s ip.cip.cc
-<span class="token comment"># 获取ip信息</span>
-<span class="token function">curl</span> -s cip.cc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>从文件中查找字符串</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">fgrep</span> <span class="token string">"mytext"</span> textfile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>获取进程<code>aliyun-service</code>的真正文件地址</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ll /proc/<span class="token variable"><span class="token variable">$(</span>pidof aliyun-service<span class="token variable">)</span></span>/exe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>ls出来文件rm掉</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token operator">|</span> <span class="token function">grep</span> -v c <span class="token operator">|</span> <span class="token function">grep</span> -v t <span class="token operator">|</span> <span class="token function">grep</span> -v l <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">rm</span>	<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-</ul>
+                <h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ufw status numbered
+ufw delete <span class="token number">5</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="信任网卡"><a href="#信任网卡" class="headerlink" title="信任网卡"></a>信任网卡</h3><pre class="line-numbers language-none"><code class="language-none">ufw allow in on v9 
+ufw allow in on v9 from 192.168.16.0/24<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+<h3 id="允许tcp端口"><a href="#允许tcp端口" class="headerlink" title="允许tcp端口"></a>允许tcp端口</h3><pre class="line-numbers language-none"><code class="language-none">ufw allow 9115/tcp
+或者
+ufw allow proto tcp from 172.18.0.0/16 to any port 9115<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -608,7 +546,7 @@ $ <span class="token function">date</span> +%s
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://patdz.github.io/2021/01/19/bash-zong-jie/">https://patdz.github.io/2021/01/19/bash-zong-jie/</a>
+                    <a href="https://patdz.github.io/2025/03/15/firewall-ufw-bei-wang/">https://patdz.github.io/2025/03/15/firewall-ufw-bei-wang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -646,8 +584,12 @@ $ <span class="token function">date</span> +%s
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/bash/">
-                                    <span class="chip bg-color">bash</span>
+                                <a href="/tags/firewall/">
+                                    <span class="chip bg-color">firewall</span>
+                                </a>
+                            
+                                <a href="/tags/ufw/">
+                                    <span class="chip bg-color">ufw</span>
                                 </a>
                             
                         </div>
@@ -821,31 +763,31 @@ $ <span class="token function">date</span> +%s
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/01/30/grpc/">
+                <a href="/2025/03/15/vmware-shou-shen/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Grpc">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="VMWare之硬盘文件瘦身">
                         
-                        <span class="card-title">Grpc</span>
+                        <span class="card-title">VMWare之硬盘文件瘦身</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Grpc相关的资料信息
+                            VMDK文件瘦身
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-30
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-03-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Grpc/" class="post-category">
-                                    Grpc
+                            <a href="/categories/VMSWare/" class="post-category">
+                                    VMSWare
                                 </a>
                             
                             
@@ -855,8 +797,8 @@ $ <span class="token function">date</span> +%s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/grpc/">
-                        <span class="chip bg-color">grpc</span>
+                    <a href="/tags/vmware/">
+                        <span class="chip bg-color">vmware</span>
                     </a>
                     
                 </div>
@@ -870,31 +812,31 @@ $ <span class="token function">date</span> +%s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/01/14/centos7-ymi-iredmail/">
+                <a href="/2025/03/15/python3-chu-tan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="CentOS7之邮件服务器安装">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Python3之初探">
                         
-                        <span class="card-title">CentOS7之邮件服务器安装</span>
+                        <span class="card-title">Python3之初探</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Ymi配置之邮件服务器安装
+                            samba的使用
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-03-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Ymi/" class="post-category">
-                                    Ymi
+                            <a href="/categories/Python3/" class="post-category">
+                                    Python3
                                 </a>
                             
                             
@@ -904,20 +846,16 @@ $ <span class="token function">date</span> +%s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/iredmail/">
-                        <span class="chip bg-color">iredmail</span>
+                    <a href="/tags/python3/">
+                        <span class="chip bg-color">python3</span>
                     </a>
                     
-                    <a href="/tags/centos7/">
-                        <span class="chip bg-color">centos7</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                     <a href="/tags/install/">
                         <span class="chip bg-color">install</span>
-                    </a>
-                    
-                    <a href="/tags/ymi/">
-                        <span class="chip bg-color">ymi</span>
                     </a>
                     
                 </div>
@@ -1066,7 +1004,7 @@ $ <span class="token function">date</span> +%s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">23.6k</span>&nbsp;字
+                class="white-color">33.2k</span>&nbsp;字
             
             
             

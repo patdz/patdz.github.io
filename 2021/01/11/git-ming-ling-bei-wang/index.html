@@ -481,23 +481,18 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    569
+                    737
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
             </div>
         </div>
         <hr class="clearfix">
@@ -511,7 +506,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="windows上git文件标记为-x可执行"><a href="#windows上git文件标记为-x可执行" class="headerlink" title="windows上git文件标记为+x可执行"></a><code>windows</code>上<code>git</code>文件标记为<code>+x</code>可执行</h2>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> update-index --chmod<span class="token operator">=</span>+x <span class="token operator">&lt;</span>your_file<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="添加多个远程库"><a href="#添加多个远程库" class="headerlink" title="添加多个远程库"></a>添加多个远程库</h2><h3 id="纯push"><a href="#纯push" class="headerlink" title="纯push"></a>纯<code>push</code></h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote set-url --add origin git@github.com:bus/xbe.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p>可以参考这个文档 <a target="_blank" rel="noopener" href="https://blog.csdn.net/fancivez/article/details/51544354">https://blog.csdn.net/fancivez/article/details/51544354</a> 但是没啥吊用</p>
+</blockquote>
+<h2 id="Git删除历史版本只保留最新"><a href="#Git删除历史版本只保留最新" class="headerlink" title="Git删除历史版本只保留最新"></a>Git删除历史版本只保留最新</h2><p>问题：旧项目提交到git上，历史记录中会包含项目密码等敏感信息，删除这些历史记录，保留最新一次版本。</p>
+<pre class="line-numbers language-none"><code class="language-none">切换分支：git checkout --orphan latest_branch
+添加到暂存区：git add -A
+提交更改： git commit -am "commit message"
+删除分支： git branch -D master
+重命名分支： git branch -m master
+强制提交到远程仓库：git push -f origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/guopiaowanan/article/details/102132745">https://blog.csdn.net/guopiaowanan/article/details/102132745</a></p>
+<h2 id="windows上git文件标记为-x可执行"><a href="#windows上git文件标记为-x可执行" class="headerlink" title="windows上git文件标记为+x可执行"></a><code>windows</code>上<code>git</code>文件标记为<code>+x</code>可执行</h2>  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> update-index --chmod<span class="token operator">=</span>+x <span class="token operator">&lt;</span>your_file<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 <h2 id="基于提交记录建立分支"><a href="#基于提交记录建立分支" class="headerlink" title="基于提交记录建立分支"></a>基于提交记录建立分支</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout -b develop e97c1e01<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1104,7 +1115,7 @@ go list -m -f <span class="token string">'{{if not (or .Indirect .Main)}}{{.Path
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">23.6k</span>&nbsp;字
+                class="white-color">33.2k</span>&nbsp;字
             
             
             
