@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Ceopenvpn-connect客æ客户端证书增加不走vpn的ip, patdz">
+    <meta name="keywords" content="OpenVPN之connect客户端证书增加不走vpn的ip, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Ceopenvpn-connect客æ客户端证书增加不走vpn的ip | patdz的程序人生</title>
+    <title>OpenVPN之connect客户端证书增加不走vpn的ip | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,15 +310,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Ceopenvpn-connect客æ客户端证书增加不走vpn的ip</h1>
+                    <h1 class="description center-align post-title">OpenVPN之connect客户端证书增加不走vpn的ip</h1>
                 </div>
             </div>
         </div>
@@ -438,6 +451,10 @@
                                 <span class="chip bg-color">openvpn</span>
                             </a>
                         
+                            <a href="/tags/vpn/">
+                                <span class="chip bg-color">vpn</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -446,8 +463,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/VPN/" class="post-category">
-                                VPN
+                            <a href="/categories/OpenVPN/" class="post-category">
+                                OpenVPN
                             </a>
                         
                     </div>
@@ -576,6 +593,10 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
                             
                                 <a href="/tags/openvpn/">
                                     <span class="chip bg-color">openvpn</span>
+                                </a>
+                            
+                                <a href="/tags/vpn/">
+                                    <span class="chip bg-color">vpn</span>
                                 </a>
                             
                         </div>
@@ -761,7 +782,7 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            单机部署ELK
                         
                     </div>
                     <div class="publish-info">
@@ -772,8 +793,8 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Install/" class="post-category">
-                                    Install
+                            <a href="/categories/ELK/" class="post-category">
+                                    ELK
                                 </a>
                             
                             
@@ -783,12 +804,20 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ELK/">
-                        <span class="chip bg-color">ELK</span>
-                    </a>
-                    
                     <a href="/tags/log/">
                         <span class="chip bg-color">log</span>
+                    </a>
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/install/">
+                        <span class="chip bg-color">install</span>
+                    </a>
+                    
+                    <a href="/tags/elk/">
+                        <span class="chip bg-color">elk</span>
                     </a>
                     
                 </div>
@@ -802,19 +831,19 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/10/06/centos-an-zhuang-python3/">
+                <a href="/2022/10/06/centos7-an-zhuang-python3/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="CentOS安装Python3">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="CentOS7之安装Python3">
                         
-                        <span class="card-title">CentOS安装Python3</span>
+                        <span class="card-title">CentOS7之安装Python3</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            安装Python3
                         
                     </div>
                     <div class="publish-info">
@@ -825,8 +854,8 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Install/" class="post-category">
-                                    Install
+                            <a href="/categories/CentOS7/" class="post-category">
+                                    CentOS7
                                 </a>
                             
                             
@@ -990,7 +1019,7 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1014,15 +1043,6 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1030,9 +1050,6 @@ route <span class="token number">8.210</span>.126.80 <span class="token number">
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

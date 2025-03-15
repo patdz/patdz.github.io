@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '65614e54456e22ab8187a39ea4e05a56a0c3e902df37751c0a801e653b634434';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -446,8 +459,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Patdz/" class="post-category">
-                                Patdz
+                            <a href="/categories/stw/" class="post-category">
+                                stw
                             </a>
                         
                     </div>
@@ -831,31 +844,31 @@ PARTITION BY HASH (uid) PARTITIONS 4 (
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/01/linux-ming-ling/">
+                <a href="/2020/12/03/kafka/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="linux命令">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Kafka">
                         
-                        <span class="card-title">linux命令</span>
+                        <span class="card-title">Kafka</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Kafka使用
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-01
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-03
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/Kafka/" class="post-category">
+                                    Kafka
                                 </a>
                             
                             
@@ -865,12 +878,12 @@ PARTITION BY HASH (uid) PARTITIONS 4 (
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/bash/">
-                        <span class="chip bg-color">bash</span>
+                    <a href="/tags/kafka/">
+                        <span class="chip bg-color">kafka</span>
                     </a>
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
+                    <a href="/tags/mq/">
+                        <span class="chip bg-color">mq</span>
                     </a>
                     
                 </div>
@@ -888,15 +901,15 @@ PARTITION BY HASH (uid) PARTITIONS 4 (
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="openssl">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="OpenSSL命令">
                         
-                        <span class="card-title">openssl</span>
+                        <span class="card-title">OpenSSL命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            命令
                         
                     </div>
                     <div class="publish-info">
@@ -907,8 +920,8 @@ PARTITION BY HASH (uid) PARTITIONS 4 (
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Tools/" class="post-category">
-                                    Tools
+                            <a href="/categories/OpenSSL/" class="post-category">
+                                    OpenSSL
                                 </a>
                             
                             
@@ -1072,7 +1085,7 @@ PARTITION BY HASH (uid) PARTITIONS 4 (
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1096,15 +1109,6 @@ PARTITION BY HASH (uid) PARTITIONS 4 (
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1112,9 +1116,6 @@ PARTITION BY HASH (uid) PARTITIONS 4 (
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

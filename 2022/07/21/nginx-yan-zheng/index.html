@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Nginx验证, patdz">
+    <meta name="keywords" content="Nginx之验证, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Nginx验证 | patdz的程序人生</title>
+    <title>Nginx之验证 | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,15 +310,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Nginx验证</h1>
+                    <h1 class="description center-align post-title">Nginx之验证</h1>
                 </div>
             </div>
         </div>
@@ -779,15 +792,15 @@ auth_conf  conf.d  default.d  nginx.conf.rpmsave<span aria-hidden="true" class="
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Nginx获取客户端真实地址">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Nginx之获取客户端真实地址">
                         
-                        <span class="card-title">Nginx获取客户端真实地址</span>
+                        <span class="card-title">Nginx之获取客户端真实地址</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Nginx中获取客户端真是地址并传递给接受服务
                         
                     </div>
                     <div class="publish-info">
@@ -828,19 +841,19 @@ auth_conf  conf.d  default.d  nginx.conf.rpmsave<span aria-hidden="true" class="
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/21/nginx-xu-ni-zhu-ji-liu-liang-zhuang-tai-jian-kong/">
+                <a href="/2022/07/21/nginx-an-zhuang-nginx-module-vts-mo-kuai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Nginx虚拟主机流量状态监控">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Nginx模块安装之nginx-module-vts">
                         
-                        <span class="card-title">Nginx虚拟主机流量状态监控</span>
+                        <span class="card-title">Nginx模块安装之nginx-module-vts</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            nginx-module-vts是用来虚拟主机流量状态监控的一个Nginx模块
                         
                     </div>
                     <div class="publish-info">
@@ -866,12 +879,8 @@ auth_conf  conf.d  default.d  nginx.conf.rpmsave<span aria-hidden="true" class="
                         <span class="chip bg-color">nginx</span>
                     </a>
                     
-                    <a href="/tags/vhts/">
-                        <span class="chip bg-color">vhts</span>
-                    </a>
-                    
-                    <a href="/tags/monitor/">
-                        <span class="chip bg-color">monitor</span>
+                    <a href="/tags/nginx-module/">
+                        <span class="chip bg-color">nginx-module</span>
                     </a>
                     
                 </div>
@@ -1020,7 +1029,7 @@ auth_conf  conf.d  default.d  nginx.conf.rpmsave<span aria-hidden="true" class="
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1044,15 +1053,6 @@ auth_conf  conf.d  default.d  nginx.conf.rpmsave<span aria-hidden="true" class="
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1060,9 +1060,6 @@ auth_conf  conf.d  default.d  nginx.conf.rpmsave<span aria-hidden="true" class="
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

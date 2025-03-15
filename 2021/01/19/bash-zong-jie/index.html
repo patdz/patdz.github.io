@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="bash总结, patdz">
+    <meta name="keywords" content="Bash之总结, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>bash总结 | patdz的程序人生</title>
+    <title>Bash之总结 | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,15 +310,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">bash总结</h1>
+                    <h1 class="description center-align post-title">Bash之总结</h1>
                 </div>
             </div>
         </div>
@@ -434,10 +447,6 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/script/">
-                                <span class="chip bg-color">script</span>
-                            </a>
-                        
                             <a href="/tags/bash/">
                                 <span class="chip bg-color">bash</span>
                             </a>
@@ -472,7 +481,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    132
+                    240
                 </div>
                 
 
@@ -548,6 +557,31 @@
 </ul>
 </li>
 </ul>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><ul>
+<li><p>如果存在某个文件，则重命名</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span> -s /file <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">&amp;&amp;</span> <span class="token function">mv</span> /file /file.<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%F_%T<span class="token variable">)</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p><code>date</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">date</span> +%F_%T
+<span class="token number">2020</span>-12-01_15:07:27
+$ <span class="token function">date</span> +%s
+<span class="token number">1606806485</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>获取外网<code>ip</code></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> -s ip.cip.cc
+<span class="token comment"># 获取ip信息</span>
+<span class="token function">curl</span> -s cip.cc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>从文件中查找字符串</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">fgrep</span> <span class="token string">"mytext"</span> textfile<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>获取进程<code>aliyun-service</code>的真正文件地址</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ll /proc/<span class="token variable"><span class="token variable">$(</span>pidof aliyun-service<span class="token variable">)</span></span>/exe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>ls出来文件rm掉</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token operator">|</span> <span class="token function">grep</span> -v c <span class="token operator">|</span> <span class="token function">grep</span> -v t <span class="token operator">|</span> <span class="token function">grep</span> -v l <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">rm</span>	<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
 
                 
             </div>
@@ -611,10 +645,6 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/script/">
-                                    <span class="chip bg-color">script</span>
-                                </a>
                             
                                 <a href="/tags/bash/">
                                     <span class="chip bg-color">bash</span>
@@ -795,15 +825,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="grpc">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Grpc">
                         
-                        <span class="card-title">grpc</span>
+                        <span class="card-title">Grpc</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Grpc相关的资料信息
                         
                     </div>
                     <div class="publish-info">
@@ -823,6 +853,14 @@
                     </div>
                 </div>
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/grpc/">
+                        <span class="chip bg-color">grpc</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
@@ -836,15 +874,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="羊米-邮件服务器安装">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="CentOS7之邮件服务器安装">
                         
-                        <span class="card-title">羊米-邮件服务器安装</span>
+                        <span class="card-title">CentOS7之邮件服务器安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Ymi配置之邮件服务器安装
                         
                     </div>
                     <div class="publish-info">
@@ -868,6 +906,18 @@
                     
                     <a href="/tags/iredmail/">
                         <span class="chip bg-color">iredmail</span>
+                    </a>
+                    
+                    <a href="/tags/centos7/">
+                        <span class="chip bg-color">centos7</span>
+                    </a>
+                    
+                    <a href="/tags/install/">
+                        <span class="chip bg-color">install</span>
+                    </a>
+                    
+                    <a href="/tags/ymi/">
+                        <span class="chip bg-color">ymi</span>
                     </a>
                     
                 </div>
@@ -1016,7 +1066,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1040,15 +1090,6 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1056,9 +1097,6 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CentOS7配置静态IP地址, patdz">
+    <meta name="keywords" content="CentOS7之配置静态IP地址, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CentOS7配置静态IP地址 | patdz的程序人生</title>
+    <title>CentOS7之配置静态IP地址 | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,15 +310,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CentOS7配置静态IP地址</h1>
+                    <h1 class="description center-align post-title">CentOS7之配置静态IP地址</h1>
                 </div>
             </div>
         </div>
@@ -438,8 +451,12 @@
                                 <span class="chip bg-color">centos</span>
                             </a>
                         
-                            <a href="/tags/%E9%9D%99%E6%80%81IP%E5%9C%B0%E5%9D%80/">
-                                <span class="chip bg-color">静态IP地址</span>
+                            <a href="/tags/config/">
+                                <span class="chip bg-color">config</span>
+                            </a>
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
                     </div>
@@ -450,8 +467,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Install/" class="post-category">
-                                Install
+                            <a href="/categories/CentOS7/" class="post-category">
+                                CentOS7
                             </a>
                         
                     </div>
@@ -583,8 +600,12 @@
                                     <span class="chip bg-color">centos</span>
                                 </a>
                             
-                                <a href="/tags/%E9%9D%99%E6%80%81IP%E5%9C%B0%E5%9D%80/">
-                                    <span class="chip bg-color">静态IP地址</span>
+                                <a href="/tags/config/">
+                                    <span class="chip bg-color">config</span>
+                                </a>
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
                         </div>
@@ -762,15 +783,15 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="CentOS7初探">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="CentOS7之初探">
                         
-                        <span class="card-title">CentOS7初探</span>
+                        <span class="card-title">CentOS7之初探</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            centos7安装系统后可能进行的一些设置
                         
                     </div>
                     <div class="publish-info">
@@ -781,8 +802,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Install/" class="post-category">
-                                    Install
+                            <a href="/categories/CentOS7/" class="post-category">
+                                    CentOS7
                                 </a>
                             
                             
@@ -792,8 +813,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/centos/">
-                        <span class="chip bg-color">centos</span>
+                    <a href="/tags/centos7/">
+                        <span class="chip bg-color">centos7</span>
+                    </a>
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/install/">
+                        <span class="chip bg-color">install</span>
                     </a>
                     
                 </div>
@@ -807,19 +836,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/">
+                <a href="/2020/12/27/linux-sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="sudo保持当前用户的环境变量">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="sudo时候保持当前用户的环境变量">
                         
-                        <span class="card-title">sudo保持当前用户的环境变量</span>
+                        <span class="card-title">sudo时候保持当前用户的环境变量</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            几种sudo时候保持当前环境变量的设置方法
                         
                     </div>
                     <div class="publish-info">
@@ -847,10 +876,6 @@
                     
                     <a href="/tags/sudo/">
                         <span class="chip bg-color">sudo</span>
-                    </a>
-                    
-                    <a href="/tags/env/">
-                        <span class="chip bg-color">env</span>
                     </a>
                     
                 </div>
@@ -999,7 +1024,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1023,15 +1048,6 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1039,9 +1055,6 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

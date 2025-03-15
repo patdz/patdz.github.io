@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -803,19 +816,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/11/14/yun-wei-nginx-an-zhuang-http-v2-module-mo-kuai/">
+                <a href="/2022/11/14/nginx-an-zhuang-http-v2-module-mo-kuai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="运维-Nginx安装http_v2_module模块">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Nginx模块安装之http_v2_module">
                         
-                        <span class="card-title">运维-Nginx安装http_v2_module模块</span>
+                        <span class="card-title">Nginx模块安装之http_v2_module</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            ngx_http_v2_module 模块（1.9.5）提供对 HTTP/2 的支持并取代了 ngx_http_spdy_module 模块。
                         
                     </div>
                     <div class="publish-info">
@@ -826,8 +839,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BF%90%E7%BB%B4/" class="post-category">
-                                    运维
+                            <a href="/categories/Nginx/" class="post-category">
+                                    Nginx
                                 </a>
                             
                             
@@ -841,8 +854,12 @@
                         <span class="chip bg-color">nginx</span>
                     </a>
                     
-                    <a href="/tags/%E8%BF%90%E7%BB%B4/">
-                        <span class="chip bg-color">运维</span>
+                    <a href="/tags/nginx-module/">
+                        <span class="chip bg-color">nginx-module</span>
+                    </a>
+                    
+                    <a href="/tags/install/">
+                        <span class="chip bg-color">install</span>
                     </a>
                     
                 </div>
@@ -868,7 +885,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            使用ref获取dom元素,适用于vue2和vue3
                         
                     </div>
                     <div class="publish-info">
@@ -879,8 +896,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue3/" class="post-category">
-                                    Vue3
+                            <a href="/categories/Vue/" class="post-category">
+                                    Vue
                                 </a>
                             
                             
@@ -892,10 +909,6 @@
                     
                     <a href="/tags/vue/">
                         <span class="chip bg-color">vue</span>
-                    </a>
-                    
-                    <a href="/tags/web/">
-                        <span class="chip bg-color">web</span>
                     </a>
                     
                 </div>
@@ -1044,7 +1057,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1068,15 +1081,6 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1084,9 +1088,6 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

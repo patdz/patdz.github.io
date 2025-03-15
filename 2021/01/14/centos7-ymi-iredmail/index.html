@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="羊米-邮件服务器安装, patdz">
+    <meta name="keywords" content="CentOS7之邮件服务器安装, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>羊米-邮件服务器安装 | patdz的程序人生</title>
+    <title>CentOS7之邮件服务器安装 | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,15 +310,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">羊米-邮件服务器安装</h1>
+                    <h1 class="description center-align post-title">CentOS7之邮件服务器安装</h1>
                 </div>
             </div>
         </div>
@@ -436,6 +449,18 @@
                         
                             <a href="/tags/iredmail/">
                                 <span class="chip bg-color">iredmail</span>
+                            </a>
+                        
+                            <a href="/tags/centos7/">
+                                <span class="chip bg-color">centos7</span>
+                            </a>
+                        
+                            <a href="/tags/install/">
+                                <span class="chip bg-color">install</span>
+                            </a>
+                        
+                            <a href="/tags/ymi/">
+                                <span class="chip bg-color">ymi</span>
                             </a>
                         
                     </div>
@@ -1004,10 +1029,10 @@ smtpd_banner = $myhostname ESMTP $mail_name
 [root@mx z]# postconf myhostname
 myhostname = ymicj.com
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li></ul></del>
 
 
-</li>
-</ul>
+
 <h2 id="proxy-protocol"><a href="#proxy-protocol" class="headerlink" title="proxy protocol"></a>proxy protocol</h2><ul>
 <li><p>配置</p>
   <pre class="line-numbers language-none"><code class="language-none"># on real mail server
@@ -1100,7 +1125,7 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://forum.iredmail.org/topic8108-iredmail-support-mail-rejected.html">https://forum.iredmail.org/topic8108-iredmail-support-mail-rejected.html</a></p>
 </blockquote>
-</del>
+
                 
             </div>
             <hr/>
@@ -1166,6 +1191,18 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
                             
                                 <a href="/tags/iredmail/">
                                     <span class="chip bg-color">iredmail</span>
+                                </a>
+                            
+                                <a href="/tags/centos7/">
+                                    <span class="chip bg-color">centos7</span>
+                                </a>
+                            
+                                <a href="/tags/install/">
+                                    <span class="chip bg-color">install</span>
+                                </a>
+                            
+                                <a href="/tags/ymi/">
+                                    <span class="chip bg-color">ymi</span>
                                 </a>
                             
                         </div>
@@ -1343,15 +1380,15 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="bash总结">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Bash之总结">
                         
-                        <span class="card-title">bash总结</span>
+                        <span class="card-title">Bash之总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Bash常用命令
                         
                     </div>
                     <div class="publish-info">
@@ -1373,10 +1410,6 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/script/">
-                        <span class="chip bg-color">script</span>
-                    </a>
-                    
                     <a href="/tags/bash/">
                         <span class="chip bg-color">bash</span>
                     </a>
@@ -1396,15 +1429,15 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Docker-常用命令">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Docker之常用命令">
                         
-                        <span class="card-title">Docker-常用命令</span>
+                        <span class="card-title">Docker之常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            罗列一些 docker 相关的控制命令
                         
                     </div>
                     <div class="publish-info">
@@ -1426,8 +1459,12 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/config/">
-                        <span class="chip bg-color">config</span>
+                    <a href="/tags/docker/">
+                        <span class="chip bg-color">docker</span>
+                    </a>
+                    
+                    <a href="/tags/shell/">
+                        <span class="chip bg-color">shell</span>
                     </a>
                     
                 </div>
@@ -1576,7 +1613,7 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1600,15 +1637,6 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1616,9 +1644,6 @@ service postfix restart<span aria-hidden="true" class="line-numbers-rows"><span>
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

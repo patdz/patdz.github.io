@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="羊米-Gitlab Runner安装, patdz">
+    <meta name="keywords" content="CentOS7之Gitlab Runner安装, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>羊米-Gitlab Runner安装 | patdz的程序人生</title>
+    <title>CentOS7之Gitlab Runner安装 | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,15 +310,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">羊米-Gitlab Runner安装</h1>
+                    <h1 class="description center-align post-title">CentOS7之Gitlab Runner安装</h1>
                 </div>
             </div>
         </div>
@@ -436,6 +449,18 @@
                         
                             <a href="/tags/gitlab-runner/">
                                 <span class="chip bg-color">gitlab-runner</span>
+                            </a>
+                        
+                            <a href="/tags/centos7/">
+                                <span class="chip bg-color">centos7</span>
+                            </a>
+                        
+                            <a href="/tags/install/">
+                                <span class="chip bg-color">install</span>
+                            </a>
+                        
+                            <a href="/tags/ymi/">
+                                <span class="chip bg-color">ymi</span>
                             </a>
                         
                     </div>
@@ -660,6 +685,18 @@ total <span class="token number">8</span>
                                     <span class="chip bg-color">gitlab-runner</span>
                                 </a>
                             
+                                <a href="/tags/centos7/">
+                                    <span class="chip bg-color">centos7</span>
+                                </a>
+                            
+                                <a href="/tags/install/">
+                                    <span class="chip bg-color">install</span>
+                                </a>
+                            
+                                <a href="/tags/ymi/">
+                                    <span class="chip bg-color">ymi</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -835,15 +872,15 @@ total <span class="token number">8</span>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="CentOS7-安装golang">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="CentOS7之安装golang">
                         
-                        <span class="card-title">CentOS7-安装golang</span>
+                        <span class="card-title">CentOS7之安装golang</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            安装golang
                         
                     </div>
                     <div class="publish-info">
@@ -854,8 +891,8 @@ total <span class="token number">8</span>
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Install/" class="post-category">
-                                    Install
+                            <a href="/categories/CentOS7/" class="post-category">
+                                    CentOS7
                                 </a>
                             
                             
@@ -869,6 +906,18 @@ total <span class="token number">8</span>
                         <span class="chip bg-color">golang</span>
                     </a>
                     
+                    <a href="/tags/centos7/">
+                        <span class="chip bg-color">centos7</span>
+                    </a>
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/install/">
+                        <span class="chip bg-color">install</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -880,19 +929,19 @@ total <span class="token number">8</span>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/01/10/centos-ymi-an-zhuang-docker/">
+                <a href="/2021/01/10/centos7-ymi-gitlab/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="CentOS安装Docker">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="CentOS7之Gitlab安装">
                         
-                        <span class="card-title">CentOS安装Docker</span>
+                        <span class="card-title">CentOS7之Gitlab安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Ymi配置之安装Gitlab
                         
                     </div>
                     <div class="publish-info">
@@ -903,8 +952,8 @@ total <span class="token number">8</span>
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Install/" class="post-category">
-                                    Install
+                            <a href="/categories/Ymi/" class="post-category">
+                                    Ymi
                                 </a>
                             
                             
@@ -914,12 +963,20 @@ total <span class="token number">8</span>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/centos/">
-                        <span class="chip bg-color">centos</span>
+                    <a href="/tags/gitlab/">
+                        <span class="chip bg-color">gitlab</span>
                     </a>
                     
-                    <a href="/tags/docker/">
-                        <span class="chip bg-color">docker</span>
+                    <a href="/tags/centos7/">
+                        <span class="chip bg-color">centos7</span>
+                    </a>
+                    
+                    <a href="/tags/install/">
+                        <span class="chip bg-color">install</span>
+                    </a>
+                    
+                    <a href="/tags/ymi/">
+                        <span class="chip bg-color">ymi</span>
                     </a>
                     
                 </div>
@@ -1068,7 +1125,7 @@ total <span class="token number">8</span>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1092,15 +1149,6 @@ total <span class="token number">8</span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1108,9 +1156,6 @@ total <span class="token number">8</span>
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

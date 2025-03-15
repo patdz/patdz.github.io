@@ -365,179 +365,6 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2021/01/06/centos7-chu-tan/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="CentOS7初探">
-                            
-                            <span class="card-title">CentOS7初探</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-修改用户名
-sudo hostnamectl set-hostname dev-env-srv # 重新登陆生效
-
-yum改阿里源
-sudo wget -O /etc/yum.repos.d/CentOS-Base.repo http:/
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Install/" class="post-category">
-                                    Install
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/centos/">
-                            <span class="chip bg-color">centos</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/01/06/centos7-pei-zhi-jing-tai-ip-di-zhi/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="CentOS7配置静态IP地址">
-                            
-                            <span class="card-title">CentOS7配置静态IP地址</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-ls /etc/sysconfig/network-scripts 查看以ifcfg-开始的非ifcfg-lo的配置文件，这里为ifcfg-ens33
-
-
-按如下内容修改ifcfg-ens33
-
-
-解释一下：我这里为虚拟机，网段为192.
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Install/" class="post-category">
-                                    Install
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/centos/">
-                            <span class="chip bg-color">centos</span>
-                        </a>
-                        
-                        <a href="/tags/%E9%9D%99%E6%80%81IP%E5%9C%B0%E5%9D%80/">
-                            <span class="chip bg-color">静态IP地址</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="sudo保持当前用户的环境变量">
-                            
-                            <span class="card-title">sudo保持当前用户的环境变量</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                方法一在/etc/sudoers文件中设置
-Defaults !env_reset
-
-
-
-方法二在/etc/sudoers文件中
-可以把需要传递环境变量的命令设置到env_keep
-例如：
-Defaults env_keep += "ftp
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-27
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Linux/" class="post-category">
-                                    Linux
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/linux/">
-                            <span class="chip bg-color">linux</span>
-                        </a>
-                        
-                        <a href="/tags/sudo/">
-                            <span class="chip bg-color">sudo</span>
-                        </a>
-                        
-                        <a href="/tags/env/">
-                            <span class="chip bg-color">env</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2020/12/22/bs-zai-wen-zhang-zhong-tian-jia-tu-pian/">
                         <div class="card-image">
                             
@@ -589,27 +416,20 @@ Defaults env_keep += "ftp
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/">
+                    <a href="/2020/12/22/map-jing-wei-du-suo-zai-sheng-fen-cheng-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="地图-经纬度所在省份城市">
+                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Map-经纬度所在省份城市">
                             
-                            <span class="card-title">地图-经纬度所在省份城市</span>
+                            <span class="card-title">Map-经纬度所在省份城市</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                下载区域文件根据附属的参考，本文选择从https://osm-boundaries.com/中下载
-滑动到页面最下，选择Download
-Admin Level 对于中国来说
-
-2 国家级别
-
-3 香港、澳门、直辖市、阿克赛钦等你懂得区域
-
+                                程序中根据经纬度离线查询城市，可以参考参考
                             
                         </div>
                         <div class="publish-info">
@@ -655,26 +475,20 @@ Admin Level 对于中国来说
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/16/brew-tap/">
+                    <a href="/2020/12/16/mac-brew-brew-tap/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="brew tap">
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Mac之Brew之制作源">
                             
-                            <span class="card-title">brew tap</span>
+                            <span class="card-title">Mac之Brew之制作源</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                目标brew没找到influx客户端程序，所以搞一个
-步骤
-github上创建用户patdz下的仓库influx-cli, 用来存放二进制的influx包
-
-本地打包influx tar zcvf 0.0.1.tgz influx
-
-git
+                                制作brew软件源
                             
                         </div>
                         <div class="publish-info">
@@ -685,8 +499,8 @@ git
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Brew/" class="post-category">
-                                    Brew
+                                <a href="/categories/Mac/" class="post-category">
+                                    Mac
                                 </a>
                                 
                                 
@@ -701,6 +515,14 @@ git
                             <span class="chip bg-color">brew-tap</span>
                         </a>
                         
+                        <a href="/tags/brew/">
+                            <span class="chip bg-color">brew</span>
+                        </a>
+                        
+                        <a href="/tags/mac/">
+                            <span class="chip bg-color">mac</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
@@ -708,27 +530,20 @@ git
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/16/mac-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/">
+                    <a href="/2020/12/16/mac-brew-an-zhuang-di-san-fang-ruan-jian-kai-fa-gong-ju-pian/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mac安装第三方软件(开发工具篇)">
+                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Mac之brew之安装第三方软件-开发工具篇">
                             
-                            <span class="card-title">mac安装第三方软件(开发工具篇)</span>
+                            <span class="card-title">Mac之brew之安装第三方软件-开发工具篇</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                redis-clibrew tap ringohub/redis-cli 
-brew update &amp;&amp; brew doctor
-
-brew install redis-cli
-
-
-
-mysql-clientbrew ins
+                                brew安装第三方软件
                             
                         </div>
                         <div class="publish-info">
@@ -766,26 +581,20 @@ mysql-clientbrew ins
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/09/jian-kong-influxdb-telegraf-grafana/">
+                    <a href="/2020/12/09/yun-wei-acme.sh/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="监控[influxdb+telegraf+grafana]">
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="自动申请证书">
                             
-                            <span class="card-title">监控[influxdb+telegraf+grafana]</span>
+                            <span class="card-title">自动申请证书</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                安装Docker# 更新ubuntu的apt源索引
-sudo apt-get update
-
-# 安装包允许apt通过HTTPS使用仓库
-sudo apt-get install \
-    apt-transport-https \
-  
+                                自动申请证书
                             
                         </div>
                         <div class="publish-info">
@@ -796,8 +605,63 @@ sudo apt-get install \
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Monitor/" class="post-category">
-                                    Monitor
+                                <a href="/categories/%E8%BF%90%E7%BB%B4/" class="post-category">
+                                    运维
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E8%BF%90%E7%BB%B4/">
+                            <span class="chip bg-color">运维</span>
+                        </a>
+                        
+                        <a href="/tags/cert/">
+                            <span class="chip bg-color">cert</span>
+                        </a>
+                        
+                        <a href="/tags/acme/">
+                            <span class="chip bg-color">acme</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/12/09/yun-wei-influxdb-telegraf-grafana/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="运维之监控[influxdb+telegraf+grafana]">
+                            
+                            <span class="card-title">运维之监控[influxdb+telegraf+grafana]</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                搭建influxdb+telegraf+grafana监控体系
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-09
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%BF%90%E7%BB%B4/" class="post-category">
+                                    运维
                                 </a>
                                 
                                 
@@ -828,58 +692,8 @@ sudo apt-get install \
                             <span class="chip bg-color">ubuntu</span>
                         </a>
                         
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/12/09/yun-wei-acme.sh/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="自动申请证书">
-                            
-                            <span class="card-title">自动申请证书</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E
-
-安装curl  https://get.acme.sh | sh -s email=my@exampl
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Monitor/" class="post-category">
-                                    Monitor
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/cert/">
-                            <span class="chip bg-color">cert</span>
-                        </a>
-                        
-                        <a href="/tags/acme/">
-                            <span class="chip bg-color">acme</span>
+                        <a href="/tags/%E8%BF%90%E7%BB%B4/">
+                            <span class="chip bg-color">运维</span>
                         </a>
                         
                     </div>
@@ -889,28 +703,20 @@ https://github.com/acmesh-official/acme.sh/wiki/%E8%AF%B4%E6%98%8E
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/03/mysql/">
+                    <a href="/2020/12/03/mysql-bei-wang/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="MySQL之备忘">
                             
-                            <span class="card-title">mysql</span>
+                            <span class="card-title">MySQL之备忘</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                语句
-时间格式
-select DATE_FORMAT(create_time,'%Y%m%d') as day from tableA;
-
-
-
-
-
-
+                                MySQL使用中可能用到的语句
                             
                         </div>
                         <div class="publish-info">
@@ -921,8 +727,8 @@ select DATE_FORMAT(create_time,'%Y%m%d') as day from tableA;
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/DB/" class="post-category">
-                                    DB
+                                <a href="/categories/MySQL/" class="post-category">
+                                    MySQL
                                 </a>
                                 
                                 
@@ -952,17 +758,16 @@ select DATE_FORMAT(create_time,'%Y%m%d') as day from tableA;
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="kafka">
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Kafka">
                             
-                            <span class="card-title">kafka</span>
+                            <span class="card-title">Kafka</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                命令# create topic
-kafka-topics.sh --create --topic topic002 --partitions 4 --zookeeper zookeeper-dev:2181 --replication-f
+                                Kafka使用
                             
                         </div>
                         <div class="publish-info">
@@ -973,8 +778,8 @@ kafka-topics.sh --create --topic topic002 --partitions 4 --zookeeper zookeeper-d
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/MQ/" class="post-category">
-                                    MQ
+                                <a href="/categories/Kafka/" class="post-category">
+                                    Kafka
                                 </a>
                                 
                                 
@@ -1000,63 +805,6 @@ kafka-topics.sh --create --topic topic002 --partitions 4 --zookeeper zookeeper-d
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/01/linux-ming-ling/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="linux命令">
-                            
-                            <span class="card-title">linux命令</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                
-如果存在某个文件，则重命名
-  [ -s /file ] &amp;&amp; &amp;&amp; mv /file /file.$(date +%F_%T)
-
-date
-  $ date +%F_%T
-2020-12-01_15:07
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-01
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Linux/" class="post-category">
-                                    Linux
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/bash/">
-                            <span class="chip bg-color">bash</span>
-                        </a>
-                        
-                        <a href="/tags/linux/">
-                            <span class="chip bg-color">linux</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
                     <a href="/2020/12/01/ge-ren-bi-ji/">
                         <div class="card-image">
                             
@@ -1070,16 +818,7 @@ date
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                 
-
-
-
-MySQL
-MySQL 分库分表
-## only for myisam
-CREATE TABLE IF NOT EXISTS `user1` (
-	`id` int NOT NULL AUTO_INCREMENT,
-	`name`
+                                个人笔记，我也不知道为啥
                             
                         </div>
                         <div class="publish-info">
@@ -1090,8 +829,8 @@ CREATE TABLE IF NOT EXISTS `user1` (
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Patdz/" class="post-category">
-                                    Patdz
+                                <a href="/categories/stw/" class="post-category">
+                                    stw
                                 </a>
                                 
                                 
@@ -1117,21 +856,16 @@ CREATE TABLE IF NOT EXISTS `user1` (
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="openssl">
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="OpenSSL命令">
                             
-                            <span class="card-title">openssl</span>
+                            <span class="card-title">OpenSSL命令</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                
-字符串sha256加密
-  echo -n "stw"  | openssl sha256
-
-
-
+                                命令
                             
                         </div>
                         <div class="publish-info">
@@ -1142,8 +876,8 @@ CREATE TABLE IF NOT EXISTS `user1` (
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Tools/" class="post-category">
-                                    Tools
+                                <a href="/categories/OpenSSL/" class="post-category">
+                                    OpenSSL
                                 </a>
                                 
                                 
@@ -1169,27 +903,20 @@ CREATE TABLE IF NOT EXISTS `user1` (
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/01/screen-ming-ling-shi-yong/">
+                    <a href="/2020/12/01/linux-screen/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="screen命令使用">
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Linux之screen的使用">
                             
-                            <span class="card-title">screen命令使用</span>
+                            <span class="card-title">Linux之screen的使用</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                screen 使用# 创建session
-screen -S zjz
-# 查看所有session
-screen -ls
-# 重新进入session
-screen -r zjz
-# 根据名字destroy
-screen -S zjz -X q
+                                screen的使用
                             
                         </div>
                         <div class="publish-info">
@@ -1200,8 +927,8 @@ screen -S zjz -X q
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Tools/" class="post-category">
-                                    Tools
+                                <a href="/categories/Linux/" class="post-category">
+                                    Linux
                                 </a>
                                 
                                 
@@ -1230,8 +957,7 @@ screen -S zjz -X q
                     <a href="/2020/12/01/bs-an-jia-liao/">
                         <div class="card-image">
                             
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="安家了">
+                            <img src="https://patdz.github.io/1999/11/17/i-tuchuang/hexo.png" class="responsive-img" alt="安家了">
                             
                             <span class="card-title">安家了</span>
                         </div>
@@ -1370,7 +1096,7 @@ screen -S zjz -X q
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1394,15 +1120,6 @@ screen -S zjz -X q
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1410,9 +1127,6 @@ screen -S zjz -X q
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -752,15 +765,15 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="nginx-黑名单">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="nginx之黑名单">
                         
-                        <span class="card-title">nginx-黑名单</span>
+                        <span class="card-title">nginx之黑名单</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Nginx黑名单
                         
                     </div>
                     <div class="publish-info">
@@ -771,8 +784,8 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/nginx/" class="post-category">
-                                    nginx
+                            <a href="/categories/Nginx/" class="post-category">
+                                    Nginx
                                 </a>
                             
                             
@@ -805,15 +818,15 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Git-标签">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Git之操作标签">
                         
-                        <span class="card-title">Git-标签</span>
+                        <span class="card-title">Git之操作标签</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Git操作标签
                         
                     </div>
                     <div class="publish-info">
@@ -824,8 +837,8 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/git/" class="post-category">
-                                    git
+                            <a href="/categories/Git/" class="post-category">
+                                    Git
                                 </a>
                             
                             
@@ -837,10 +850,6 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
                     
                     <a href="/tags/git/">
                         <span class="chip bg-color">git</span>
-                    </a>
-                    
-                    <a href="/tags/tag/">
-                        <span class="chip bg-color">tag</span>
                     </a>
                     
                 </div>
@@ -989,7 +998,7 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1013,15 +1022,6 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1029,9 +1029,6 @@ docker <span class="token function">cp</span> <span class="token operator">&lt;<
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

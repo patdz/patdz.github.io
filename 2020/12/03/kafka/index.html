@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="kafka, patdz">
+    <meta name="keywords" content="Kafka, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>kafka | patdz的程序人生</title>
+    <title>Kafka | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,15 +310,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">kafka</h1>
+                    <h1 class="description center-align post-title">Kafka</h1>
                 </div>
             </div>
         </div>
@@ -450,8 +463,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/MQ/" class="post-category">
-                                MQ
+                            <a href="/categories/Kafka/" class="post-category">
+                                Kafka
                             </a>
                         
                     </div>
@@ -794,19 +807,19 @@ kafka-dev-2:
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/03/mysql/">
+                <a href="/2020/12/03/mysql-bei-wang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="mysql">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="MySQL之备忘">
                         
-                        <span class="card-title">mysql</span>
+                        <span class="card-title">MySQL之备忘</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            MySQL使用中可能用到的语句
                         
                     </div>
                     <div class="publish-info">
@@ -817,8 +830,8 @@ kafka-dev-2:
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/DB/" class="post-category">
-                                    DB
+                            <a href="/categories/MySQL/" class="post-category">
+                                    MySQL
                                 </a>
                             
                             
@@ -847,19 +860,19 @@ kafka-dev-2:
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/01/linux-ming-ling/">
+                <a href="/2020/12/01/ge-ren-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="linux命令">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="个人笔记">
                         
-                        <span class="card-title">linux命令</span>
+                        <span class="card-title">个人笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            个人笔记，我也不知道为啥
                         
                     </div>
                     <div class="publish-info">
@@ -870,8 +883,8 @@ kafka-dev-2:
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/stw/" class="post-category">
+                                    stw
                                 </a>
                             
                             
@@ -881,12 +894,8 @@ kafka-dev-2:
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/bash/">
-                        <span class="chip bg-color">bash</span>
-                    </a>
-                    
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
+                    <a href="/tags/personal/">
+                        <span class="chip bg-color">personal</span>
                     </a>
                     
                 </div>
@@ -1035,7 +1044,7 @@ kafka-dev-2:
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1059,15 +1068,6 @@ kafka-dev-2:
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1075,9 +1075,6 @@ kafka-dev-2:
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 

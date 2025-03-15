@@ -310,6 +310,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -438,6 +451,10 @@
                                 <span class="chip bg-color">nginx</span>
                             </a>
                         
+                            <a href="/tags/install/">
+                                <span class="chip bg-color">install</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -446,8 +463,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Install/" class="post-category">
-                                Install
+                            <a href="/categories/Nginx/" class="post-category">
+                                Nginx
                             </a>
                         
                     </div>
@@ -600,7 +617,7 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
 <span class="token function">phpinfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
-<h2 id="其他系统"><a href="#其他系统" class="headerlink" title="其他系统"></a>其他系统</h2><h1 id><a href="#" class="headerlink" title></a></h1>
+<h2 id="其他系统"><a href="#其他系统" class="headerlink" title="其他系统"></a>其他系统</h2><h1 id=""><a href="#" class="headerlink" title=""></a></h1>
                 
             </div>
             <hr/>
@@ -666,6 +683,10 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
                             
                                 <a href="/tags/nginx/">
                                     <span class="chip bg-color">nginx</span>
+                                </a>
+                            
+                                <a href="/tags/install/">
+                                    <span class="chip bg-color">install</span>
                                 </a>
                             
                         </div>
@@ -843,15 +864,15 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Nginx安装ngx_http_geoip2_module模块">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Nginx模块安装之ngx_http_geoip2_module">
                         
-                        <span class="card-title">Nginx安装ngx_http_geoip2_module模块</span>
+                        <span class="card-title">Nginx模块安装之ngx_http_geoip2_module</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            一个基于Nginx 的开源模块，旨在通过MaxMind 的GeoIP2 数据库，根据客户端IP 地址或特定变量生成地理位置
                         
                     </div>
                     <div class="publish-info">
@@ -877,8 +898,12 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
                         <span class="chip bg-color">nginx</span>
                     </a>
                     
-                    <a href="/tags/http-geoip2-module/">
-                        <span class="chip bg-color">http-geoip2-module</span>
+                    <a href="/tags/nginx-module/">
+                        <span class="chip bg-color">nginx-module</span>
+                    </a>
+                    
+                    <a href="/tags/install/">
+                        <span class="chip bg-color">install</span>
                     </a>
                     
                 </div>
@@ -896,15 +921,15 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Nginx获取客户端真实地址">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Nginx之获取客户端真实地址">
                         
-                        <span class="card-title">Nginx获取客户端真实地址</span>
+                        <span class="card-title">Nginx之获取客户端真实地址</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Nginx中获取客户端真是地址并传递给接受服务
                         
                     </div>
                     <div class="publish-info">
@@ -1080,7 +1105,7 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.3k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
@@ -1104,15 +1129,6 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
 
 
 
@@ -1120,9 +1136,6 @@ scl <span class="token builtin class-name">enable</span> rh-php72 <span class="t
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
 
 
 
