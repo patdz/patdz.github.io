@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo在文章中添加图片, patdz">
+    <meta name="keywords" content="安家了, patdz">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo在文章中添加图片 | patdz的程序人生</title>
+    <title>安家了 | patdz的程序人生</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo在文章中添加图片</h1>
+                    <h1 class="description center-align post-title">安家了</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/config/">
-                                <span class="chip bg-color">config</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                            <a href="/tags/bs/">
+                                <span class="chip bg-color">bs</span>
                             </a>
                         
                     </div>
@@ -459,17 +463,32 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-22
+                    2020-12-01
                 </div>
                 
 
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    303
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -484,10 +503,56 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ol>
-<li>目录中安装插件<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/install-plugin.jpg"></li>
-<li>目录的<code>_config.yml</code>文件中修改<code>post_asset_folder</code>为<code>true</code><br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/post-assert-folder.jpg">     </li>
-<li>尝试生成一篇新的文章<code>hexo new post "hexo在文章中添加图片"</code></li>
-<li>会发现同时生成了一个放置图片的目录<br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/newpost.jpg">     </li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/">Github</a>注册账户 - 这里为<code>patdz</code></p>
+</li>
+<li><p>本地安装<code>git</code> <code>npm</code>, 创建<code>ssh key</code>,并关联<code>github</code>上的账户</p>
+</li>
+<li><p>登录账户新建<code>repository</code>这里名字为<code>patdz.github.io</code></p>
+<ul>
+<li>注意：是在用户名<code>patdz</code>下创建名字为<code>patdz.github.io</code>的<code>repository</code>,格式为<code>${用户名}.github.io</code></li>
+</ul>
+</li>
+<li><p>本地安装<code>hexo</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>创建项目</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> blog
+<span class="token builtin class-name">cd</span> blog
+hexo init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li><p>更新<code>hexo</code>博客代码</p>
+<ul>
+<li>修改 <code>patdz.github.io</code> 目录的 <code>_config.yml</code>, 内容替换成自己的仓库地址  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 修改 title 等自定义内容</span>
+<span class="token comment"># </span>
+<span class="token comment"># 修改deploy相关</span>
+deploy:
+  type: <span class="token function">git</span>
+  repository: git@github.com:patdz/patdz.github.io.git
+  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+<li><p>新增，发布文章</p>
+<ol>
+<li>安装插件 <code>npm i hexo-deployer-git</code></li>
+<li>新增文章 <code>hexo new post "安家了"</code></li>
+<li>把本文章内容复制到 <code>source\_posts</code>下的<code>安家了.md</code>文件中</li>
+<li>测试，发布 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo g
+hexo s
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>发布之后等一段时间<code>几分钟到1小时?</code>，在<code>github.com</code>上打开<code>repository</code>的<code>settings</code>页面，选择<code>Options</code>往下拉，能在<code>GitHub Pages</code>看到地址，这里是<code>https://patdz.github.io/</code></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>源码上传 - 首先创建仓库 <code>src.patdz.github.io</code></p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"init"</span>
+<span class="token function">git</span> branch -M main
+<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:patdz/src.patdz.github.io.git
+<span class="token function">git</span> push -u origin main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>主题、设置 - <a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a></p>
+</li>
 </ol>
 
                 
@@ -515,7 +580,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://patdz.github.io/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/">https://patdz.github.io/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/</a>
+                    <a href="https://patdz.github.io/2020/12/01/bs-an-jia-liao/">https://patdz.github.io/2020/12/01/bs-an-jia-liao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -553,8 +618,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/config/">
-                                    <span class="chip bg-color">config</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
+                                </a>
+                            
+                                <a href="/tags/bs/">
+                                    <span class="chip bg-color">bs</span>
                                 </a>
                             
                         </div>
@@ -728,13 +797,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/27/sudo-bao-chi-dang-qian-yong-hu-de-huan-jing-bian-liang/">
+                <a href="/2020/12/01/screen-ming-ling-shi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="sudo保持当前用户的环境变量">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="screen命令使用">
                         
-                        <span class="card-title">sudo保持当前用户的环境变量</span>
+                        <span class="card-title">screen命令使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -745,14 +814,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category">
-                                    Linux
+                            <a href="/categories/Tools/" class="post-category">
+                                    Tools
                                 </a>
                             
                             
@@ -766,12 +835,8 @@
                         <span class="chip bg-color">linux</span>
                     </a>
                     
-                    <a href="/tags/sudo/">
-                        <span class="chip bg-color">sudo</span>
-                    </a>
-                    
-                    <a href="/tags/env/">
-                        <span class="chip bg-color">env</span>
+                    <a href="/tags/screen/">
+                        <span class="chip bg-color">screen</span>
                     </a>
                     
                 </div>
@@ -785,31 +850,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/22/di-tu-jing-wei-du-suo-zai-sheng-fen-cheng-shi/">
+                <a href="/1999/11/17/i-tuchuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="地图-经纬度所在省份城市">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="图床">
                         
-                        <span class="card-title">地图-经纬度所在省份城市</span>
+                        <span class="card-title">图床</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            博客图床-勿入
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-22
+                                <i class="far fa-clock fa-fw icon-date"></i>1999-11-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Map/" class="post-category">
-                                    Map
+                            <a href="/categories/Images/" class="post-category">
+                                    Images
                                 </a>
                             
                             
@@ -819,20 +884,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/longitude/">
-                        <span class="chip bg-color">longitude</span>
-                    </a>
-                    
-                    <a href="/tags/latitude/">
-                        <span class="chip bg-color">latitude</span>
-                    </a>
-                    
-                    <a href="/tags/geocode/">
-                        <span class="chip bg-color">geocode</span>
-                    </a>
-                    
-                    <a href="/tags/reverse/">
-                        <span class="chip bg-color">reverse</span>
+                    <a href="/tags/images/">
+                        <span class="chip bg-color">images</span>
                     </a>
                     
                 </div>
@@ -968,71 +1021,20 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-    
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2023</span>
+                <span id="year">2019-2025</span>
             
             <span id="year">2019</span>
             <a href="/about" target="_blank">patdz</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">24.3k</span>&nbsp;字
             
             
             
@@ -1246,6 +1248,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     

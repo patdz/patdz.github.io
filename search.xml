@@ -1465,11 +1465,11 @@
     
     
     <entry>
-      <title>hexo在文章中添加图片</title>
-      <link href="2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/"/>
-      <url>2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/</url>
+      <title>hexo之在文章中添加图片</title>
+      <link href="2020/12/22/bs-zai-wen-zhang-zhong-tian-jia-tu-pian/"/>
+      <url>2020/12/22/bs-zai-wen-zhang-zhong-tian-jia-tu-pian/</url>
       
-        <content type="html"><![CDATA[<ol><li>目录中安装插件<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/install-plugin.jpg"></li><li>目录的<code>_config.yml</code>文件中修改<code>post_asset_folder</code>为<code>true</code><br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/post-assert-folder.jpg">     </li><li>尝试生成一篇新的文章<code>hexo new post "hexo在文章中添加图片"</code></li><li>会发现同时生成了一个放置图片的目录<br><img src="/2020/12/22/hexo-zai-wen-zhang-zhong-tian-jia-tu-pian/newpost.jpg">     </li></ol>]]></content>
+        <content type="html"><![CDATA[<ol><li>目录中安装插件<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><br><img src="/2020/12/22/bs-zai-wen-zhang-zhong-tian-jia-tu-pian/install-plugin.jpg"></li><li>目录的<code>_config.yml</code>文件中修改<code>post_asset_folder</code>为<code>true</code><br><img src="/2020/12/22/bs-zai-wen-zhang-zhong-tian-jia-tu-pian/post-assert-folder.jpg">     </li><li>尝试生成一篇新的文章<code>hexo new post "hexo在文章中添加图片"</code></li><li>会发现同时生成了一个放置图片的目录<br><img src="/2020/12/22/bs-zai-wen-zhang-zhong-tian-jia-tu-pian/newpost.jpg">     </li></ol>]]></content>
       
       
       <categories>
@@ -1481,7 +1481,9 @@
       
         <tags>
             
-            <tag> config </tag>
+            <tag> hexo </tag>
+            
+            <tag> bs </tag>
             
         </tags>
       
@@ -1794,25 +1796,51 @@
     
     <entry>
       <title>安家了</title>
-      <link href="2020/12/01/an-jia-liao/"/>
-      <url>2020/12/01/an-jia-liao/</url>
+      <link href="2020/12/01/bs-an-jia-liao/"/>
+      <url>2020/12/01/bs-an-jia-liao/</url>
       
         <content type="html"><![CDATA[<ol><li><p><a href="https://github.com/">Github</a>注册账户 - 这里为<code>patdz</code></p></li><li><p>本地安装<code>git</code> <code>npm</code>, 创建<code>ssh key</code>,并关联<code>github</code>上的账户</p></li><li><p>登录账户新建<code>repository</code>这里名字为<code>patdz.github.io</code></p><ul><li>注意：是在用户名<code>patdz</code>下创建名字为<code>patdz.github.io</code>的<code>repository</code>,格式为<code>${用户名}.github.io</code></li></ul></li><li><p>本地安装<code>hexo</code></p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> i hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>创建项目</p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> blog<span class="token builtin class-name">cd</span> bloghexo init<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li><p>更新<code>hexo</code>博客代码</p><ul><li>修改 <code>patdz.github.io</code> 目录的 <code>_config.yml</code>, 内容替换成自己的仓库地址  <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 修改 title 等自定义内容</span><span class="token comment"># </span><span class="token comment"># 修改deploy相关</span>deploy:  type: <span class="token function">git</span>  repository: git@github.com:patdz/patdz.github.io.git  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul></li><li><p>新增，发布文章</p><ol><li>安装插件 <code>npm i hexo-deployer-git</code></li><li>新增文章 <code>hexo new post "安家了"</code></li><li>把本文章内容复制到 <code>source\_posts</code>下的<code>安家了.md</code>文件中</li><li>测试，发布 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo ghexo shexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>发布之后等一段时间<code>几分钟到1小时?</code>，在<code>github.com</code>上打开<code>repository</code>的<code>settings</code>页面，选择<code>Options</code>往下拉，能在<code>GitHub Pages</code>看到地址，这里是<code>https://patdz.github.io/</code></p></blockquote></li></ol></li><li><p>源码上传 - 首先创建仓库 <code>src.patdz.github.io</code></p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span><span class="token function">git</span> commit -m <span class="token string">"init"</span><span class="token function">git</span> branch -M main<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:patdz/src.patdz.github.io.git<span class="token function">git</span> push -u origin main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>主题、设置 - <a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a></p></li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> bs </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>htuchuang</title>
-      <link href="1999/11/17/htuchuang/"/>
-      <url>1999/11/17/htuchuang/</url>
+      <title>图床</title>
+      <link href="1999/11/17/i-tuchuang/"/>
+      <url>1999/11/17/i-tuchuang/</url>
       
-        <content type="html"><![CDATA[<p><img src="/1999/11/17/htuchuang/customer.png"><br><img src="/1999/11/17/htuchuang/servicer.png"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/1999/11/17/i-tuchuang/customer.png"><br><img src="/1999/11/17/i-tuchuang/servicer.png"><br><img src="/1999/11/17/i-tuchuang/hexo.png"></p>]]></content>
       
       
+      <categories>
+          
+          <category> Images </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> images </tag>
+            
+        </tags>
       
     </entry>
     
