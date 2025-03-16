@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2025-03-16T05:11:25.766Z</updated>
+  <updated>2025-03-16T06:59:13.461Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nuxt.js初探</title>
+    <link href="https://patdz.github.io/2025/03/16/nuxt-chu-tan/"/>
+    <id>https://patdz.github.io/2025/03/16/nuxt-chu-tan/</id>
+    <published>2025-03-16T06:58:56.000Z</published>
+    <updated>2025-03-16T06:59:13.461Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://nuxt.com/docs/getting-started/installation&quot;&gt;nuxt.js</summary>
+        
+      
+    
+    
+    
+    <category term="Nuxt" scheme="https://patdz.github.io/categories/Nuxt/"/>
+    
+    
+    <category term="web" scheme="https://patdz.github.io/tags/web/"/>
+    
+    <category term="nuxt" scheme="https://patdz.github.io/tags/nuxt/"/>
+    
+  </entry>
   
   <entry>
     <title>Python之虚拟环境搭建</title>
@@ -522,35 +549,6 @@
     <category term="firewall" scheme="https://patdz.github.io/tags/firewall/"/>
     
     <category term="ufw" scheme="https://patdz.github.io/tags/ufw/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python3之初探</title>
-    <link href="https://patdz.github.io/2025/03/15/python3-chu-tan/"/>
-    <id>https://patdz.github.io/2025/03/15/python3-chu-tan/</id>
-    <published>2025-03-15T14:39:20.000Z</published>
-    <updated>2025-03-15T14:39:58.335Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;CentOS&quot;&gt;&lt;a href=&quot;#CentOS&quot; class=&quot;headerlink&quot; title=&quot;CentOS&quot;&gt;&lt;/a&gt;&lt;code&gt;CentOS&lt;/code&gt;&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python3" scheme="https://patdz.github.io/categories/Python3/"/>
-    
-    
-    <category term="python3" scheme="https://patdz.github.io/tags/python3/"/>
-    
-    <category term="python" scheme="https://patdz.github.io/tags/python/"/>
-    
-    <category term="install" scheme="https://patdz.github.io/tags/install/"/>
     
   </entry>
   
