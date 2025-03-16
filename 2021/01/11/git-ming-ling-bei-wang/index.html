@@ -481,7 +481,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    737
+                    797
                 </div>
                 
 
@@ -617,9 +617,20 @@ go list -m -f <span class="token string">'{{if not (or .Indirect .Main)}}{{.Path
 
 <span class="token comment"># check has any change :( after git add to run </span>
 <span class="token keyword">if</span> <span class="token punctuation">[</span> -n <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> status -s<span class="token variable">)</span></span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span> <span class="token builtin class-name">echo</span> <span class="token string">"has"</span><span class="token punctuation">;</span> <span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 </li>
 </ul>
+<h2 id="从tag拉分之到新branch"><a href="#从tag拉分之到新branch" class="headerlink" title="从tag拉分之到新branch"></a>从tag拉分之到新branch</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout v1.6.48-0081334e5abeta -b base_v1.6.48-0081334e5abeta<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<h2 id="从分支拉分支"><a href="#从分支拉分支" class="headerlink" title="从分支拉分支"></a>从分支拉分支</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout -b v1.6.48-0081334e5abeta <span class="token number">38593396</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="获取最新tag"><a href="#获取最新tag" class="headerlink" title="获取最新tag"></a>获取最新tag</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> describe --tags<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<p>git checkout -b beta_kasnoprotect beta</p>
+<p>kas remove protect</p>
+<h2 id="查看stash-内容"><a href="#查看stash-内容" class="headerlink" title="查看stash 内容"></a>查看stash 内容</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> stash list
+<span class="token function">git</span> stash show -p stash@<span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -1115,7 +1126,7 @@ go list -m -f <span class="token string">'{{if not (or .Indirect .Main)}}{{.Path
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">33.2k</span>&nbsp;字
+                class="white-color">34.7k</span>&nbsp;字
             
             
             

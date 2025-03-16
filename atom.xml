@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2025-03-15T14:50:25.706Z</updated>
+  <updated>2025-03-16T05:11:25.766Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,438 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python之虚拟环境搭建</title>
+    <link href="https://patdz.github.io/2025/03/16/python-xu-ni-huan-jing/"/>
+    <id>https://patdz.github.io/2025/03/16/python-xu-ni-huan-jing/</id>
+    <published>2025-03-16T05:08:20.000Z</published>
+    <updated>2025-03-16T05:11:25.766Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;python3 -m venv ~/pth3_v1
+&lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://patdz.github.io/categories/Python/"/>
+    
+    
+    <category term="config" scheme="https://patdz.github.io/tags/config/"/>
+    
+    <category term="python" scheme="https://patdz.github.io/tags/python/"/>
+    
+    <category term="venv" scheme="https://patdz.github.io/tags/venv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python之使用国内源</title>
+    <link href="https://patdz.github.io/2025/03/16/python-shi-yong-guo-nei-yuan/"/>
+    <id>https://patdz.github.io/2025/03/16/python-shi-yong-guo-nei-yuan/</id>
+    <published>2025-03-16T05:08:20.000Z</published>
+    <updated>2025-03-16T05:10:01.823Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;pip3 &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://patdz.github.io/categories/Python/"/>
+    
+    
+    <category term="python" scheme="https://patdz.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac之修复 分享快捷指令提示“你必须登录iCloud才能执行” 问题</title>
+    <link href="https://patdz.github.io/2025/03/16/mac-fix-fen-xiang-kuai-jie-zhi-ling-ti-shi-ni-bi-xu-deng-lu-icloud-cai-neng-zhi-xing/"/>
+    <id>https://patdz.github.io/2025/03/16/mac-fix-fen-xiang-kuai-jie-zhi-ling-ti-shi-ni-bi-xu-deng-lu-icloud-cai-neng-zhi-xing/</id>
+    <published>2025-03-16T05:06:58.000Z</published>
+    <updated>2025-03-16T05:06:52.551Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我更新系统后仍有问题 但我打开了iCloud下 iCloud云盘就可以了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Mac" scheme="https://patdz.github.io/categories/Mac/"/>
+    
+    
+    <category term="mac" scheme="https://patdz.github.io/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Makefile之检测Python版本</title>
+    <link href="https://patdz.github.io/2025/03/16/makefile-jian-ce-python-ban-ben/"/>
+    <id>https://patdz.github.io/2025/03/16/makefile-jian-ce-python-ban-ben/</id>
+    <published>2025-03-16T05:02:36.000Z</published>
+    <updated>2025-03-16T05:02:44.428Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-makefile&quot; data-language=&quot;makefile&quot;&gt;&lt;code class=&quot;language-makefile&quot;&gt;python_version_full &lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="Makefile" scheme="https://patdz.github.io/categories/Makefile/"/>
+    
+    
+    <category term="python" scheme="https://patdz.github.io/tags/python/"/>
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="makefile" scheme="https://patdz.github.io/tags/makefile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bash之日志重定向</title>
+    <link href="https://patdz.github.io/2025/03/16/bash-ri-zhi-chong-ding-xiang/"/>
+    <id>https://patdz.github.io/2025/03/16/bash-ri-zhi-chong-ding-xiang/</id>
+    <published>2025-03-16T05:00:13.000Z</published>
+    <updated>2025-03-16T05:00:45.945Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;./proxy_linux_amd64 &lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="Bash" scheme="https://patdz.github.io/categories/Bash/"/>
+    
+    
+    <category term="log" scheme="https://patdz.github.io/tags/log/"/>
+    
+    <category term="bash" scheme="https://patdz.github.io/tags/bash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux之扫描所有端口</title>
+    <link href="https://patdz.github.io/2025/03/16/linux-sao-miao-suo-you-duan-kou/"/>
+    <id>https://patdz.github.io/2025/03/16/linux-sao-miao-suo-you-duan-kou/</id>
+    <published>2025-03-16T04:50:19.000Z</published>
+    <updated>2025-03-16T04:50:22.575Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;nmap&quot;&gt;&lt;a href=&quot;#nmap&quot; class=&quot;headerlink&quot; title=&quot;nmap&quot;&gt;&lt;/a&gt;&lt;code&gt;nmap&lt;/code&gt;&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://patdz.github.io/categories/Linux/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="测试" scheme="https://patdz.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux之查找，删除文件</title>
+    <link href="https://patdz.github.io/2025/03/16/linux-cha-zhao-shan-chu-wen-jian/"/>
+    <id>https://patdz.github.io/2025/03/16/linux-cha-zhao-shan-chu-wen-jian/</id>
+    <published>2025-03-16T04:50:19.000Z</published>
+    <updated>2025-03-16T04:58:34.625Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;删除大小小于1k的文件&quot;&gt;&lt;a href=&quot;#删除大小小于1k的文件&quot; class=&quot;headerlink&quot; title=&quot;删除大小小于1k的文件&quot;&gt;&lt;/a&gt;删除大小小于1k的文件&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://patdz.github.io/categories/Linux/"/>
+    
+    
+    <category term="rm" scheme="https://patdz.github.io/tags/rm/"/>
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="find" scheme="https://patdz.github.io/tags/find/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ffmpeg之合并视频音频</title>
+    <link href="https://patdz.github.io/2025/03/16/ffmpeg-he-bing-shi-pin-yin-pin/"/>
+    <id>https://patdz.github.io/2025/03/16/ffmpeg-he-bing-shi-pin-yin-pin/</id>
+    <published>2025-03-16T04:43:50.000Z</published>
+    <updated>2025-03-16T04:44:18.552Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;ffmpeg -i video.mp4 -i audio.aac -vcodec copy</summary>
+        
+      
+    
+    
+    
+    <category term="Ffmpeg" scheme="https://patdz.github.io/categories/Ffmpeg/"/>
+    
+    
+    <category term="ffpeg" scheme="https://patdz.github.io/tags/ffpeg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker之获取容器ip</title>
+    <link href="https://patdz.github.io/2025/03/16/docker-huo-qu-rong-qi-ip/"/>
+    <id>https://patdz.github.io/2025/03/16/docker-huo-qu-rong-qi-ip/</id>
+    <published>2025-03-16T04:41:01.000Z</published>
+    <updated>2025-03-16T04:57:12.963Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;docker inspect &lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
+    
+    
+    <category term="docker" scheme="https://patdz.github.io/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac之备忘</title>
+    <link href="https://patdz.github.io/2025/03/16/mac-bei-wang/"/>
+    <id>https://patdz.github.io/2025/03/16/mac-bei-wang/</id>
+    <published>2025-03-16T03:45:58.000Z</published>
+    <updated>2025-03-16T05:07:27.785Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;端口是否打开了&quot;&gt;&lt;a href=&quot;#端口是否打开了&quot; class=&quot;headerlink&quot; title=&quot;端口是否打开了&quot;&gt;&lt;/a&gt;端口是否打开了&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Mac" scheme="https://patdz.github.io/categories/Mac/"/>
+    
+    
+    <category term="mac" scheme="https://patdz.github.io/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go之备忘</title>
+    <link href="https://patdz.github.io/2025/03/16/go-bei-wang/"/>
+    <id>https://patdz.github.io/2025/03/16/go-bei-wang/</id>
+    <published>2025-03-16T03:44:53.000Z</published>
+    <updated>2025-03-16T03:44:40.968Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;获取go支持的dist&quot;&gt;&lt;a href=&quot;#获取go支持的dist&quot; class=&quot;headerlink&quot; title=&quot;获取go支持的dist&quot;&gt;&lt;/a&gt;获取go支持的dist&lt;/h3&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://patdz.github.io/categories/Go/"/>
+    
+    
+    <category term="go" scheme="https://patdz.github.io/tags/go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wget之保存文件</title>
+    <link href="https://patdz.github.io/2025/03/16/wget-bao-cun-wen-jian/"/>
+    <id>https://patdz.github.io/2025/03/16/wget-bao-cun-wen-jian/</id>
+    <published>2025-03-16T03:38:11.000Z</published>
+    <updated>2025-03-16T03:39:11.827Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;wget&lt;/span&gt; -c &lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="wget" scheme="https://patdz.github.io/categories/wget/"/>
+    
+    
+    <category term="wget" scheme="https://patdz.github.io/tags/wget/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试之ab</title>
+    <link href="https://patdz.github.io/2025/03/16/ce-shi-ab/"/>
+    <id>https://patdz.github.io/2025/03/16/ce-shi-ab/</id>
+    <published>2025-03-16T03:06:11.000Z</published>
+    <updated>2025-03-16T03:07:17.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;ab -c &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt; -n</summary>
+        
+      
+    
+    
+    
+    <category term="测试" scheme="https://patdz.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="ab" scheme="https://patdz.github.io/tags/ab/"/>
+    
+    <category term="测试" scheme="https://patdz.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Curl之测试网页速度</title>
+    <link href="https://patdz.github.io/2025/03/16/curl-ce-shi-wang-ye-su-du/"/>
+    <id>https://patdz.github.io/2025/03/16/curl-ce-shi-wang-ye-su-du/</id>
+    <published>2025-03-16T03:06:05.000Z</published>
+    <updated>2025-03-16T03:19:35.005Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -o</summary>
+        
+      
+    
+    
+    
+    <category term="Curl" scheme="https://patdz.github.io/categories/Curl/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="测试" scheme="https://patdz.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="curl" scheme="https://patdz.github.io/tags/curl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux之解决ssh免密登录失败问题</title>
+    <link href="https://patdz.github.io/2025/03/16/linux-fix-ssh-deng-lu-shi-bai/"/>
+    <id>https://patdz.github.io/2025/03/16/linux-fix-ssh-deng-lu-shi-bai/</id>
+    <published>2025-03-16T03:03:02.000Z</published>
+    <updated>2025-03-16T03:03:52.456Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;检查目标主机的&lt;code&gt;SSH&lt;/code&gt;服务器配置：确保&lt;code&gt;SSH&lt;/code&gt;服务器已正确设置允许使用公钥身份验证。你可以编辑目标主机上的&lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;文件，确保以下配置项未被注释或设置为</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://patdz.github.io/categories/Linux/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="fix" scheme="https://patdz.github.io/tags/fix/"/>
+    
+    <category term="ssh" scheme="https://patdz.github.io/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx之解决 stream unknown directive &quot;stream&quot; in /etc/nginx/nginx.conf 问题</title>
+    <link href="https://patdz.github.io/2025/03/16/nginx-fix-nginx-stream-unknown-directive/"/>
+    <id>https://patdz.github.io/2025/03/16/nginx-fix-nginx-stream-unknown-directive/</id>
+    <published>2025-03-16T03:01:29.000Z</published>
+    <updated>2025-03-16T03:01:59.784Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ yum -y &lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="Nginx" scheme="https://patdz.github.io/categories/Nginx/"/>
+    
+    
+    <category term="nginx" scheme="https://patdz.github.io/tags/nginx/"/>
+    
+    <category term="fix" scheme="https://patdz.github.io/tags/fix/"/>
+    
+  </entry>
   
   <entry>
     <title>VMWare之备忘</title>
@@ -119,466 +551,6 @@
     <category term="python" scheme="https://patdz.github.io/tags/python/"/>
     
     <category term="install" scheme="https://patdz.github.io/tags/install/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx之配置只允许Cloudflare CDN访问</title>
-    <link href="https://patdz.github.io/2025/03/15/nginx-pei-zhi-zhi-yun-xu-cloudflare-cdn-fang-wen/"/>
-    <id>https://patdz.github.io/2025/03/15/nginx-pei-zhi-zhi-yun-xu-cloudflare-cdn-fang-wen/</id>
-    <published>2025-03-15T14:37:14.000Z</published>
-    <updated>2025-03-15T14:37:39.872Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;设置在&lt;code&gt;server&lt;/code&gt;里&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-nginx&quot; data-language=&quot;nginx&quot;&gt;&lt;code class=&quot;language-nginx&quot;&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="Nginx" scheme="https://patdz.github.io/categories/Nginx/"/>
-    
-    
-    <category term="nginx" scheme="https://patdz.github.io/tags/nginx/"/>
-    
-    <category term="cloudflare" scheme="https://patdz.github.io/tags/cloudflare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx之备忘</title>
-    <link href="https://patdz.github.io/2025/03/15/nginx-bei-wang/"/>
-    <id>https://patdz.github.io/2025/03/15/nginx-bei-wang/</id>
-    <published>2025-03-15T14:35:29.000Z</published>
-    <updated>2025-03-15T14:36:20.730Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;HTTP代理&quot;&gt;&lt;a href=&quot;#HTTP代理&quot; class=&quot;headerlink&quot; title=&quot;HTTP代理&quot;&gt;&lt;/a&gt;HTTP代理&lt;/h2&gt;&lt;h2 id=&quot;纯代理&quot;&gt;&lt;a href=&quot;#纯代理&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Nginx" scheme="https://patdz.github.io/categories/Nginx/"/>
-    
-    
-    <category term="nginx" scheme="https://patdz.github.io/tags/nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac之系统如何输入拼音音调</title>
-    <link href="https://patdz.github.io/2025/03/15/mac-xi-tong-ru-he-shu-ru-pin-yin-yin-diao/"/>
-    <id>https://patdz.github.io/2025/03/15/mac-xi-tong-ru-he-shu-ru-pin-yin-yin-diao/</id>
-    <published>2025-03-15T14:32:58.000Z</published>
-    <updated>2025-03-15T14:33:20.261Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Mac 默认的英文键盘长按元音字母也会弹出包含声调的选单，但是这个选单是给英语音标用的，以元音 a 为例，选择项中只有 â ，没有 ǎ</summary>
-        
-      
-    
-    
-    
-    <category term="Mac" scheme="https://patdz.github.io/categories/Mac/"/>
-    
-    
-    <category term="mac" scheme="https://patdz.github.io/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac之Brew之安装MySQL</title>
-    <link href="https://patdz.github.io/2025/03/15/mac-an-zhuang-mysql/"/>
-    <id>https://patdz.github.io/2025/03/15/mac-an-zhuang-mysql/</id>
-    <published>2025-03-15T14:31:58.000Z</published>
-    <updated>2025-03-15T14:32:36.212Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt; 登录官网&lt;a href=&quot;https://dev.mysql.com/downloads/mysql/&quot;&gt;dev.mysql.com/downloads/m…&lt;/a&gt; </summary>
-        
-      
-    
-    
-    
-    <category term="Mac" scheme="https://patdz.github.io/categories/Mac/"/>
-    
-    
-    <category term="mysql" scheme="https://patdz.github.io/tags/mysql/"/>
-    
-    <category term="mac" scheme="https://patdz.github.io/tags/mac/"/>
-    
-    <category term="install" scheme="https://patdz.github.io/tags/install/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Server之samba的使用</title>
-    <link href="https://patdz.github.io/2025/03/15/server-samba/"/>
-    <id>https://patdz.github.io/2025/03/15/server-samba/</id>
-    <published>2025-03-15T14:23:02.000Z</published>
-    <updated>2025-03-15T14:24:30.147Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;p&gt;以&lt;code&gt;Armbian&lt;/code&gt;或&lt;code&gt;Ubuntu&lt;/code&gt;之类系统为例&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Server" scheme="https://patdz.github.io/categories/Server/"/>
-    
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
-    
-    <category term="samba" scheme="https://patdz.github.io/tags/samba/"/>
-    
-    <category term="smb" scheme="https://patdz.github.io/tags/smb/"/>
-    
-    <category term="smbd" scheme="https://patdz.github.io/tags/smbd/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux之mount的使用</title>
-    <link href="https://patdz.github.io/2025/03/15/linux-mount/"/>
-    <id>https://patdz.github.io/2025/03/15/linux-mount/</id>
-    <published>2025-03-15T14:22:02.000Z</published>
-    <updated>2025-03-15T14:22:28.509Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;查看磁盘&quot;&gt;&lt;a href=&quot;#查看磁盘&quot; class=&quot;headerlink&quot; title=&quot;查看磁盘&quot;&gt;&lt;/a&gt;查看磁盘&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Linux" scheme="https://patdz.github.io/categories/Linux/"/>
-    
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
-    
-    <category term="mount" scheme="https://patdz.github.io/tags/mount/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac之Brew之Mac-brew-切换为国内源</title>
-    <link href="https://patdz.github.io/2025/03/15/mac-brew-qie-huan-wei-guo-nei-yuan/"/>
-    <id>https://patdz.github.io/2025/03/15/mac-brew-qie-huan-wei-guo-nei-yuan/</id>
-    <published>2025-03-15T14:20:01.000Z</published>
-    <updated>2025-03-15T14:27:31.373Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;国内安装 brew(如果已经安装会顺便卸载就得brew)，直接执行脚本：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;/bin/zsh -c &quot;$(curl -fsSL</summary>
-        
-      
-    
-    
-    
-    <category term="Mac" scheme="https://patdz.github.io/categories/Mac/"/>
-    
-    
-    <category term="config" scheme="https://patdz.github.io/tags/config/"/>
-    
-    <category term="brew" scheme="https://patdz.github.io/tags/brew/"/>
-    
-    <category term="mac" scheme="https://patdz.github.io/tags/mac/"/>
-    
-    <category term="install" scheme="https://patdz.github.io/tags/install/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Firewall之firewalld安装</title>
-    <link href="https://patdz.github.io/2025/03/15/firewall-firewalld-an-zhuang/"/>
-    <id>https://patdz.github.io/2025/03/15/firewall-firewalld-an-zhuang/</id>
-    <published>2025-03-15T14:19:14.000Z</published>
-    <updated>2025-03-15T14:42:36.176Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Install-firewalld&quot;&gt;&lt;a href=&quot;#Install-firewalld&quot; class=&quot;headerlink&quot; title=&quot;Install firewalld&quot;&gt;&lt;/a&gt;Install firewalld&lt;/h2&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="Firewall" scheme="https://patdz.github.io/categories/Firewall/"/>
-    
-    
-    <category term="install" scheme="https://patdz.github.io/tags/install/"/>
-    
-    <category term="firewall" scheme="https://patdz.github.io/tags/firewall/"/>
-    
-    <category term="firewalld" scheme="https://patdz.github.io/tags/firewalld/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux之备忘</title>
-    <link href="https://patdz.github.io/2025/03/15/linux-bei-wang/"/>
-    <id>https://patdz.github.io/2025/03/15/linux-bei-wang/</id>
-    <published>2025-03-15T14:17:25.000Z</published>
-    <updated>2025-03-15T14:17:41.027Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;设置用户密码绕过密码策略&quot;&gt;&lt;a href=&quot;#设置用户密码绕过密码策略&quot; class=&quot;headerlink&quot; title=&quot;设置用户密码绕过密码策略&quot;&gt;&lt;/a&gt;设置用户密码绕过密码策略&lt;/h2&gt;&lt;p&gt;If you can run the command as</summary>
-        
-      
-    
-    
-    
-    <category term="MySQL" scheme="https://patdz.github.io/categories/MySQL/"/>
-    
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go之pporf</title>
-    <link href="https://patdz.github.io/2025/03/15/go-pprof/"/>
-    <id>https://patdz.github.io/2025/03/15/go-pprof/</id>
-    <published>2025-03-15T14:13:53.000Z</published>
-    <updated>2025-03-15T14:14:31.978Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;heap&quot;&gt;&lt;a href=&quot;#heap&quot; class=&quot;headerlink&quot; title=&quot;heap&quot;&gt;&lt;/a&gt;heap&lt;/h1&gt;&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Go" scheme="https://patdz.github.io/categories/Go/"/>
-    
-    
-    <category term="go" scheme="https://patdz.github.io/tags/go/"/>
-    
-    <category term="debug" scheme="https://patdz.github.io/tags/debug/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github之子模块发布release</title>
-    <link href="https://patdz.github.io/2025/03/15/github-zi-mo-kuai-fa-bu-release/"/>
-    <id>https://patdz.github.io/2025/03/15/github-zi-mo-kuai-fa-bu-release/</id>
-    <published>2025-03-15T14:09:53.000Z</published>
-    <updated>2025-03-15T14:12:16.662Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;demo/
-└── submod
-    └── subsubmod
-        ├── file.go
-        └──</summary>
-        
-      
-    
-    
-    
-    <category term="Github" scheme="https://patdz.github.io/categories/Github/"/>
-    
-    
-    <category term="git" scheme="https://patdz.github.io/tags/git/"/>
-    
-    <category term="github" scheme="https://patdz.github.io/tags/github/"/>
-    
-    <category term="release" scheme="https://patdz.github.io/tags/release/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docker之解决自动打开防火墙端口的问题</title>
-    <link href="https://patdz.github.io/2025/03/15/docker-jie-jue-zi-dong-da-kai-fang-huo-qiang-duan-kou-de-wen-ti/"/>
-    <id>https://patdz.github.io/2025/03/15/docker-jie-jue-zi-dong-da-kai-fang-huo-qiang-duan-kou-de-wen-ti/</id>
-    <published>2025-03-15T14:01:49.000Z</published>
-    <updated>2025-03-15T14:04:23.161Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;阻止暴露接口&quot;&gt;&lt;a href=&quot;#阻止暴露接口&quot; class=&quot;headerlink&quot; title=&quot;阻止暴露接口&quot;&gt;&lt;/a&gt;阻止暴露接口&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Docker" scheme="https://patdz.github.io/categories/Docker/"/>
-    
-    
-    <category term="docker" scheme="https://patdz.github.io/tags/docker/"/>
-    
-    <category term="firewall" scheme="https://patdz.github.io/tags/firewall/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>运维之DNS国内外不同线路连接</title>
-    <link href="https://patdz.github.io/2025/03/15/yun-wei-dns-guo-nei-wai-bu-tong-xian-lu-lian-jie/"/>
-    <id>https://patdz.github.io/2025/03/15/yun-wei-dns-guo-nei-wai-bu-tong-xian-lu-lian-jie/</id>
-    <published>2025-03-15T13:58:06.000Z</published>
-    <updated>2025-03-15T14:00:01.494Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;主域名[myserver.com] - 浏览器访问的服务器域名&lt;/li&gt;
-&lt;li&gt;辅助域名[mytrans.com] -</summary>
-        
-      
-    
-    
-    
-    <category term="运维" scheme="https://patdz.github.io/categories/%E8%BF%90%E7%BB%B4/"/>
-    
-    
-    <category term="运维" scheme="https://patdz.github.io/tags/%E8%BF%90%E7%BB%B4/"/>
-    
-    <category term="dns" scheme="https://patdz.github.io/tags/dns/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Debian之初探</title>
-    <link href="https://patdz.github.io/2025/03/15/debian-chu-tan/"/>
-    <id>https://patdz.github.io/2025/03/15/debian-chu-tan/</id>
-    <published>2025-03-15T13:55:05.000Z</published>
-    <updated>2025-03-15T13:56:07.418Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;设置北京时区&quot;&gt;&lt;a href=&quot;#设置北京时区&quot; class=&quot;headerlink&quot; title=&quot;设置北京时区&quot;&gt;&lt;/a&gt;设置北京时区&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Debian" scheme="https://patdz.github.io/categories/Debian/"/>
-    
-    
-    <category term="python3" scheme="https://patdz.github.io/tags/python3/"/>
-    
-    <category term="python" scheme="https://patdz.github.io/tags/python/"/>
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
-    
-    <category term="install" scheme="https://patdz.github.io/tags/install/"/>
-    
-    <category term="debian" scheme="https://patdz.github.io/tags/debian/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Server之安装Syncthing</title>
-    <link href="https://patdz.github.io/2025/03/15/server-an-zhuang-syncthing/"/>
-    <id>https://patdz.github.io/2025/03/15/server-an-zhuang-syncthing/</id>
-    <published>2025-03-15T13:51:56.000Z</published>
-    <updated>2025-03-15T13:53:03.902Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Server" scheme="https://patdz.github.io/categories/Server/"/>
-    
-    
-    <category term="install" scheme="https://patdz.github.io/tags/install/"/>
-    
-    <category term="syncthing" scheme="https://patdz.github.io/tags/syncthing/"/>
-    
-    <category term="sync" scheme="https://patdz.github.io/tags/sync/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS7之设置国内源</title>
-    <link href="https://patdz.github.io/2025/03/15/centos7-she-zhi-guo-nei-yuan/"/>
-    <id>https://patdz.github.io/2025/03/15/centos7-she-zhi-guo-nei-yuan/</id>
-    <published>2025-03-15T13:47:19.000Z</published>
-    <updated>2025-03-15T13:48:25.071Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;备份&quot;&gt;&lt;a href=&quot;#备份&quot; class=&quot;headerlink&quot; title=&quot;备份&quot;&gt;&lt;/a&gt;备份&lt;/h2&gt; &lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="CentOS7" scheme="https://patdz.github.io/categories/CentOS7/"/>
-    
-    
-    <category term="centos" scheme="https://patdz.github.io/tags/centos/"/>
-    
-    <category term="centos7" scheme="https://patdz.github.io/tags/centos7/"/>
-    
-    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
     
   </entry>
   

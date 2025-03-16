@@ -485,7 +485,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    94
+                    203
                 </div>
                 
 
@@ -523,6 +523,14 @@
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://www.xxmac.com/apple-app.html">https://www.xxmac.com/apple-app.html</a></p>
 </blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 应用程序-实用工具中打开终端，用命令行打开“任何来源”功能</span>
+<span class="token function">sudo</span> spctl --master-disable
+
+<span class="token comment"># 修复 app</span>
+<span class="token function">sudo</span> xattr -r -d com.apple.quarantine 后面加一个空格，然后把打不开的应用拖动到空格后面
+
+<span class="token comment"># 再修复</span>
+复制指令sudo codesign --sign - --force --deep后面有个空格不要丢了，将损坏的文件拖动到指令后面，回车，输入电脑密码回车即可<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1015,7 +1023,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">33.2k</span>&nbsp;字
+                class="white-color">34.7k</span>&nbsp;字
             
             
             

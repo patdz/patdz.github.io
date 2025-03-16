@@ -485,7 +485,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    91
+                    112
                 </div>
                 
 
@@ -522,6 +522,10 @@ docker <span class="token function">rm</span> <span class="token variable"><span
 docker rmi -f <span class="token variable"><span class="token variable">$(</span>docker images -q<span class="token variable">)</span></span>
 <span class="token comment"># 看需要挂载的目录</span>
 docker inspect grafana <span class="token comment"># 然后看 Env </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="停止，删除所有实例"><a href="#停止，删除所有实例" class="headerlink" title="停止，删除所有实例"></a>停止，删除所有实例</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token variable"><span class="token variable">`</span>docker stop <span class="token punctuation">$(</span>docker <span class="token function">ps</span> -a -q<span class="token punctuation">)</span><span class="token variable">`</span></span>
+<span class="token variable"><span class="token variable">`</span>docker <span class="token function">rm</span> -f <span class="token punctuation">$(</span>docker <span class="token function">ps</span> -a -q<span class="token punctuation">)</span><span class="token variable">`</span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -1013,7 +1017,7 @@ docker inspect grafana <span class="token comment"># 然后看 Env </span><span 
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">33.2k</span>&nbsp;字
+                class="white-color">34.7k</span>&nbsp;字
             
             
             

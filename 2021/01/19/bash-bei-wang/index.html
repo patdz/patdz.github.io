@@ -451,6 +451,10 @@
                                 <span class="chip bg-color">bash</span>
                             </a>
                         
+                            <a href="/tags/tail/">
+                                <span class="chip bg-color">tail</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -481,14 +485,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    290
+                    575
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -577,17 +581,78 @@ $ <span class="token function">date</span> +%s
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token operator">|</span> <span class="token function">grep</span> -v c <span class="token operator">|</span> <span class="token function">grep</span> -v t <span class="token operator">|</span> <span class="token function">grep</span> -v l <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">rm</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
+
 </li>
 </ul>
-<h2 id="查找删除"><a href="#查找删除" class="headerlink" title="查找删除"></a>查找删除</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">find</span> <span class="token builtin class-name">.</span> -name <span class="token string">"*.tgz"</span>  -exec <span class="token function">ls</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">\</span><span class="token punctuation">;</span>
-<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token punctuation">\</span><span class="token punctuation">(</span> -iname <span class="token string">"*.tgz"</span> -o -iname <span class="token string">"*.bak"</span> <span class="token punctuation">\</span><span class="token punctuation">)</span> -exec <span class="token function">ls</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">\</span><span class="token punctuation">;</span>
-<span class="token function">find</span> <span class="token builtin class-name">.</span> -not -path <span class="token string">"./allbackups/*"</span> <span class="token punctuation">\</span><span class="token punctuation">(</span> -iname <span class="token string">"*.tgz"</span> -o -iname <span class="token string">"*.bak"</span> <span class="token punctuation">\</span><span class="token punctuation">)</span> -exec <span class="token function">ls</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">\</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="查看特定程序cpu，内存"><a href="#查看特定程序cpu，内存" class="headerlink" title="查看特定程序cpu，内存"></a>查看特定程序cpu，内存</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">top</span>  -b -n <span class="token number">1</span> <span class="token operator">|</span> <span class="token function">grep</span> xtunnel_dev$ <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{ print <span class="token variable">$1</span>, <span class="token variable">$6</span>, <span class="token variable">$9</span> }'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<ul>
-<li><code>-iname</code> 忽略大小写</li>
-<li><code>-not -path</code>: 忽略目录</li>
-<li><code>ls</code> 如果删除， 替换成<code>rm -rf</code></li>
-</ul>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">while</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> <span class="token operator">&gt;&gt;</span> cost.txt<span class="token punctuation">;</span> <span class="token function">top</span> -b -n <span class="token number">1</span> <span class="token operator">|</span> <span class="token function">grep</span> xtunnel_dev$ <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{ print <span class="token variable">$1</span>, <span class="token variable">$6</span>, <span class="token variable">$9</span> }'</span> <span class="token operator">&gt;&gt;</span> cost.txt<span class="token punctuation">;</span> <span class="token function">sleep</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">top</span> -b -n <span class="token number">500</span> -d <span class="token number">1</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"xtunnel_dev$"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{sum += <span class="token variable">$9</span>; count++} END {print "Average CPU: " sum/count "%"}'</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="检测站点证书"><a href="#检测站点证书" class="headerlink" title="检测站点证书"></a>检测站点证书</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">curl</span> -v -k https://1.2.3.4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="用户选择-无select"><a href="#用户选择-无select" class="headerlink" title="用户选择-无select"></a>用户选择-无select</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">
+<span class="token keyword">while</span> <span class="token boolean">true</span>
+<span class="token keyword">do</span>
+  <span class="token function">cat</span> <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+ 1) lion
+ 2) tiger
+ 3) panda
+ 4) flower
+EOF</span>
+  <span class="token builtin class-name">read</span> -p <span class="token string">"input :"</span> animal
+  <span class="token keyword">case</span> <span class="token string">"<span class="token variable">$animal</span>"</span> <span class="token keyword">in</span>
+    <span class="token number">1</span><span class="token punctuation">)</span> <span class="token builtin class-name">echo</span> <span class="token string">"lion"</span>
+       <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    <span class="token number">2</span><span class="token punctuation">)</span> <span class="token builtin class-name">echo</span> <span class="token string">"tiger"</span>
+       <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    <span class="token number">3</span><span class="token punctuation">)</span> <span class="token builtin class-name">echo</span> <span class="token string">"panda"</span>
+       <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    *<span class="token punctuation">)</span> <span class="token builtin class-name">echo</span> <span class="token string">"not animal"</span>
+       <span class="token builtin class-name">break</span>
+       <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token keyword">esac</span>
+<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="时间格式"><a href="#时间格式" class="headerlink" title="时间格式"></a>时间格式</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token variable"><span class="token variable">`</span><span class="token function">date</span> <span class="token string">"+%Y%m%d%H%M%S"</span><span class="token variable">`</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="for遍历数组"><a href="#for遍历数组" class="headerlink" title="for遍历数组"></a>for遍历数组</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">element</span> <span class="token keyword">in</span> <span class="token variable">${a<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span><span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token builtin class-name">echo</span> <span class="token variable">$element</span><span class="token punctuation">;</span> <span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">while</span> <span class="token boolean">true</span> <span class="token punctuation">;</span><span class="token keyword">do</span> <span class="token function">find</span> ./ -name <span class="token string">"*"</span> -type f -size -1000c -mmin +1 <span class="token operator">|</span> <span class="token function">xargs</span> -n <span class="token number">1</span> <span class="token function">rm</span> -f<span class="token punctuation">;</span> <span class="token function">sleep</span> <span class="token number">2</span><span class="token punctuation">;</span> <span class="token keyword">done</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h2 id="grep-正则"><a href="#grep-正则" class="headerlink" title="grep 正则"></a>grep 正则</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">grep</span> -E <span class="token string">"set_diff|set_extranonce|submit"</span> 20230905062717_6e80275c-e1a5-48a5-9f1b-da1f9602edc6.record
+
+<span class="token function">tail</span> -f <span class="token number">11</span>-miner-1960936407841112064.log <span class="token operator">|</span> <span class="token function">grep</span> -E <span class="token string">"set_diff|set_extranonce"</span>
+<span class="token function">tail</span> -f /var/log/xtunnel_dev2.log<span class="token operator">|</span> <span class="token function">grep</span> dbgKAS
+
+<span class="token function">cat</span> <span class="token number">2</span>-miner-1964861612921716739.log <span class="token operator">|</span> <span class="token function">grep</span> -E <span class="token string">"startCS|finishCS|false"</span>'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="Linux清除日志"><a href="#Linux清除日志" class="headerlink" title="Linux清除日志"></a>Linux清除日志</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Retain only the past two days:
+journalctl --vacuum-time<span class="token operator">=</span>2d
+
+Retain only the past <span class="token number">500</span> MB:
+journalctl --vacuum-size<span class="token operator">=</span>500M<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="删除除x外的文件"><a href="#删除除x外的文件" class="headerlink" title="删除除x外的文件"></a>删除除x外的文件</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">find</span> ./ <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">'22-miner-2008516466483134468.log'</span> <span class="token operator">|</span> <span class="token function">tr</span> <span class="token string">'<span class="token entity" title="\n">\n</span>'</span> <span class="token string">'<span class="token entity" title="\0">\0</span>'</span> <span class="token operator">|</span> <span class="token function">xargs</span> -0 -n1 <span class="token function">rm</span> -r <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="几核"><a href="#几核" class="headerlink" title="几核"></a>几核</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span><span class="token function">grep</span> <span class="token string">"physical id"</span><span class="token operator">|</span><span class="token function">sort</span> <span class="token operator">|</span><span class="token function">uniq</span><span class="token operator">|</span><span class="token function">wc</span> -l<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="逻辑CPU数"><a href="#逻辑CPU数" class="headerlink" title="逻辑CPU数"></a>逻辑CPU数</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span><span class="token function">grep</span> <span class="token string">"processor"</span><span class="token operator">|</span><span class="token function">wc</span> -l<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="主频"><a href="#主频" class="headerlink" title="主频"></a>主频</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span><span class="token function">grep</span> MHz<span class="token operator">|</span><span class="token function">uniq</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="CPU型号，核心"><a href="#CPU型号，核心" class="headerlink" title="CPU型号，核心"></a>CPU型号，核心</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> name <span class="token operator">|</span> <span class="token function">cut</span> -f2 -d: <span class="token operator">|</span> <span class="token function">uniq</span> -c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h2 id="修复tail写文件失败"><a href="#修复tail写文件失败" class="headerlink" title="修复tail写文件失败"></a>修复tail写文件失败</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">tail</span> -f xxx.log <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'/china|beijing/ {print <span class="token variable">$0</span>; fflush() }'</span> <span class="token operator">&gt;&gt;</span> out.txt
+<span class="token function">tail</span> -f  /var/log/xtunnel_dev.log <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'/DDD/ {print <span class="token variable">$0</span>; fflush() }'</span> <span class="token operator">&gt;&gt;</span> out.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -654,6 +719,10 @@ $ <span class="token function">date</span> +%s
                             
                                 <a href="/tags/bash/">
                                     <span class="chip bg-color">bash</span>
+                                </a>
+                            
+                                <a href="/tags/tail/">
+                                    <span class="chip bg-color">tail</span>
                                 </a>
                             
                         </div>
@@ -1072,7 +1141,7 @@ $ <span class="token function">date</span> +%s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">33.2k</span>&nbsp;字
+                class="white-color">34.7k</span>&nbsp;字
             
             
             
