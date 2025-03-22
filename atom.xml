@@ -6,7 +6,7 @@
   <link href="https://patdz.github.io/atom.xml" rel="self"/>
   
   <link href="https://patdz.github.io/"/>
-  <updated>2025-03-16T06:59:13.461Z</updated>
+  <updated>2025-03-22T02:49:59.111Z</updated>
   <id>https://patdz.github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu之修改DNS方法（临时和永久修改DNS）</title>
+    <link href="https://patdz.github.io/2025/03/22/ubuntu-xiu-gai-dns-fang-fa/"/>
+    <id>https://patdz.github.io/2025/03/22/ubuntu-xiu-gai-dns-fang-fa/</id>
+    <published>2025-03-22T02:45:56.000Z</published>
+    <updated>2025-03-22T02:49:59.111Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;永久修改DNS方法&quot;&gt;&lt;a href=&quot;#永久修改DNS方法&quot; class=&quot;headerlink&quot; title=&quot;永久修改DNS方法&quot;&gt;&lt;/a&gt;永久修改DNS方法&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;修改</summary>
+        
+      
+    
+    
+    
+    <category term="Ubuntu" scheme="https://patdz.github.io/categories/Ubuntu/"/>
+    
+    
+    <category term="linux" scheme="https://patdz.github.io/tags/linux/"/>
+    
+    <category term="ubuntu" scheme="https://patdz.github.io/tags/ubuntu/"/>
+    
+    <category term="dns" scheme="https://patdz.github.io/tags/dns/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Armbian之安装Docker</title>
+    <link href="https://patdz.github.io/2025/03/22/armbian-an-zhuang-docker/"/>
+    <id>https://patdz.github.io/2025/03/22/armbian-an-zhuang-docker/</id>
+    <published>2025-03-22T02:37:52.000Z</published>
+    <updated>2025-03-22T02:38:13.492Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;apt-get&lt;/span&gt; remove</summary>
+        
+      
+    
+    
+    
+    <category term="Armbian" scheme="https://patdz.github.io/categories/Armbian/"/>
+    
+    
+    <category term="docker" scheme="https://patdz.github.io/tags/docker/"/>
+    
+    <category term="armbian" scheme="https://patdz.github.io/tags/armbian/"/>
+    
+  </entry>
   
   <entry>
     <title>Nuxt.js初探</title>
@@ -497,58 +554,6 @@
     
     
     <category term="vmware" scheme="https://patdz.github.io/tags/vmware/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VMWare之硬盘文件瘦身</title>
-    <link href="https://patdz.github.io/2025/03/15/vmware-shou-shen/"/>
-    <id>https://patdz.github.io/2025/03/15/vmware-shou-shen/</id>
-    <published>2025-03-15T14:44:56.000Z</published>
-    <updated>2025-03-15T14:50:43.542Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;虚拟机创建后，随着日常使用，物理机中的磁盘文件 &lt;code&gt;vmdk&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="VMWare" scheme="https://patdz.github.io/categories/VMWare/"/>
-    
-    
-    <category term="vmware" scheme="https://patdz.github.io/tags/vmware/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Firewall之ufw备忘</title>
-    <link href="https://patdz.github.io/2025/03/15/firewall-ufw-bei-wang/"/>
-    <id>https://patdz.github.io/2025/03/15/firewall-ufw-bei-wang/</id>
-    <published>2025-03-15T14:42:19.000Z</published>
-    <updated>2025-03-15T14:43:23.672Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;删除&quot;&gt;&lt;a href=&quot;#删除&quot; class=&quot;headerlink&quot; title=&quot;删除&quot;&gt;&lt;/a&gt;删除&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-bash&quot; data-language=&quot;bash&quot;&gt;&lt;code</summary>
-        
-      
-    
-    
-    
-    <category term="Firewall" scheme="https://patdz.github.io/categories/Firewall/"/>
-    
-    
-    <category term="firewall" scheme="https://patdz.github.io/tags/firewall/"/>
-    
-    <category term="ufw" scheme="https://patdz.github.io/tags/ufw/"/>
     
   </entry>
   

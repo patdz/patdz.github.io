@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>Ubuntu之修改DNS方法（临时和永久修改DNS）</title>
+      <link href="2025/03/22/ubuntu-xiu-gai-dns-fang-fa/"/>
+      <url>2025/03/22/ubuntu-xiu-gai-dns-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<h2 id="永久修改DNS方法"><a href="#永久修改DNS方法" class="headerlink" title="永久修改DNS方法"></a>永久修改DNS方法</h2><ol><li><p>修改 <code>/etc/systemd/resolved.conf</code> 文件</p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">vim</span>  /etc/systemd/resolved.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p> 这里我们可以看到这些参数：</p> <pre class="line-numbers language-conf" data-language="conf"><code class="language-conf"># 指定 DNS 服务器，以空白分隔，支持 IPv4 或 IPv6 位置DNS=8.8.8.8 114.114.115.115# 备用 DNS 服务器FallbackDNS=8.8.8.8# 设置搜索域名Domains=domain.com# 设置 LLMNR 是否激活，可用的选项有 yes、no、resolveLLMNR=yes# 设置 MulticastDNS 是否激活，可用的选项有 yes、no、resolveMulticastDNS=yes# 设置 DNSSEC 是否激活，可用的选项有 yes、no、allow-downgradeDNSSEC=yes# 设置缓存是否激活，可用的选项有 yes、no、no-negativeCache=no-negative<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p> 根据需要修改 resolved.conf 文件中的DNS，然后保存。</p></li><li><p>重启 <code>systemd-resolved</code> 服务</p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl restart systemd-resolved<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>设置开机启动 <code>systemd-resolved</code> 服务</p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl <span class="token builtin class-name">enable</span> systemd-resolved<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li><li><p>备份 <code>systemd-resolved</code> 托管文件 <code>resolv.conf</code></p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mv</span> /etc/resolv.conf /etc/resolv.conf.bak<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p> 重新生成。</p> <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ln</span> -s /run/systemd/resolve/resolv.conf /etc/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol><h2 id="临时修改DNS方法"><a href="#临时修改DNS方法" class="headerlink" title="临时修改DNS方法"></a>临时修改DNS方法</h2><p>如果我们临时使用的话，也可以临时修改DNS。</p><p>修改下面文件：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">vim</span> /etc/resolv.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>加入想要修改的DNS</p><pre class="line-numbers language-conf" data-language="conf"><code class="language-conf">nameserver 8.8.8.8nameserver 8.8.4.4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>如果多个DNS，就一行一个，修改之后保存退出即可；此方法修改后即刻生效，但重启后失效。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Ubuntu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> ubuntu </tag>
+            
+            <tag> dns </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Armbian之安装Docker</title>
+      <link href="2025/03/22/armbian-an-zhuang-docker/"/>
+      <url>2025/03/22/armbian-an-zhuang-docker/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">apt-get</span> remove docker docker-engine docker.io containerd runc<span class="token function">apt-get</span> <span class="token function">install</span> ca-certificates <span class="token function">curl</span> gnupg lsb-release<span class="token function">mkdir</span> -p /etc/apt/keyrings<span class="token function">curl</span> -fsSL https://download.docker.com/linux/debian/gpg <span class="token operator">|</span> <span class="token function">sudo</span> gpg --dearmor -o /etc/apt/keyrings/docker.gpg<span class="token builtin class-name">echo</span> <span class="token string">"deb [arch=<span class="token variable"><span class="token variable">$(</span>dpkg --print-architecture<span class="token variable">)</span></span> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian <span class="token variable"><span class="token variable">$(</span>lsb_release -cs<span class="token variable">)</span></span> stable"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/docker.list <span class="token operator">&gt;</span> /dev/null<span class="token function">apt</span> update<span class="token function">apt-get</span> <span class="token function">install</span> docker-ce docker-ce-cli containerd.io docker-compose-plugin<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Armbian </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> armbian </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Nuxt.js初探</title>
       <link href="2025/03/16/nuxt-chu-tan/"/>
       <url>2025/03/16/nuxt-chu-tan/</url>
